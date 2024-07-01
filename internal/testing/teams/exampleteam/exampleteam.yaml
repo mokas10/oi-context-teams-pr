@@ -1,0 +1,50 @@
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # resource name - CANNOT be changed!
+  name: exampleteam
+spec:
+  # display name within Grafana - needs to be separate as metadata.name is very strict
+  # this display name can be changed to rename org in Grafana
+  displayName: "Example Grafana Team"
+  # owner / responsible for the team
+  owner: "manager@ingka.com"
+  # locations where team will be added
+  locations:
+    # gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - "ADGroup1"
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - name: "tenant1"
+      cost_center: "CC1234"
+      project_code: "IN1234"
+      # teams allowed to read - automatically adding loki datasources for these teams
+      read_access:
+        - "exampleteam"
+        - "secondexampleteam"
+      # teams allowed to write - (future) permission to create write token
+      write_access:
+        - "exampleteam"
+  # other datasources supposed to be synced by operator - currently only used for alertmanager
+  otherDatasources:
+    - type: alertmanager
+      tenant: public
+  # tokens OWNED by this team, information about these tokens
+  tokens:
+    - name: "Tokenname"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "tenant1"
+      expires: "False"
