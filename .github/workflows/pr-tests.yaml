@@ -29,6 +29,7 @@ jobs:
           SHELL: /usr/bin/bash
         run: |
           make test
+
   changed_files:
     name: Verify change validity
     needs: pr-tests
@@ -45,8 +46,6 @@ jobs:
       - name: Test changes
         shell: bash
         env:
-          ALL_CHANGED_FILES:  ${{ steps.changed-files.outputs.all_changed_files }}
+          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         run: |
           make test_changes
-
-
