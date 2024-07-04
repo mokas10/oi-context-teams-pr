@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-import sys
+import os
 
-vars = sys.argv[1]
 print("hello world")
-print(vars)
+print(os.environ.get("ALL_CHANGED_FILES"))

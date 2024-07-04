@@ -44,8 +44,8 @@ jobs:
         with:
           base_sha: ${{ github.event.pull_request.base.sha }}
       - name: Test changes
-        shell: bash
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        working-directory: .github/src
         run: |
-          make test_changes
+          python change_verify.py
