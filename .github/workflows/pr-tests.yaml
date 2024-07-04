@@ -3,9 +3,7 @@ name: PR - Teams
 
 on:
   pull_request:
-    branches: ["main"]
-    paths:
-      - "teams/**"
+    branches: ["*"]
 
 jobs:
   pr-tests:
