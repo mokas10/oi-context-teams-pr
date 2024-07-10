@@ -1,0 +1,147 @@
+---
+name: Status Check
+
+on:
+  workflow_call:
+    inputs:
+      deploymentName:
+        description: "Name of application in Argo. Ex. 'context-teams'"
+        required: false
+        type: string
+        default: "context-teams"
+      deploymentNamespace:
+        description: "Namespace to deployment to. Ex. 'context'"
+        required: false
+        type: string
+        default: "context"
+      targetEnvironment:
+        description: "Environment to deploy"
+        required: true
+        type: string
+      targetPlatform:
+        description: "Platform to deploy to"
+        required: true
+        type: string
+        default: "gcp"
+      targetVersion:
+        description: "Git version to checkout"
+        required: true
+        type: string
+
+jobs:
+  status-check:
+    name: "Check status of ${{ inputs.targetPlatform }}-${{ inputs.targetEnvironment }}"
+    runs-on: ubuntu-latest
+    environment:
+      name: "${{ inputs.targetPlatform }}-${{ inputs.targetEnvironment }}"
+    steps:
+      # Setup
+
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        with:
+          ref: ${{ inputs.targetVersion }}
+
+      - name: Set env
+        run: |
+          echo "REVISION=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          echo "RUNNER_IP=$(curl -s https://api.ipify.org)" >> "$GITHUB_ENV"
+
+      - name: Echo
+        run: |
+          echo "This is the deploy job!"
+          echo "inputs.deploymentName: ${{ inputs.deploymentName }}"
+          echo "inputs.deploymentNamespace: ${{ inputs.deploymentNamespace }}"
+          echo "inputs.targetEnvironment: ${{ inputs.targetEnvironment }}"
+          echo "inputs.targetPlatform: ${{ inputs.targetPlatform }}"
+          echo "inputs.targetVersion: ${{ inputs.targetVersion }}"
+          echo "REVISION: $REVISION"
+          echo "RUNNER_IP: $RUNNER_IP"
+
+      - name: Setup Aliyun CLI
+        if: inputs.targetPlatform == 'alicloud'
+        # Not sure about the release version of this action..
+        uses: aliyun/setup-aliyun-cli-action@09a5f86915bb556e27bf050e9a5e339aeb073df5 # v1
+
+      - name: Get Vault secrets for AliCloud
+        id: vault-ac
+        if: inputs.targetPlatform == 'alicloud'
+        uses: hashicorp/vault-action@d1720f055e0635fd932a1d2a48f87a666a57906c # v3.0.0
+        with:
+          url: "https://vault-prod.build.ingka.ikea.com"
+          namespace: "oi-ng-prod"
+          method: jwt
+          jwtGithubAudience: oi-ng
+          role: "github-repo-read"
+          exportToken: false
+          exportEnv: true
+          secrets: |
+            secret/data/alicloud/${{ inputs.targetEnvironment }} access.ALICLOUD_ACCESS_KEY | ALICLOUD_ACCESS_KEY ;
+            secret/data/alicloud/${{ inputs.targetEnvironment }} access.ALICLOUD_ACCESS_KEY | ALICLOUD_ACCESS_KEY_ID ;
+            secret/data/alicloud/${{ inputs.targetEnvironment }} access.ALICLOUD_SECRET_KEY | ALICLOUD_SECRET_KEY ;
+            secret/data/alicloud/${{ inputs.targetEnvironment }} access.ALICLOUD_SECRET_KEY | ALICLOUD_ACCESS_KEY_SECRET ;
+            secret/data/alicloud/${{ inputs.targetEnvironment }} access.ALICLOUD_REGION | ALICLOUD_REGION ;
+            secret/data/alicloud/${{ inputs.targetEnvironment }} access.ALICLOUD_REGION | ALICLOUD_REGION_ID ;
+            secret/data/terraform-output/ack/${{ inputs.targetEnvironment }} ack.ACK_CLUSTER_ID | ACK_CLUSTER_ID ;
+            secret/data/terraform-output/ack/${{ inputs.targetEnvironment }} ack.ACK_ACL_ID | ACK_ACL_ID ;
+
+      - name: GCP auth
+        if: inputs.targetPlatform == 'gcp'
+        uses: google-github-actions/auth@71fee32a0bb7e97b4d33d548e7d957010649d8fa # v2.1.3
+        with:
+          workload_identity_provider: projects/${{ vars.GCP_PROJECT_NUM }}/locations/global/workloadIdentityPools/github/providers/github
+          service_account: ${{ github.event.repository.name }}-deploy@${{ vars.GCP_PROJECT_ID }}.iam.gserviceaccount.com
+
+      - name: GKE auth
+        if: inputs.targetPlatform == 'gcp'
+        uses: google-github-actions/get-gke-credentials@c544a3d7e92276d24e03a5632a53aa3913ad5d8a # v2.2.0
+        with:
+          cluster_name: "${{ vars.GKE_CLUSTER_NAME }}"
+          location: "${{ vars.GKE_LOCATION }}"
+
+      - name: Set ACK context
+        if: inputs.targetPlatform == 'alicloud'
+        # Not sure about the release version of this action..
+        uses: aliyun/ack-set-context@d2631e5c69a693a333f1a5f6b59023d5d3326fb7 # v1
+        with:
+          access-key-id: "${{ env.ALICLOUD_ACCESS_KEY }}"
+          access-key-secret: "${{ env.ALICLOUD_SECRET_KEY }}"
+          cluster-id: "${{ env.ACK_CLUSTER_ID }}"
+
+      - name: Add runner IP to ACL on kube-api ACK SLB Listener
+        if: inputs.targetPlatform == 'alicloud'
+        run: |
+          ACL_ENTRY=$(echo '[]' | jq -c -r '.[0] = {"entry": $runner_ip, "comment": "Github Actions runner"}' --arg runner_ip "$RUNNER_IP/32")
+          aliyun slb AddAccessControlListEntry --AclId "$ACK_ACL_ID" --AclEntrys "$ACL_ENTRY"
+
+      # Wait
+
+      - name: Check Argo CD revision
+        timeout-minutes: 16
+        run: |
+          echo "Waiting for ${{ inputs.deploymentName }} sync.revision: $REVISION"
+          until kubectl -n argocd wait application/${{ inputs.deploymentName }} --timeout=15m --for=jsonpath='{.status.sync.revision}'=$REVISION 2>/dev/null; do
+              echo "Waiting for ${{ inputs.deploymentName }} sync.revision: $REVISION"
+              sleep 5
+          done
+
+      - name: Check Argo CD sync status
+        timeout-minutes: 30
+        run: |
+          echo "Waiting for ${{ inputs.deploymentName }} sync.status: Synced"
+          kubectl -n argocd wait application/${{ inputs.deploymentName }} --timeout=15m --for=jsonpath='{.status.sync.status}'=Synced
+
+      - name: Check Argo CD health status
+        timeout-minutes: 60
+        run: |
+          echo "Waiting for ${{ inputs.deploymentName }} health.status: Healthy"
+          kubectl -n argocd wait application/${{ inputs.deploymentName }} --timeout=59m --for=jsonpath='{.status.health.status}'=Healthy
+
+      # Cleanup
+
+      - name: Remove runner IP to ACL on kube-api ACK SLB Listener
+        if: |
+          always() &&
+          inputs.targetPlatform == 'alicloud'
+        run: |
+          ACL_ENTRY=$(echo '[]' | jq -c -r '.[0] = {"entry": $runner_ip, "comment": "Github Actions runner"}' --arg runner_ip "$RUNNER_IP/32")
+          aliyun slb RemoveAccessControlListEntry --AclId "$ACK_ACL_ID" --AclEntrys "$ACL_ENTRY"

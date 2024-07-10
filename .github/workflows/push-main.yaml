@@ -1,0 +1,39 @@
+---
+name: Push - Deploy to Context Dev
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "teams/**"
+      - "**.yaml"
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  # check if deployment done by Argo is successful in GCP
+  check_status_gcp:
+    uses: ./.github/workflows/wc-status-check.yaml
+    with:
+      targetEnvironment: "dev"
+      targetPlatform: "gcp"
+      targetVersion: ${{ github.sha }}
+  # check if deployment done by Argo is successful in Alicloud
+  check_status_alicloud:
+    uses: ./.github/workflows/wc-status-check.yaml
+    with:
+      targetEnvironment: "dev"
+      targetPlatform: "alicloud"
+      targetVersion: ${{ github.sha }}
+  # if it was successful, trigger push to Prod
+  push_to_prod:
+    needs: [check_status_gcp, check_status_alicloud]
+    if: ${{ needs.check_status_gcp.outputs.status == 'success'  }} && ${{needs.check_status_alicloud.outputs.status == 'success'}}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Push to Prod # TODO
+        run: |
+          echo "Pushing to Prod"
+          # your deployment script here
