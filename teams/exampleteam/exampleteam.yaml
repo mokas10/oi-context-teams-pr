@@ -1,10 +1,12 @@
+---
 apiVersion: "context.ingka.com/v1"
 kind: Team
 metadata:
   # resource name - CANNOT be changed!
   name: exampleteam
 spec:
-  # display name within Grafana - needs to be separate as metadata.name is very strict
+  # display name within Grafana - needs to be separate as
+  # metadata.name is very strict
   # this display name can be changed to rename org in Grafana
   displayName: "Example Grafana Team"
   # owner / responsible for the team
@@ -30,14 +32,16 @@ spec:
     - name: "tenant1"
       cost_center: "CC1234"
       project_code: "IN1234"
-      # teams allowed to read - automatically adding loki datasources for these teams
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
       read_access:
         - "exampleteam"
         - "secondexampleteam"
       # teams allowed to write - (future) permission to create write token
       write_access:
         - "exampleteam"
-  # other datasources supposed to be synced by operator - currently only used for alertmanager
+  # other datasources supposed to be synced by operator - currently only
+  # used for alertmanager
   otherDatasources:
     - type: alertmanager
       tenant: public
