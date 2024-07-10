@@ -16,6 +16,9 @@ jobs:
   # check if deployment done by Argo is successful in GCP
   check_status_gcp:
     uses: ./.github/workflows/wc-status-check.yaml
+    permissions:
+      contents: read
+      id-token: write
     with:
       targetEnvironment: "dev"
       targetPlatform: "gcp"
@@ -23,6 +26,9 @@ jobs:
   # check if deployment done by Argo is successful in Alicloud
   check_status_alicloud:
     uses: ./.github/workflows/wc-status-check.yaml
+    permissions:
+      contents: read
+      id-token: write
     with:
       targetEnvironment: "dev"
       targetPlatform: "alicloud"
