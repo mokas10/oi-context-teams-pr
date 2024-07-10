@@ -1,5 +1,5 @@
 ---
-apiVersion: "context.ingka.com/v1"
+apiVersion: "context.ingka.com/v2"
 kind: Team
 metadata:
   # resource name - CANNOT be changed!
