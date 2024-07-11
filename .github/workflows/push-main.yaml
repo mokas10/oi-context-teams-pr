@@ -1,5 +1,5 @@
 ---
-name: Push - Deploy to Context Dev
+name: Push - Main Branch
 
 on:
   push:
@@ -36,9 +36,24 @@ jobs:
   push_to_prod:
     needs: [check_status_gcp, check_status_alicloud]
     if: ${{ needs.check_status_gcp.outputs.status == 'success'  }} && ${{needs.check_status_alicloud.outputs.status == 'success'}}
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
-      - name: Push to Prod # TODO
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: main
+      - name: Git config
         run: |
-          echo "Pushing to Prod"
-          # your deployment script here
+          git config user.name "OI-Context bot"
+          git config user.email l-context-a-itsehbg@ingka.ikea.com
+      - name: Push to Prod branch
+        run: |
+          git checkout main
+          git fetch origin
+          git checkout prod
+          git pull
+          git merge origin/main
+          git push origin prod

@@ -8,7 +8,7 @@ spec:
   # display name within Grafana - needs to be separate as
   # metadata.name is very strict
   # this display name can be changed to rename org in Grafana
-  displayName: "Example Grafana Team"
+  displayName: "Example Grafana Team2"
   # owner / responsible for the team
   owner: "manager@ingka.com"
   # locations where team will be added
