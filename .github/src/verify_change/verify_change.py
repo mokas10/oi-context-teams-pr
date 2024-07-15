@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 import sys
 import yaml
+import os
+import requests
+
+
+GCP_ID_TOKEN = os.getenv("GCP_ID_TOKEN")
+GCP_BACKEND_URL = os.getenv("GCP_BACKEND_URL")
 
 
 def findDiff(d1, d2, path="", changes={}):
@@ -46,5 +52,19 @@ if "metadata.name" in changes:
 if "spec.displayName" in changes and changes["spec.displayName"] is None:
     print("ERROR: display name can't be deleted")
     sys.exit(1)
+
+# check if new displayName is already in use in Grafana
+if "spec.displayName" in changes:
+    print("checking if name already in use")
+    url = f"{GCP_BACKEND_URL}/team/exists?product=context&name={changes['spec.displayName']}"
+    response = requests.get(url, headers={"Authorization": "Bearer " + GCP_ID_TOKEN})
+    if response.status_code != 200:
+        print(f"ERROR: failed to check if name already in use: {response.text}")
+    else:
+        if response.json()["onboarded"]:
+            print(
+                f"ERROR: display name {changes['spec.displayName']} already in use in Grafana, needs to be unique"
+            )
+            sys.exit(1)
 
 print("all changes are permitted, continuing...")
