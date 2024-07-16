@@ -14,6 +14,7 @@ concurrency:
 jobs:
   # check if deployment done by Argo is successful in GCP
   check_status_gcp:
+    name: Check deployment status in GCP Dev
     uses: ./.github/workflows/wc-status-check.yaml
     permissions:
       contents: read
@@ -24,6 +25,7 @@ jobs:
       targetVersion: ${{ github.sha }}
   # check if deployment done by Argo is successful in Alicloud
   check_status_alicloud:
+    name: Check deployment status in AliCloud Dev
     uses: ./.github/workflows/wc-status-check.yaml
     permissions:
       contents: read
@@ -34,6 +36,7 @@ jobs:
       targetVersion: ${{ github.sha }}
   # if it was successful, trigger push to Prod
   push_to_prod:
+    name: Push to GCP and AliCloud Prod
     needs: [check_status_gcp, check_status_alicloud]
     if: ${{ needs.check_status_gcp.outputs.status == 'success'  }} && ${{needs.check_status_alicloud.outputs.status == 'success'}}
     permissions:
@@ -65,7 +68,6 @@ jobs:
           git config user.email l-context-a-itsehbg@ingka.ikea.com
       - name: Push to Prod branch
         run: |
-          git config --list
           git checkout main
           git fetch origin
           git checkout prod
