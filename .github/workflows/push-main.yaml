@@ -38,6 +38,7 @@ jobs:
     if: ${{ needs.check_status_gcp.outputs.status == 'success'  }} && ${{needs.check_status_alicloud.outputs.status == 'success'}}
     permissions:
       contents: write
+      id-token: write
     runs-on: ubuntu-latest
     steps:
       - name: Vault auth
