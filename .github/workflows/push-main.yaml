@@ -40,11 +40,24 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
+      - name: Vault auth
+        uses: hashicorp/vault-action@d1720f055e0635fd932a1d2a48f87a666a57906c # v3.0.0
+        with:
+          url: "https://vault-prod.build.ingka.ikea.com"
+          namespace: "oi-ng-prod"
+          method: jwt
+          jwtGithubAudience: oi-ng
+          role: "github-repo-read"
+          exportToken: false
+          exportEnv: true
+          secrets: |
+            secret/data/github/pat l-context-a-itsehbg | GH_PAT ;
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
           ref: main
+          token: ${{ env.GH_PAT }}
       - name: Git config
         run: |
           git config user.name "OI-Context bot"
