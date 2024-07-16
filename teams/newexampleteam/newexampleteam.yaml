@@ -5,7 +5,7 @@ metadata:
   name: newexampleteam
 spec:
   # this display name can be changed to rename org in Grafana
-  displayName: "New Example Grafana Team"
+  displayName: "New Example Grafana Team 2"
   # owner / responsible for the team
   owner: "manager@ingka.com"
   # locations where team will be added

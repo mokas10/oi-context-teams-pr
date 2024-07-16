@@ -51,6 +51,7 @@ jobs:
           git config user.email l-context-a-itsehbg@ingka.ikea.com
       - name: Push to Prod branch
         run: |
+          git config --list
           git checkout main
           git fetch origin
           git checkout prod
