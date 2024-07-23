@@ -34,11 +34,23 @@ jobs:
       targetEnvironment: "dev"
       targetPlatform: "alicloud"
       targetVersion: ${{ github.sha }}
+    # update firestore in DEV with new changes
+  update_firestore_dev:
+    name: Update Firestore database in Dev with new information
+    needs: [check_status_gcp, check_status_alicloud]
+    permissions:
+      contents: read
+      id-token: write
+    uses: ./.github/workflows/wc-update-firestore.yaml
+    with:
+      env: "dev"
+      head_sha: ${{ github.sha }}
+      base_sha: "main"
+
   # if it was successful, trigger push to Prod
   push_to_prod:
     name: Push to GCP and AliCloud Prod
-    needs: [check_status_gcp, check_status_alicloud]
-    if: ${{ needs.check_status_gcp.outputs.status == 'success'  }} && ${{needs.check_status_alicloud.outputs.status == 'success'}}
+    needs: [update_firestore_dev]
     permissions:
       contents: write
       id-token: write
@@ -74,3 +86,15 @@ jobs:
           git pull
           git merge origin/main
           git push origin prod
+  # update firestore database with new changes
+  update_firestore:
+    name: Update Firestore database in Prod with new information
+    needs: [push_to_prod]
+    permissions:
+      contents: read
+      id-token: write
+    uses: ./.github/workflows/wc-update-firestore.yaml
+    with:
+      env: "prod"
+      head_sha: "main"
+      base_sha: "prod"
