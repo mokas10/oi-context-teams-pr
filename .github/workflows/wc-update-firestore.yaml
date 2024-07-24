@@ -62,7 +62,7 @@ jobs:
           pip install -r .github/src/firestore_sync/requirements.txt
           for file in ${{ steps.check-changes.outputs.validfiles }}; do
             echo "Checking $file"
-            if git show ${{ github.event.pull_request.base.sha }}:$file > oldfile ; then
+            if git show ${{ inputs.base_sha }}:$file > oldfile ; then
               python .github/src/firestore_sync/update_firestore.py oldfile $file
             else
               echo "File $file not found in base branch, new team"
