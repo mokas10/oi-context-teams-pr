@@ -57,3 +57,8 @@ spec:
         - "newergithubteam"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+      - name: "NewerGithubTenant_write_NewerGithubTeam_1721827189"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "NewerGithubTenant"
+      expires: "False"
