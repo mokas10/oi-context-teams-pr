@@ -1,0 +1,56 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: exampleteam3
+spec:
+  # display name in Grafana
+  displayName: "Example Team3"
+  # owner / responsible for the team
+  owner: "testuser"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - "viewer1"
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - ""
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - "admin1"
+        - "admin2"
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "tenant1"
+      cost_center: "costcenter1"
+      project_code: "projectcode1"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "exampleteam3"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "exampleteam3"
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "tenant2"
+      cost_center: "costcenter2"
+      project_code: "projectcode2"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "exampleteam3"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "exampleteam3"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
