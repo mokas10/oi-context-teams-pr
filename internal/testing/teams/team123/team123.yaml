@@ -44,3 +44,8 @@ spec:
         - "team123"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Tenant123_write_Team123_1721885322"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Tenant123"
+      expires: "False"
