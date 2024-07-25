@@ -57,3 +57,8 @@ spec:
         - "actuallasttest"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ActualLastTest_write_ActualLastTest_1721908104"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ActualLastTest"
+      expires: "False"
