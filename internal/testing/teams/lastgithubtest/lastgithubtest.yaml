@@ -44,3 +44,8 @@ spec:
         - "lastgithubtest"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "LastGithubTest_write_LastGithubTest_1721908035"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "LastGithubTest"
+      expires: "False"
