@@ -62,3 +62,8 @@ spec:
       permissions: "write"
       tenant: "ActualLastTest"
       expires: "False"
+    - name: "ActualLastTest2_write_ActualLastTest_1721908109"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ActualLastTest2"
+      expires: "False"
