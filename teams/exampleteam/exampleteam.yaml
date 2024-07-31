@@ -44,3 +44,8 @@ spec:
         - "exampleteam"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Example-Tenant_write_Example-Team_1722412900"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Example-Tenant"
+      expires: "False"
