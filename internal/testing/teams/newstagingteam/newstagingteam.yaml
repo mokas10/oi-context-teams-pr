@@ -57,3 +57,8 @@ spec:
         - "newstagingteam"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "NewStagingTenant1_write_New-Staging-Team_1722403225"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "NewStagingTenant1"
+      expires: "False"
