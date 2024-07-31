@@ -44,3 +44,8 @@ spec:
         - "esworkflows"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "workflows_write_es-workflows_1722434762"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "workflows"
+      expires: "False"
