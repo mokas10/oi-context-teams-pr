@@ -62,3 +62,8 @@ spec:
       permissions: "write"
       tenant: "NewStagingTenant1"
       expires: "False"
+    - name: "NewStagingTenant2_write_New-Staging-Team_1722403231"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "NewStagingTenant2"
+      expires: "False"
