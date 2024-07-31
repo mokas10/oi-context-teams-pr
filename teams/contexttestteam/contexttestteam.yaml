@@ -44,3 +44,8 @@ spec:
         - "contexttestteam"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ContextTest-Tenant_write_ContextTest-Team_1722411362"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ContextTest-Tenant"
+      expires: "False"
