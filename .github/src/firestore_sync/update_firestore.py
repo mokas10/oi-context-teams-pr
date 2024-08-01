@@ -123,8 +123,9 @@ def handle_changes(display_name, changes):
 
     exists = get_firestore_doc("GrafanaOrgs", display_name)
     if not exists:
-        print("ERROR: document doesn't exist")
-        sys.exit(1)
+        print("WARNING: document doesn't exist, creating")
+        create_team(new_yaml)
+        sys.exit(0)
 
     # handle updated roles
     if "spec.roles" in changes:
