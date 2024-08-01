@@ -1,0 +1,51 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: teperftest
+spec:
+  # display name in Grafana
+  displayName: "TE-PERF-TEST"
+  # owner / responsible for the team
+  owner: "mattias.melin1@ingka.ikea.com"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - "TS2-PERF-TEST"
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - ""
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "TEPERFTEST"
+      # cost center associated with this tenant
+      cost_center: "5244"
+      # project code associated with this tenant
+      project_code: "IN_005272"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "teperftest"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "teperftest"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
+    - name: "TEPERFTEST_write_TE-PERF-TEST_1718089200"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "TEPERFTEST"
+      expires: "False"

@@ -1,0 +1,51 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: customeradmin
+spec:
+  # display name in Grafana
+  displayName: "customer-admin"
+  # owner / responsible for the team
+  owner: "mazen.saeed1@ingka.ikea.com"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - ""
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - "IAM_AAD_Team_Customer_Admin"
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "cu"
+      # cost center associated with this tenant
+      cost_center: "CC5442"
+      # project code associated with this tenant
+      project_code: "IN010125"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "customeradmin"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "customeradmin"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
+    - name: "cu_write_customer-admin_1712573565"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cu"
+      expires: "False"

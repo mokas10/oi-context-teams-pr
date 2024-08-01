@@ -1,0 +1,70 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: cie
+spec:
+  # display name in Grafana
+  displayName: "CIE"
+  # owner / responsible for the team
+  owner: "gurusiddappa.athani1@ingka.ikea.com"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - "SonarQube_cie_Admin"
+        - "SonarQube_cie_Viewer"
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - ""
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "cie-dev"
+      # cost center associated with this tenant
+      cost_center: "CC5442"
+      # project code associated with this tenant
+      project_code: "IN009497"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "cie"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "cie"
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "cie-prod"
+      # cost center associated with this tenant
+      cost_center: "CC5442"
+      # project code associated with this tenant
+      project_code: "IN009497"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "cie"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "cie"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
+    - name: "cie-dev_write_CIE_1708607534"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cie-dev"
+      expires: "False"
+    - name: "cie-prod_write_CIE_1708607536"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cie-prod"
+      expires: "False"

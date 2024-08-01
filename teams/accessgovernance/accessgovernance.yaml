@@ -1,0 +1,102 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: accessgovernance
+spec:
+  # display name in Grafana
+  displayName: "AccessGovernance"
+  # owner / responsible for the team
+  owner: "johan.finndahl@ingka.ikea.com"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - "IAM_AAD_Team_Access_Governance"
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - ""
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "Atkomst"
+      # cost center associated with this tenant
+      cost_center: "CC5269"
+      # project code associated with this tenant
+      project_code: "PRD001014"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "accessgovernance"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "accessgovernance"
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "EIAM"
+      # cost center associated with this tenant
+      cost_center: "CC5269"
+      # project code associated with this tenant
+      project_code: "PRD001014"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "accessgovernance"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "accessgovernance"
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "DFP"
+      # cost center associated with this tenant
+      cost_center: "CC5269"
+      # project code associated with this tenant
+      project_code: "PRD001014"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "accessgovernance"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "accessgovernance"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
+    - name: "Atkomst_write_AccessGovernance_1706527813"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Atkomst"
+      expires: "False"
+    - name: "Atkomst_write_AccessGovernance_1706538504"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Atkomst"
+      expires: "False"
+    - name: "DFP_write_AccessGovernance_1706538526"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "DFP"
+      expires: "False"
+    - name: "EIAM_write_AccessGovernance_1706527824"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "EIAM"
+      expires: "False"
+    - name: "EIAM_write_AccessGovernance_1706538536"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "EIAM"
+      expires: "False"
+    - name: "DFP_write_AccessGovernance_1706527819"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "DFP"
+      expires: "False"

@@ -1,0 +1,51 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: cffinsights
+spec:
+  # display name in Grafana
+  displayName: "cff-insights"
+  # owner / responsible for the team
+  owner: "michael.fallows@ingka.ikea.com"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - "IAM_AAD_Team_CFF_Insights"
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - ""
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "cff-insights"
+      # cost center associated with this tenant
+      cost_center: "CC5075"
+      # project code associated with this tenant
+      project_code: "IN_005657"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "cffinsights"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "cffinsights"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
+    - name: "cff-insights_write_cff-insights_1701167361"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cff-insights"
+      expires: "False"

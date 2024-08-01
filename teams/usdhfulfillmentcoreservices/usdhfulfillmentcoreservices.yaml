@@ -1,0 +1,51 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: usdhfulfillmentcoreservices
+spec:
+  # display name in Grafana
+  displayName: "usdh-fulfillment-core-services"
+  # owner / responsible for the team
+  owner: "jonathan.stoler@ingka.ikea.com"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - "IAM_AAD_Team_Grapevine"
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - ""
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "grapevine"
+      # cost center associated with this tenant
+      cost_center: "CC5037"
+      # project code associated with this tenant
+      project_code: "IN009980"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "usdhfulfillmentcoreservices"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "usdhfulfillmentcoreservices"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
+    - name: "grapevine_write_usdh-fulfillment-core-services_1709217715"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "grapevine"
+      expires: "False"

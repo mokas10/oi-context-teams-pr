@@ -1,0 +1,75 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: akamaicdn
+spec:
+  # display name in Grafana
+  displayName: "AkamaiCDN"
+  # owner / responsible for the team
+  owner: "peter.hansson@ingka.ikea.com"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - "IAM_AAD_Team_Akamai_CDN"
+        - ""
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - ""
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "AkamaiCDNsec"
+      # cost center associated with this tenant
+      cost_center: "CC5317"
+      # project code associated with this tenant
+      project_code: "PRJ003655"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "akamaicdn"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "akamaicdn"
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "AkacdnInternal"
+      # cost center associated with this tenant
+      cost_center: "CC5317"
+      # project code associated with this tenant
+      project_code: "PRJ003655"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "akamaicdn"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "akamaicdn"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
+    - name: "AkacdnInternal_write_AkamaiCDN_1697548779"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "AkacdnInternal"
+      expires: "False"
+    - name: "AkamaiCDNlogsTEST_write_AkamaiCDN_1698217541"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "AkamaiCDNlogsTEST"
+      expires: "False"
+    - name: "AkamaiCDNsec_write_AkamaiCDN_1697548776"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "AkamaiCDNsec"
+      expires: "False"

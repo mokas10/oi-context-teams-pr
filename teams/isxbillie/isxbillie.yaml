@@ -1,0 +1,51 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: isxbillie
+spec:
+  # display name in Grafana
+  displayName: "ISX-BILLIE"
+  # owner / responsible for the team
+  owner: "gero.haug@ingka.ikea.com"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - "IAM_AAD_Team_Chatbot"
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - "IAM_AAD_Team_ContactBotAIOps"
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "ISX-BILLIE"
+      # cost center associated with this tenant
+      cost_center: "CC5357"
+      # project code associated with this tenant
+      project_code: "IN009617"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "isxbillie"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "isxbillie"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
+    - name: "ISX-BILLIE_write_ISX-BILLIE_1710246680"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ISX-BILLIE"
+      expires: "False"

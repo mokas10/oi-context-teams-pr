@@ -1,0 +1,56 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: fmsdp
+spec:
+  # display name in Grafana
+  displayName: "FMSDP"
+  # owner / responsible for the team
+  owner: "marcel.jepma@ingka.com"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - "FMS Data Platform (ITNL012)"
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - "FMS Data Platform (ITNL012)"
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "FMSDP"
+      # cost center associated with this tenant
+      cost_center: "CC5681"
+      # project code associated with this tenant
+      project_code: "IN_008484"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "fmsdp"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "fmsdp"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
+    - name: "FMSDP_write_FMSDP_1698931728"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "FMSDP"
+      expires: "False"
+    - name: "FMSDP_write_FMSDP_1698658771"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "FMSDP"
+      expires: "False"

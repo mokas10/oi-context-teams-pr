@@ -1,0 +1,51 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: fmsreporting
+spec:
+  # display name in Grafana
+  displayName: "FMS-Reporting"
+  # owner / responsible for the team
+  owner: "alex.jonk@ingka.ikea.com"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - "IAM_AAD_FMS_Reporting_Support_Team"
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - ""
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - "IAM_AAD_Team_FMS_Reporting"
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "FMS-Reporting"
+      # cost center associated with this tenant
+      cost_center: "CC5208"
+      # project code associated with this tenant
+      project_code: "PJWFL52500"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "fmsreporting"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "fmsreporting"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
+    - name: "FMS-Reporting_write_FMS-Reporting_1711537080"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "FMS-Reporting"
+      expires: "False"

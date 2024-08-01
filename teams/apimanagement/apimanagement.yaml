@@ -1,0 +1,52 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: apimanagement
+spec:
+  # display name in Grafana
+  displayName: "api-management"
+  # owner / responsible for the team
+  owner: "debadri.gupta@ingka.ikea.com"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - ""
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - "IAM_AAD_Team_oi-op"
+        - "IAM_AAD_Team_api-management"
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "apim"
+      # cost center associated with this tenant
+      cost_center: "CC5178"
+      # project code associated with this tenant
+      project_code: "IN_005082"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "apimanagement"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "apimanagement"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
+    - name: "apim_write_api-management_1709107197"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "apim"
+      expires: "False"

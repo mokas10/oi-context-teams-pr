@@ -59,6 +59,6 @@ if __name__ == "__main__":
         print("read data")
     exists = get_firestore_doc("GrafanaOrgs", new_file_data["spec"]["displayName"])
     if exists:
-        print("ERROR: new name already exists")
-        sys.exit(1)
+        print("WARNING: new name already exists, skipping creation")
+        sys.exit(0)
     create_team(new_file_data)
