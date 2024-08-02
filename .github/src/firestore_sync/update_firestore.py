@@ -129,16 +129,16 @@ def handle_changes(display_name, changes):
 
     # handle updated roles
     if "spec.roles" in changes:
+        # get correct format
+        roles_dict = {}
         for role in changes["spec.roles"]:
-            groups = []
-            if role["groups"]:
-                groups = role["groups"]
-            # update the role
-            update_all_firestore_fields(
-                display_name,
-                f"roles.{role['name']}",
-                groups,
-            )
+            roles_dict[role["name"]] = role.get("groups", [])
+        # update the role
+        update_all_firestore_fields(
+            display_name,
+            "roles",
+            roles_dict,
+        )
 
     # handle updated locations
     if "spec.locations" in changes:
@@ -162,7 +162,7 @@ if __name__ == "__main__":
         new_yaml = yaml.safe_load(file)
     changes = findDiff(old_yaml, new_yaml)
 
-    print(f" found changes: {changes}")
+    print(f"update - found changes: {changes}")
 
     display_name = new_yaml["spec"]["displayName"]
 

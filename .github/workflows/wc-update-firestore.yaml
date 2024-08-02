@@ -13,12 +13,12 @@ on:
         description: "Base SHA to compare against"
         required: false
         type: string
-        default: "main"
+        default: "prod"
       head_sha:
         description: "Head SHA to compare against"
         required: true
         type: string
-        default: "prod"
+        default: "main"
 jobs:
   # Generic formatting tests
 
@@ -59,11 +59,13 @@ jobs:
           GCP_TOKEN: ${{ steps.gcp-auth.outputs.access_token }}
           GCP_PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
         run: |
+          echo "Checking out base branch ${{ inputs.base_sha }}"
           git fetch origin ${{ inputs.base_sha }}:${{ inputs.base_sha }}
           pip install -r .github/src/firestore_sync/requirements.txt
           for file in ${{ steps.check-changes.outputs.validfiles }}; do
             echo "Checking $file"
-            if git show ${{ inputs.base_sha }}:$file > oldfile ; then
+            if git show ${{ inputs.base_sha }}~1:$file > oldfile ; then
+              echo "File $file found in base branch, updating team"
               python .github/src/firestore_sync/update_firestore.py oldfile $file
             else
               echo "File $file not found in base branch, new team"

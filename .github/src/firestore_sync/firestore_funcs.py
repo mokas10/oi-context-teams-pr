@@ -60,7 +60,8 @@ def create_firestore_doc(collection, id, data):
 
 def update_firestore_field(collection, id, field_name, field_data):
     db = firestore.Client(project=os.environ["GCP_PROJECT_ID"])
-    field_data = data_transform(field_data)
+    # not needed here - spec holds the full current array, can just replace it
+    # field_data = data_transform(field_data)
     org_ref = db.collection(collection).document(id)
     data = {field_name: field_data}
     org_ref.update(data)

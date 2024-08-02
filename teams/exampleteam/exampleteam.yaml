@@ -12,17 +12,16 @@ spec:
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
-    - "gcp-eu"
+    - "alicloud-cn"
   # role definitions for this team
   roles:
     # allowed to view / query data
     - name: "0-Viewer"
       groups:
-        - ""
     # allowed to create dashboards
     - name: "1-Editor"
       groups:
-        - ""
+        - "IAM_AAD_Team_DPS-OI-NextGen"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
