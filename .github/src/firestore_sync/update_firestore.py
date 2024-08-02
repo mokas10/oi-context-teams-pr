@@ -132,7 +132,7 @@ def handle_changes(display_name, changes):
         # get correct format
         roles_dict = {}
         for role in changes["spec.roles"]:
-            roles_dict[role["name"]] = role.get("groups", [])
+            roles_dict[role["name"]] = role.get("groups", [""])
         # update the role
         update_all_firestore_fields(
             display_name,
