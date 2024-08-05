@@ -44,3 +44,8 @@ spec:
         - "allenstagingteam"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "AllenStagingTeam_write_AllenStagingTeam_1722843723"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "AllenStagingTeam"
+      expires: "False"
