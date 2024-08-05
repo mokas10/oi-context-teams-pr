@@ -44,3 +44,8 @@ spec:
         - "iamaadcontexteducation"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ContextEducation_write_IAM-AAD-Context-Education_1722845721"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ContextEducation"
+      expires: "False"
