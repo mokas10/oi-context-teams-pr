@@ -1,0 +1,67 @@
+---
+name: Push - Codeowners
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/CODEOWNERS"
+
+jobs:
+  # Add permissions to Repo
+  add_permissions:
+    name: Add Write permissions to repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - name: Get Github PAT
+        uses: hashicorp/vault-action@d1720f055e0635fd932a1d2a48f87a666a57906c # v3.0.0
+        with:
+          url: "https://vault-prod.build.ingka.ikea.com"
+          namespace: "oi-ng-prod"
+          method: jwt
+          jwtGithubAudience: oi-ng
+          role: "github-repo-read"
+          exportToken: false
+          exportEnv: true
+          secrets: |
+            secret/data/github/pat context-teams-20240806 | GH_PAT ;
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ env.GH_PAT }}
+      - name: Find team names in CODEOWNERS
+        id: find-team-names
+        run: |
+          echo codeowners=$( cat .github/CODEOWNERS | grep -oP "@ingka-group-digital\/\K[\w-]+" | sort | uniq ) >> $GITHUB_OUTPUT
+      - name: Add team with write access
+        if: |
+          steps.find-team-names.conclusion == 'success' &&
+          steps.find-team-names.outputs.codeowners != 'null'
+        env:
+          GH_TOKEN: ${{ env.GH_PAT }}
+        run: |
+          for team in $(echo ${{ steps.find-team-names.outputs.codeowners }} | tr ' ' '\n'); do
+            echo "Checking if team $team has access"
+            if access=$(gh api -H "Accept: application/vnd.github.v3.repository+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            /orgs/ingka-group-digital/teams/$team/repos/ingka-group-digital/oi-context-teams \
+            --jq '.permissions.push'); then
+              if [ "$access" == "false"  ]; then
+                echo "Adding team $team with write access"
+              else
+                echo "Team $team already has write access"
+              fi
+            else
+              echo "Team $team does not have permissions, attempting to add write permissions"
+              gh api \
+              --method PUT \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              /orgs/ingka-group-digital/teams/$team/repos/ingka-group-digital/oi-context-teams \
+              -f "permission=push"
+            fi
+          done
