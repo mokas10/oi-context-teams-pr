@@ -13,6 +13,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+    - "alicloud-cn"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
