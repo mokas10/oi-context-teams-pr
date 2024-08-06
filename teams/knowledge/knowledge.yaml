@@ -44,3 +44,8 @@ spec:
         - "knowledge"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "VETA_write_Knowledge_1722945783"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "VETA"
+      expires: "False"
