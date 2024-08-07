@@ -17,5 +17,6 @@ if action == "get_last_sha":
 elif action == "update_last_sha":
     new_sha = sys.argv[2]
     timestamp = datetime.now()
+    print(f"updating sync status to sha {new_sha}")
     update_firestore_field("SyncStatus", "oi-context-teams", "last_sha", new_sha)
     update_firestore_field("SyncStatus", "oi-context-teams", "timestamp", timestamp)
