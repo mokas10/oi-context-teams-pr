@@ -1,7 +1,7 @@
 from firestore_funcs import get_firestore_doc, update_firestore_field
 import sys
 import os
-import datetime
+from datetime import datetime
 
 
 action = sys.argv[1]
@@ -16,7 +16,6 @@ if action == "get_last_sha":
 
 elif action == "update_last_sha":
     new_sha = sys.argv[2]
+    timestamp = datetime.now()
     update_firestore_field("SyncStatus", "oi-context-teams", "last_sha", new_sha)
-    update_firestore_field(
-        "SyncStatus", "oi-context-teams", "timestamp", datetime.now()
-    )
+    update_firestore_field("SyncStatus", "oi-context-teams", "timestamp", timestamp)
