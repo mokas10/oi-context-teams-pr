@@ -4,8 +4,6 @@ name: Push - Main Branch
 on:
   push:
     branches: [main]
-    paths:
-      - "teams/**.yaml"
 
 concurrency:
   group: ${{ github.workflow }}
