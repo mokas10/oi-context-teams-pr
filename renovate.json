@@ -3,5 +3,23 @@
   "timezone": "Europe/Stockholm",
   "schedule": ["on the 1st and 3rd day instance on Monday before 8am"],
   "extends": ["config:best-practices"],
-  "rebaseWhen": "conflicted"
+  "rebaseWhen": "conflicted",
+  "packageRules": [
+    {
+      "groupName": "major",
+      "commitMessageSuffix": "major",
+      "additionalBranchPrefix": "{{packageName}}-",
+      "matchUpdateTypes": ["major"],
+      "schedule": ["before 8am on Monday"],
+      "matchPackageNames": ["*"]
+    },
+    {
+      "matchManagers": ["pip_requirements"],
+      "groupName": "pip",
+      "commitMessageSuffix": "pip",
+      "additionalBranchPrefix": "pip",
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "matchPackageNames": ["*"]
+    }
+  ]
 }
