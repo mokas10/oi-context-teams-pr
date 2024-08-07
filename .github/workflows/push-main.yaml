@@ -43,7 +43,6 @@ jobs:
     with:
       env: "dev"
       head_sha: ${{ github.sha }}
-      base_sha: "main"
 
   # if it was successful, trigger push to Prod
   push_to_prod:
@@ -95,4 +94,3 @@ jobs:
     with:
       env: "prod"
       head_sha: "main"
-      base_sha: "prod"

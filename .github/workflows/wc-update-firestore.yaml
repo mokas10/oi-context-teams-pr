@@ -9,19 +9,12 @@ on:
         required: false
         type: string
         default: "dev"
-      base_sha:
-        description: "Base SHA to compare against"
-        required: false
-        type: string
-        default: "prod"
       head_sha:
         description: "Head SHA to compare against"
         required: true
         type: string
         default: "main"
 jobs:
-  # Generic formatting tests
-
   update_firestore:
     name: Update Firestore database with new information
     runs-on: ubuntu-latest
@@ -31,6 +24,7 @@ jobs:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           ref: ${{ inputs.head_sha }}
+          fetch-depth: 0
 
       # authenticate to GCP to allow changes in Firestore
       - name: GCP auth
@@ -42,11 +36,20 @@ jobs:
           token_format: access_token
           access_token_scopes: https://www.googleapis.com/auth/datastore
 
+      - name: Get last SHA
+        id: get-last-sha
+        env:
+          GCP_TOKEN: ${{ steps.gcp-auth.outputs.access_token }}
+          GCP_PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
+        run: |
+          pip install -r .github/src/firestore_sync/requirements.txt
+          echo last_sha=$(python .github/src/firestore_sync/sync_status.py get_last_sha) >> $GITHUB_OUTPUT
+
       - name: Get changed files
         id: changed-files
         uses: tj-actions/changed-files@cc733854b1f224978ef800d29e4709d5ee2883e4 # v44.5.5
         with:
-          base_sha: ${{ inputs.base_sha }}
+          base_sha: ${{ steps.get-last-sha.outputs.last_sha || 'main' }}
 
       - name: Check if changes to teams resources happened
         id: check-changes
@@ -59,16 +62,16 @@ jobs:
           GCP_TOKEN: ${{ steps.gcp-auth.outputs.access_token }}
           GCP_PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
         run: |
-          echo "Checking out base branch ${{ inputs.base_sha }}"
-          git fetch origin ${{ inputs.base_sha }}:${{ inputs.base_sha }}
+          echo "Checking out last commit ${{ steps.get-last-sha.outputs.last_sha || 'main' }}"
           pip install -r .github/src/firestore_sync/requirements.txt
           for file in ${{ steps.check-changes.outputs.validfiles }}; do
             echo "Checking $file"
-            if git show ${{ inputs.base_sha }}~1:$file > oldfile ; then
+            if git show ${{ steps.get-last-sha.outputs.last_sha || 'main' }}:$file > oldfile ; then
               echo "File $file found in base branch, updating team"
               python .github/src/firestore_sync/update_firestore.py oldfile $file
             else
               echo "File $file not found in base branch, new team"
               python .github/src/firestore_sync/create_firestore.py $file
             fi
+          python .github/src/firestore_sync/sync_status.py update_last_sha ${{ inputs.head_sha }}
           done
