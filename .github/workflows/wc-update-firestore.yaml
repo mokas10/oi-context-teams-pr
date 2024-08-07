@@ -43,7 +43,7 @@ jobs:
           GCP_PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
         run: |
           pip install -r .github/src/firestore_sync/requirements.txt
-          echo last_sha=$(python .github/src/firestore_sync/sync_status.py get_last_sha) >> $GITHUB_OUTPUT
+          python .github/src/firestore_sync/sync_status.py get_last_sha
 
       - name: Get changed files
         id: changed-files
