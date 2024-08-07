@@ -14,10 +14,18 @@
       "matchPackageNames": ["*"]
     },
     {
-      "matchManagers": ["pip_requirements"],
       "groupName": "pip",
+      "matchManagers": ["pip_requirements"],
       "commitMessageSuffix": "pip",
       "additionalBranchPrefix": "pip",
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "matchPackageNames": ["*"]
+    },
+    {
+      "groupName": "github-actions",
+      "matchManagers": ["github-actions"],
+      "commitMessageSuffix": "gha",
+      "additionalBranchPrefix": "gha",
       "matchUpdateTypes": ["minor", "patch", "digest"],
       "matchPackageNames": ["*"]
     }
