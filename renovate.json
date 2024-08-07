@@ -1,0 +1,7 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "timezone": "Europe/Stockholm",
+  "schedule": ["on the 1st and 3rd day instance on Monday before 8am"],
+  "extends": ["config:best-practices"],
+  "rebaseWhen": "conflicted"
+}
