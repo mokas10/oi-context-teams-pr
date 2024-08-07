@@ -45,3 +45,8 @@ spec:
         - "foe"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "foe_write_foe_1723022264"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "foe"
+      expires: "False"
