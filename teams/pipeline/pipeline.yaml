@@ -28,7 +28,6 @@ spec:
     - name: "2-Admin"
       groups:
         - "IAM_AAD_Team_oi-op"
-        - "IAM_AAD_Team_DPS-OI-NextGen"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
