@@ -42,7 +42,7 @@ spec:
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "dps"
-  # READ ONLY! tokens OWNED by this team, information about these tokens
+  # READ ONLY! tokens OWNED by this team, information about these tokens.
   tokens:
     - name: "DPS_write_DPS_1721737064"
       location: "gcp-eu"
