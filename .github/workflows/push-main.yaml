@@ -93,4 +93,4 @@ jobs:
     uses: ./.github/workflows/wc-update-firestore.yaml
     with:
       env: "prod"
-      head_sha: "prod"
+      head_sha: ${{ github.sha }}
