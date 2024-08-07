@@ -64,12 +64,7 @@ def update_all_firestore_fields(id, key, data, update_oiteams=True):
                 "requester": "GithubIntegration",
             }
         ]
-        update_firestore_field(
-            "OITeams",
-            id,
-            "zzz_history",
-            history,
-        )
+        update_firestore_field("OITeams", id, "zzz_history", history, True)
     except Exception as e:
         print(f"WARNING updating OITeams: {e}")
 

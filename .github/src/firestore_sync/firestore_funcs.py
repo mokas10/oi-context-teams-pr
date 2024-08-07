@@ -58,10 +58,11 @@ def create_firestore_doc(collection, id, data):
     print(f"created doc {id} in GrafanaOrgs")
 
 
-def update_firestore_field(collection, id, field_name, field_data):
+def update_firestore_field(collection, id, field_name, field_data, array_merge=False):
     db = firestore.Client(project=os.environ["GCP_PROJECT_ID"])
-    # not needed here - spec holds the full current array, can just replace it
-    # field_data = data_transform(field_data)
+    # spec holds the full current array, merge in case its wanted
+    if array_merge:
+        field_data = data_transform(field_data)
     org_ref = db.collection(collection).document(id)
     data = {field_name: field_data}
     org_ref.update(data)
