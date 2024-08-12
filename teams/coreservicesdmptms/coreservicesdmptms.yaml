@@ -54,3 +54,8 @@ spec:
       permissions: "write"
       tenant: "coreservices-dmp-tms"
       expires: "False"
+    - name: "coreservices-dmp-tms_write_CoreServices-DMP-TMS_1723490295"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "coreservices-dmp-tms"
+      expires: "False"
