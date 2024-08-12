@@ -44,3 +44,8 @@ spec:
         - "coreservicesdmptms"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "coreservices-dmp-tms_write_CoreServices-DMP-TMS_1723490288"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "coreservices-dmp-tms"
+      expires: "False"
