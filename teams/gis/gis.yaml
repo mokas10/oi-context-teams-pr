@@ -44,3 +44,8 @@ spec:
         - "gis"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "GISTenant_write_GIS_1723643509"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "GISTenant"
+      expires: "False"
