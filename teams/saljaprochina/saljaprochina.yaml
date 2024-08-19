@@ -44,3 +44,8 @@ spec:
         - "saljaprochina"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "SALJA_write_saljapro-china_1724073886"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "SALJA"
+      expires: "False"
