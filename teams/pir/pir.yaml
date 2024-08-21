@@ -44,3 +44,8 @@ spec:
         - "pir"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "pir_write_PIR_1724247175"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "pir"
+      expires: "False"
