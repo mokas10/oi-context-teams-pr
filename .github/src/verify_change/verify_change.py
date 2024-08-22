@@ -19,6 +19,8 @@ def findDiff(d1, d2, path="", changes={}):
                     )
                 if d1[k] != d2[k] and path:
                     changes[f"{path}.{k}"] = d2[k]
+                elif d1[k] != d2[k]:
+                    changes[k] = d2[k]
             else:
                 changes[f"{path}.{k}"] = None
         except Exception:
@@ -43,15 +45,17 @@ print(f" found changes: {changes}")
 ### validate if changes are permitted
 # TODO: add more validation rules
 
+any_error = False
+
 # resource name can't be changed
 if "metadata.name" in changes:
     print("ERROR: resource name can't be changed")
-    sys.exit(1)
+    any_error = True
 
 # display name can't be deleted (can later be updated to verify it's a valid Grafana org name)
 if "spec.displayName" in changes and changes["spec.displayName"] is None:
     print("ERROR: display name can't be deleted")
-    sys.exit(1)
+    any_error = True
 
 # check if new displayName is already in use in Grafana
 if "spec.displayName" in changes:
@@ -65,6 +69,30 @@ if "spec.displayName" in changes:
             print(
                 f"ERROR: display name {changes['spec.displayName']} already in use in Grafana, needs to be unique"
             )
-            sys.exit(1)
+            any_error = True
+
+if "spec.tokens" in changes:
+    print("ERROR: tokens can't be changed")
+    any_error = True
+
+# check changes within tenants
+if "spec.tenants" in changes:
+    if "tenants" in old_yaml["spec"] and "tenants" in new_yaml["spec"]:
+        if len(old_yaml["spec"]["tenants"]) != len(new_yaml["spec"]["tenants"]):
+            print("ERROR: tenants can't be added or removed")
+            any_error = True
+        else:
+            for i in range(len(old_yaml["spec"]["tenants"])):
+                old = old_yaml["spec"]["tenants"][i]
+                new = new_yaml["spec"]["tenants"][i]
+                # need to force an empty dict here, otherwise it will keep adding to the same dict
+                diffs = findDiff(old, new, changes={})
+                if "name" in diffs:
+                    print("ERROR: tenant name can't be changed")
+                    any_error = True
+
+if any_error:
+    print("ERROR: found errors in changes, exiting...")
+    sys.exit(1)
 
 print("all changes are permitted, continuing...")
