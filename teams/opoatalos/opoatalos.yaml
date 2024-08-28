@@ -19,6 +19,10 @@ spec:
     - name: "0-Viewer"
       groups:
         - "IAM_AAD_opoa-on-call"
+        - "IAM_AAD_Team_Spectre"
+        - "IAM_AAD_Team_OPDL"
+        - "IAM_AAD_Team_Phoenix"
+        - "IAM_AAD_Team_Kopoa"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
