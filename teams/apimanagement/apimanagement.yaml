@@ -18,7 +18,7 @@ spec:
     # allowed to view / query data, create READ token
     - name: "0-Viewer"
       groups:
-        - ""
+        - "IAM_AAD_APIM_Context_Viewer"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
@@ -28,6 +28,7 @@ spec:
       groups:
         - "IAM_AAD_Team_oi-op"
         - "IAM_AAD_Team_api-management"
+        - "IAM_AAD_APIM_Context_Admin"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
