@@ -44,3 +44,8 @@ spec:
         - "centralhosting"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "CentralHosting_write_CentralHosting_1725345152"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "CentralHosting"
+      expires: "False"
