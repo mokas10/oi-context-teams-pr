@@ -44,3 +44,8 @@ spec:
         - "storageanddataprotection"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Gstorage-API_write_Storage-and-Data-protection_1725450829"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Gstorage-API"
+      expires: "False"
