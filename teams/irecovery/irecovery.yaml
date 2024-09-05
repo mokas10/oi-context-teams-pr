@@ -83,3 +83,8 @@ spec:
         - "irecovery"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "pricing_write_iRecovery_1725533473"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "pricing"
+      expires: "False"
