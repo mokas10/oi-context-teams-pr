@@ -44,3 +44,8 @@ spec:
         - "orbituserdemo"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "orbit-user-demo_write_orbit-user-demo_1725534528"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "orbit-user-demo"
+      expires: "False"
