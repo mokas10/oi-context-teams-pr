@@ -88,3 +88,8 @@ spec:
       permissions: "write"
       tenant: "pricing"
       expires: "False"
+    - name: "data_write_iRecovery_1725533481"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "data"
+      expires: "False"
