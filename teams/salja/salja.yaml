@@ -44,3 +44,8 @@ spec:
         - "salja"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "salja-ch_write_Salja_1725615360"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "salja-ch"
+      expires: "False"
