@@ -44,3 +44,8 @@ spec:
         - "circularbuyback"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "circular-buyback_write_circular-buyback_1725615630"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "circular-buyback"
+      expires: "False"
