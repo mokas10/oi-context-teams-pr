@@ -44,3 +44,8 @@ spec:
         - "connectivitydclbchn"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "DCLBCHN_write_Connectivity-DCLB-CHN_1725969115"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "DCLBCHN"
+      expires: "False"
