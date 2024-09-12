@@ -44,3 +44,8 @@ spec:
         - "customermessage"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "customer-message_write_Customer-Message_1726128985"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "customer-message"
+      expires: "False"
