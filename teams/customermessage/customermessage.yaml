@@ -18,15 +18,15 @@ spec:
     # allowed to view / query data, create READ token
     - name: "0-Viewer"
       groups:
-        - ""
+        - "IAM_AAD_Customer_Message_Template_Admin"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
-        - "IAM_AAD_Team_customermessage"
+        - ""
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - ""
+        - "IAM_AAD_Team_customermessage"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
