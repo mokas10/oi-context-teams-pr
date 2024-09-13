@@ -103,3 +103,8 @@ spec:
       permissions: "write"
       tenant: "inventory"
       expires: "False"
+    - name: "infrastructure_write_iRecovery_1726213918"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "infrastructure"
+      expires: "False"
