@@ -49,3 +49,8 @@ spec:
       permissions: "write"
       tenant: "iRecover"
       expires: "False"
+    - name: "irecover-inventory_write_iRecover_1727184764"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "irecover-inventory"
+      expires: "False"
