@@ -64,6 +64,16 @@ def update_firestore_field(collection, id, field_name, field_data, array_merge=F
     if array_merge:
         field_data = data_transform(field_data)
     org_ref = db.collection(collection).document(id)
+    # handle non-alphanumeric characters in field_name
+    if "." in field_name:
+        # if an actual field path is given in dot notation, don't convert that part to firestore field path
+        field_name_split = field_name.split(".")
+        field_name = ""
+        for x in field_name_split:
+            field_name = field_name + db.field_path(x) + "."
+        field_name = field_name.strip(".")
+    else:
+        field_name = db.field_path(field_name)
     data = {field_name: field_data}
     org_ref.update(data)
 
