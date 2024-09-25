@@ -42,6 +42,19 @@ spec:
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "irecover"
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "irecover-inventory"
+      # cost center associated with this tenant
+      cost_center: "5208"
+      # project code associated with this tenant
+      project_code: "PRJ006627"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "irecover"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "irecover"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
     - name: "iRecover_write_iRecover_1716473864"
