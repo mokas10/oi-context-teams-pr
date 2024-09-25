@@ -77,3 +77,8 @@ spec:
       permissions: "write"
       tenant: "irecover-data"
       expires: "False"
+    - name: "irecover-infra_write_iRecover_1727248398"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "irecover-infra"
+      expires: "False"
