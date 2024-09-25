@@ -44,3 +44,8 @@ spec:
         - "00testteam11"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "00TestTeam11_write_00TestTeam11_1727251171"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "00TestTeam11"
+      expires: "False"
