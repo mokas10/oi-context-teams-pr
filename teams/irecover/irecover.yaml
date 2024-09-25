@@ -72,3 +72,8 @@ spec:
       permissions: "write"
       tenant: "irecover-pricing"
       expires: "False"
+    - name: "irecover-data_write_iRecover_1727248346"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "irecover-data"
+      expires: "False"
