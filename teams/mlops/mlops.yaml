@@ -70,3 +70,8 @@ spec:
         - "mlops"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "GenAI-Observability-Dev_write_MLOps_1727354242"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "GenAI-Observability-Dev"
+      expires: "False"
