@@ -44,3 +44,8 @@ spec:
         - "reexpansion"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ARMS_write_RE-EXPANSION_1727357701"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ARMS"
+      expires: "False"
