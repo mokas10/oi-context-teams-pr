@@ -44,3 +44,8 @@ spec:
         - "productpresentation"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Product-Presentation_write_Product-Presentation_1727345869"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Product-Presentation"
+      expires: "False"
