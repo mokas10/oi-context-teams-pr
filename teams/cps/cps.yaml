@@ -44,3 +44,8 @@ spec:
         - "cps"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "CPS_write_CPS_1728387676"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "CPS"
+      expires: "False"
