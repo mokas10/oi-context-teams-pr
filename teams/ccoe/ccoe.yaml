@@ -44,3 +44,8 @@ spec:
         - "ccoe"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "CCoE_write_CCoE_1728551051"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "CCoE"
+      expires: "False"
