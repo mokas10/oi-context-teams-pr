@@ -55,8 +55,17 @@ def create_team(team_yaml):
 if __name__ == "__main__":
     new_file = sys.argv[1]
     with open(new_file, "r") as file:
-        new_file_data = yaml.safe_load(file)
-        print("read data")
+        try:
+            new_file_data = yaml.safe_load(file)
+            print("read data")
+        except Exception as e:
+            print(f"ERROR: failed to parse yaml file: {e}")
+            sys.exit(1)
+    # check if it is a team file
+    if new_file_data["kind"] != "Team":
+        print("INFO: not a team file, no firestore creation needed")
+        sys.exit(0)
+
     exists = get_firestore_doc("GrafanaOrgs", new_file_data["spec"]["displayName"])
     if exists:
         print("WARNING: new name already exists, skipping creation")

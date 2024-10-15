@@ -8,7 +8,7 @@ spec:
   # display name in Grafana
   displayName: "KONTEXT"
   # owner / responsible for the team
-  owner: "alexander.lindeskar@ingka.ikea.com"
+  owner: "niclas.nilsson@ingka.ikea.com"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn

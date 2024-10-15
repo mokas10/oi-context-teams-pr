@@ -72,6 +72,8 @@ jobs:
           GCP_ID_TOKEN: ${{ steps.gcp-auth.outputs.id_token }}
           GCP_BACKEND_URL: https://europe-west1-${{ vars.GCP_PROJECT_ID }}.cloudfunctions.net/allen_backend
         run: |
+          declare -a newfiles
+          newfiles=()
           pip install -r .github/src/verify_change/requirements.txt
           for file in ${{ steps.check-changes.outputs.validfiles }}; do
             echo "Checking $file"
@@ -79,5 +81,11 @@ jobs:
               python .github/src/verify_change/verify_change.py oldfile $file
             else
               echo "File $file not found in base branch, new file"
+              newfiles+=($file)
             fi
           done
+          if (( ${#newfiles[@]} )); then
+            printf -v joined '%s,' "${newfiles[@]}"
+            echo "New files found, verifying changes $newfiles"
+            python .github/src/verify_change/verify_new_file.py "${joined%,}"
+          fi

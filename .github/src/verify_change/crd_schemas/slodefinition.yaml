@@ -1,0 +1,146 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  # name must match the spec fields below, and be in the form: <plural>.<group>
+  name: cslos.context.ingka.com
+spec:
+  # either Namespaced or Cluster
+  scope: Namespaced
+  names:
+    # plural name to be used in the URL: /apis/<group>/<version>/<plural>
+    plural: cslos
+    # singular name to be used as an alias on the CLI and for display
+    # since pyrra is using servicelevelobjective and slo, using c as a prefix for context
+    singular: cslo
+    # kind is normally the CamelCased singular type. Your resource manifests use this.
+    kind: SLO
+    # shortNames allow shorter string to match your resource on the CLI
+    shortNames:
+      - cslo
+      - ctxtslo
+  # group name to use for REST API: /apis/<group>/<version>
+  group: context.ingka.com
+  # list of versions supported by this CustomResourceDefinition
+  versions:
+    - name: v1
+      # Each version can be enabled/disabled by Served flag.
+      served: true
+      # One and only one version must be marked as the storage version.
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                description:
+                  type: string
+                target:
+                  type: string
+                window:
+                  type: string
+                labels:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                      value:
+                        type: string
+                indicator:
+                  type: object
+                  properties:
+                    bool_gauge:
+                      type: object
+                      properties:
+                        grouping:
+                          items:
+                            type: string
+                          type: array
+                        metric:
+                          type: string
+                      required:
+                        - metric
+                    latency:
+                      type: object
+                      properties:
+                        grouping:
+                          items:
+                            type: string
+                          type: array
+                        success:
+                          properties:
+                            metric:
+                              type: string
+                          required:
+                            - metric
+                          type: object
+                        total:
+                          properties:
+                            metric:
+                              type: string
+                          required:
+                            - metric
+                          type: object
+                      required:
+                        - success
+                        - total
+                    latencyNative:
+                      type: object
+                      properties:
+                        grouping:
+                          items:
+                            type: string
+                          type: array
+                        latency:
+                          type: string
+                        total:
+                          properties:
+                            metric:
+                              type: string
+                          required:
+                            - metric
+                          type: object
+                      required:
+                        - latency
+                        - total
+                    ratio:
+                      type: object
+                      properties:
+                        errors:
+                          properties:
+                            metric:
+                              type: string
+                          required:
+                            - metric
+                          type: object
+                        grouping:
+                          items:
+                            type: string
+                          type: array
+                        total:
+                          properties:
+                            metric:
+                              type: string
+                          required:
+                            - metric
+                          type: object
+                      required:
+                        - errors
+                        - total
+              required:
+                - indicator
+                - target
+                - window
+            status:
+              type: object
+              properties:
+                synced:
+                  type: boolean
+                update:
+                  type: boolean
+      subresources:
+        # status enables the status subresource.
+        status: {}

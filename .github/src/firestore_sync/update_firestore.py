@@ -152,9 +152,22 @@ if __name__ == "__main__":
     old_file = sys.argv[1]
     new_file = sys.argv[2]
     with open(old_file, "r") as file:
-        old_yaml = yaml.safe_load(file)
+        try:
+            old_yaml = yaml.safe_load(file)
+        except Exception as e:
+            print(f"ERROR: failed to parse old yaml file: {e}")
+            sys.exit(1)
     with open(new_file, "r") as file:
-        new_yaml = yaml.safe_load(file)
+        try:
+            new_yaml = yaml.safe_load(file)
+        except Exception as e:
+            print(f"ERROR: failed to parse new yaml file: {e}")
+            sys.exit(1)
+    # check if these are team files
+    if old_yaml["kind"] != "Team" or new_yaml["kind"] != "Team":
+        print("INFO: not a team file, no firestory update needed")
+        sys.exit(0)
+
     changes = findDiff(old_yaml, new_yaml)
 
     print(f"update - found changes: {changes}")
