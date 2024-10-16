@@ -57,3 +57,8 @@ spec:
         - "pdppcodp"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "pdpp-codp-dev_write_pdpp-codp_1729056190"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "pdpp-codp-dev"
+      expires: "False"
