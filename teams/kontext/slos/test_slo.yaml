@@ -8,7 +8,7 @@ spec:
   target: "99.9"
   window: "30d"
   labels:
-    - name: "team"
+    - name: "owning_team"
       value: "KONTEXT"
   indicator:
     bool_gauge:
