@@ -44,3 +44,8 @@ spec:
         - "rhsatellite"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "rh-satellite_write_RH-Satellite_1729255614"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "rh-satellite"
+      expires: "False"
