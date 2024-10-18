@@ -44,3 +44,8 @@ spec:
         - "asisonline"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "As-Is-Online_write_As-Is-Online_1729240198"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "As-Is-Online"
+      expires: "False"
