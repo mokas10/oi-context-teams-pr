@@ -44,3 +44,8 @@ spec:
         - "providedservices"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "provided-services-con-app_write_provided-services_1729263079"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "provided-services-con-app"
+      expires: "False"
