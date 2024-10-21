@@ -44,3 +44,8 @@ spec:
         - "peopleplatform"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ppldata-platform_write_People-Platform_1729505418"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ppldata-platform"
+      expires: "False"
