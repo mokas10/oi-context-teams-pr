@@ -44,3 +44,8 @@ spec:
         - "energyservices"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "energy_write_energy-services_1729587118"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "energy"
+      expires: "False"
