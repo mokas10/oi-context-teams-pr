@@ -44,3 +44,8 @@ spec:
         - "cncs"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "cncs_write_cncs_1729588277"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "cncs"
+      expires: "False"
