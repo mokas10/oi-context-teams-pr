@@ -10,6 +10,16 @@ spec:
   labels:
     - name: "owning_team"
       value: "KONTEXT"
+    - name: "deployment.environment"
+      value: "dev"
+    - name: "ingka.legal_company"
+      value: "INGKA"
+    - name: "ingka.system_name"
+      value: "Kontext"
+    - name: "ingka.team"
+      value: "OI-NG"
+    - name: "ingka.version"
+      value: "0.5.0"
   indicator:
     bool_gauge:
       grouping:
