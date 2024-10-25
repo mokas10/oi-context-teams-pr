@@ -10,6 +10,8 @@ spec:
   labels:
     - name: "owning_team"
       value: "KONTEXT"
+    - names: "ingka.team"
+      value: "OI-NG"
   indicator:
     bool_gauge:
       grouping:
