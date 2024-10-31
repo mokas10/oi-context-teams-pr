@@ -2,6 +2,7 @@ import sys
 import yaml
 import os
 from verify_schema import verify_schema
+from verify_slo import check_mandatory_labels
 
 max_per_kind = {"Team": 1, "SLO": 5}
 
@@ -56,6 +57,9 @@ for file in file_list:
         ):
             print("ERROR: schema validation failed")
             any_error = True
+        else:
+            any_error = check_mandatory_labels(yaml_data, any_error)
+
     else:
         print(f"ERROR: unknown kind '{kind}'")
         sys.exit(1)

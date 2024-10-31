@@ -36,6 +36,10 @@ spec:
               properties:
                 description:
                   type: string
+                location:
+                  type: string
+                dev:
+                  type: boolean
                 target:
                   type: string
                 window:
@@ -134,6 +138,7 @@ spec:
                 - indicator
                 - target
                 - window
+                - location
             status:
               type: object
               properties:

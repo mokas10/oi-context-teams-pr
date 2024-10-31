@@ -3,9 +3,43 @@ from util import findDiff
 import os
 from verify_schema import verify_schema
 
+mandatory_labels = [
+    ["deployment.environment", "deployment.environment.name"],
+    "ingka.legal_company",
+    "ingka.system_name",
+    "ingka.team",
+    "ingka.version",
+]
+
+
+def check_mandatory_labels(yaml_data, any_error):
+    cur_labels = yaml_data["spec"]["labels"]
+    # get a list of labels
+    label_list = []
+    for each_label in cur_labels:
+        if "value" not in each_label or not each_label["value"]:
+            print(f"ERROR: label {each_label['name']} is missing value")
+            any_error = True
+            continue
+        label_list.append(each_label["name"])
+
+    # check if all mandatory labels are present
+    for label in mandatory_labels:
+        if type(label) is list:
+            if not any(key in label_list for key in label):
+                print(f"ERROR: one of the labels {label} is missing")
+                any_error = True
+        elif label not in label_list:
+            print(f"ERROR: label {label} is missing")
+            any_error = True
+    return any_error
+
 
 def verify_slo(old_yaml, new_yaml, changes):
     any_error = False
+
+    # TODO:
+    # resource name has to be unique
 
     # verify k8s schema
     if not verify_schema(
@@ -29,5 +63,7 @@ def verify_slo(old_yaml, new_yaml, changes):
             except ValueError:
                 print("ERROR: target must be a number")
                 any_error = True
+    if "spec.labels" in changes:
+        any_error = check_mandatory_labels(new_yaml, any_error)
 
     return any_error
