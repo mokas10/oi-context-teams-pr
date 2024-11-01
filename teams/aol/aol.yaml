@@ -44,3 +44,8 @@ spec:
         - "aol"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "AOL_write_AOL_1730471361"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "AOL"
+      expires: "False"
