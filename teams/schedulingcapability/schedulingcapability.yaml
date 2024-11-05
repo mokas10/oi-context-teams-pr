@@ -44,3 +44,8 @@ spec:
         - "schedulingcapability"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "pdpp-schedule-dev_write_Scheduling-Capability_1730802366"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "pdpp-schedule-dev"
+      expires: "False"
