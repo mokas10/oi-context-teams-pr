@@ -44,3 +44,8 @@ spec:
         - "pspi"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "PSPI_write_PSPI_1730907917"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "PSPI"
+      expires: "False"
