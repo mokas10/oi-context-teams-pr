@@ -44,3 +44,8 @@ spec:
         - "fmsgoodsmovement"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "FMS-Goods-Movement_write_FMS-Goods-Movement_1731408777"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "FMS-Goods-Movement"
+      expires: "False"
