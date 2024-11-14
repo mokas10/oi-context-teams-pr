@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "apim"
       expires: "False"
+    - name: "apim_write_api-management_1731578665"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "apim"
+      expires: "False"
