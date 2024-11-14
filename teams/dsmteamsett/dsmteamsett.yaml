@@ -44,3 +44,8 @@ spec:
         - "dsmteamsett"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "cs-sett-general_write_dsm-team-sett_1731593265"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cs-sett-general"
+      expires: "False"
