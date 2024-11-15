@@ -44,3 +44,8 @@ spec:
         - "enablement"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "o11y_write_enablement_1731665267"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "o11y"
+      expires: "False"
