@@ -28,6 +28,23 @@ spec:
     - name: "2-Admin"
       groups:
         - "IAM_AAD_Team_DPS-OI-NextGen"
+  # optional
+  # will define contact points for this team to be synced to the Mimir Alertmanager
+  contactPoints:
+    # notification policy is mandatory for each contact point, one policy per point
+    - notificationPolicy:
+        group_by:
+          - "alertname"
+        matchers:
+          - "ingka_system_name=CONTEXT"
+          - "ingka_team=KONTEXT"
+          - "severity=critical"
+      # one and exactly one type of contact point has to be provided
+      # supported (for now) are: webhook, slack, teams, email
+      webhook:
+        # name is mandatory, will be used combined with team name
+        name: "critical-alerts"
+        url: "example-url.com"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!

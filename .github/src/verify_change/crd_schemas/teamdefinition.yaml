@@ -19,7 +19,9 @@ spec:
           properties:
             spec:
               type: object
-              required: ["displayName"]
+              required:
+                - displayName
+                - locations
               properties:
                 displayName:
                   type: string
@@ -40,6 +42,98 @@ spec:
                         type: array
                         items:
                           type: string
+                contactPoints:
+                  type: array
+                  items:
+                    type: object
+                    required:
+                      - notificationPolicy
+                    oneOf:
+                      - properties:
+                        required: ["webhook"]
+                      - properties:
+                        required: ["slack"]
+                      - properties:
+                        required: ["email"]
+                      - properties:
+                        required: ["teams"]
+                    properties:
+                      notificationPolicy:
+                        type: object
+                        x-kubernetes-preserve-unknown-fields: true
+                        required:
+                          - group_by
+                          - matchers
+                        properties:
+                          group_by:
+                            type: array
+                            items:
+                              type: string
+                          matchers:
+                            type: array
+                            items:
+                              type: string
+                      webhook:
+                        type: object
+                        x-kubernetes-preserve-unknown-fields: true
+                        required:
+                          - name
+                          - url
+                        properties:
+                          name:
+                            type: string
+                          url:
+                            type: string
+                          send_resolved:
+                            type: boolean
+                      slack:
+                        type: object
+                        x-kubernetes-preserve-unknown-fields: true
+                        required:
+                          - name
+                          - api_url
+                          - channel
+                        properties:
+                          name:
+                            type: string
+                          api_url:
+                            type: string
+                          channel:
+                            type: string
+                          send_resolved:
+                            type: boolean
+                          text:
+                            type: string
+                      email:
+                        type: object
+                        x-kubernetes-preserve-unknown-fields: true
+                        required:
+                          - name
+                          - to
+                        properties:
+                          name:
+                            type: string
+                          to:
+                            type: string
+                          send_resolved:
+                            type: boolean
+                      teams:
+                        type: object
+                        x-kubernetes-preserve-unknown-fields: true
+                        required:
+                          - name
+                          - url
+                        properties:
+                          name:
+                            type: string
+                          url:
+                            type: string
+                          title:
+                            type: string
+                          text:
+                            type: string
+                          send_resolved:
+                            type: boolean
                 tenants:
                   type: array
                   items:
