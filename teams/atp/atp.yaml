@@ -49,3 +49,8 @@ spec:
       permissions: "write"
       tenant: "atp"
       expires: "False"
+    - name: "atp_write_atp_1732014020"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "atp"
+      expires: "False"
