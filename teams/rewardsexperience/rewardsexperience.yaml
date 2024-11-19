@@ -44,3 +44,8 @@ spec:
         - "rewardsexperience"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "rex-rewards-services_write_rewards-experience_1732022660"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "rex-rewards-services"
+      expires: "False"
