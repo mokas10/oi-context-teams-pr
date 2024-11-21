@@ -44,7 +44,7 @@ spec:
       webhook:
         # name is mandatory, will be used combined with team name
         name: "critical-alerts"
-        url: "example-url.com"
+        url: "$kontext-testurl"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
