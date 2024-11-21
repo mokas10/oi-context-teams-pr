@@ -44,3 +44,8 @@ spec:
         - "pdppcoreschedule"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "pdpp-core-schedule_write_pdpp-core-schedule_1732191146"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "pdpp-core-schedule"
+      expires: "False"
