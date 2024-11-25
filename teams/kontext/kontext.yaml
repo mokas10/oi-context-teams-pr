@@ -45,6 +45,22 @@ spec:
         # name is mandatory, will be used combined with team name
         name: "critical-alerts"
         url: "$kontext-testurl"
+    - notificationPolicy:
+        group_by:
+          - "alertname"
+        matchers:
+          - "ingka_system_name=CONTEXT"
+          - "ingka_team=KONTEXT"
+          - "severity=critical"
+      slack:
+        name: "test-slack"
+        api_url: "$kontext-slackurl"
+        channel: "$kontext-slackchannel"
+        link_names: false
+        send_resolved: false
+        short_fields: false
+        text: "{{ range .Alerts }}Summary: {{ .Annotations.summary }}\nDescription: {{ .Annotations.description }}\nMessage: {{ .Annotations.message }}\n\n{{ end }}"
+        footer: "{{ .CommonAnnotations.runbook_url }}"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
