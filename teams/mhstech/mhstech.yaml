@@ -44,3 +44,8 @@ spec:
         - "mhstech"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "MHS-Tech_write_MHS-Tech_1732603223"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "MHS-Tech"
+      expires: "False"
