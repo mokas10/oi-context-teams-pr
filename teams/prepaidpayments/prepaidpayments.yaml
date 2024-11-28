@@ -44,3 +44,8 @@ spec:
         - "prepaidpayments"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Prepaid-Payments_write_Prepaid-Payments_1732835416"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Prepaid-Payments"
+      expires: "False"
