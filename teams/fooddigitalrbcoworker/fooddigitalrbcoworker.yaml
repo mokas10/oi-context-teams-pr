@@ -44,3 +44,8 @@ spec:
         - "fooddigitalrbcoworker"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "IKEA_write_food-digital-rb-coworker_1732813420"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "IKEA"
+      expires: "False"
