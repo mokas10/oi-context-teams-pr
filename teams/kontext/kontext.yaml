@@ -50,8 +50,9 @@ spec:
           - "alertname"
         matchers:
           - "ingka_system_name=CONTEXT"
-          - "ingka_team=KONTEXT"
-          - "severity=critical"
+          - "ingka_team=DPS-OI-NextGen"
+          - "severity=~(critical|warning)"
+          - "cluster =~ (context|context-gcp-prod)"
       slack:
         name: "test-slack"
         api_url: "$kontext-slackurl"
