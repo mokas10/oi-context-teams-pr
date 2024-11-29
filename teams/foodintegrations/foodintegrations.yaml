@@ -44,3 +44,8 @@ spec:
         - "foodintegrations"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "food-integrations_write_food-integrations_1732888290"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "food-integrations"
+      expires: "False"
