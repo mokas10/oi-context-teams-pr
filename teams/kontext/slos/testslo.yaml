@@ -26,4 +26,4 @@ spec:
     bool_gauge:
       grouping:
         - "service_name"
-      metric: demo_test_counter > 30
+      metric: "catchpoint_fail_bool"
