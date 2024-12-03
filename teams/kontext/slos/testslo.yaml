@@ -23,7 +23,10 @@ spec:
     - name: "ingka.version"
       value: "0.5.0"
   indicator:
-    bool_gauge:
+    ratio:
+      errors:
+        metric: demo_test_counter > 30
+      total:
+        metric: demo_test_counter
       grouping:
-        - "service_name"
-      metric: "catchpoint_fail_bool"
+        - entity
