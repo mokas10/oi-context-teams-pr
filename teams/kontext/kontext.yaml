@@ -57,7 +57,10 @@ spec:
     - notificationPolicy:
         # empty notification policy means that no alerts will be sent to this contact point
         group_by:
+          - "alertname"
         matchers:
+          - "ingka_team=OI-NextGen"
+          - "otherval=nonexist"
       webhook:
         name: "ilert-receiver"
         url: "$kontext-ilert"
