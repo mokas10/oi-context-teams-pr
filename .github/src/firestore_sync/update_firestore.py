@@ -123,7 +123,7 @@ def handle_changes(display_name, changes):
         sys.exit(0)
 
     # handle updated roles
-    if "spec.roles" in changes:
+    if "spec.roles" in changes and changes["spec.roles"]:
         # get correct format
         roles_dict = {}
         for role in changes["spec.roles"]:
