@@ -24,29 +24,44 @@ spec:
           - "alertname"
         matchers:
           - "ingka_system_name=CONTEXT"
-          - "ingka_team=KONTEXT"
-          - "severity=critical"
+          - "ingka_team=OI-NextGen"
+          - "severity=warning"
       # one and exactly one type of contact point has to be provided
       # supported (for now) are: webhook, slack, teams, email
-      webhook:
+      slack:
         # name is mandatory, will be used combined with team name
-        name: "critical-alerts"
-        url: "$kontext-testurl"
-
-  # role definitions for this team
-  roles:
-    # allowed to view / query data, create READ token
-    - name: "0-Viewer"
-      groups:
-        - ""
-    # allowed to create dashboards, create WRITE token
-    - name: "1-Editor"
-      groups:
-        - ""
-    # allowed to create datasources and service accounts
-    - name: "2-Admin"
-      groups:
-        - "IAM_AAD_Team_DPS-OI-NextGen"
+        name: "slack-$kontext-slackchannellow"
+        api_url: "$kontext-slackurllow"
+        channel: "$kontext-slackchannellow"
+        link_names: false
+        send_resolved: false
+        short_fields: false
+        text: "{{ range .Alerts }}Summary: {{ .Annotations.summary }}\nDescription: {{ .Annotations.description }}\nMessage: {{ .Annotations.message }}\n\n{{ end }}"
+        footer: "{{ .CommonAnnotations.runbook_url }}"
+    - notificationPolicy:
+        group_by:
+          - "alertname"
+        matchers:
+          - "ingka_system_name=CONTEXT"
+          - "ingka_team=OI-NextGen"
+          - "severity=critical"
+      slack:
+        name: "slack-$kontext-slackchannelhigh"
+        api_url: "$kontext-slackurlhigh"
+        channel: "$kontext-slackchannelhigh"
+        link_names: false
+        send_resolved: false
+        short_fields: false
+        text: "{{ range .Alerts }}Summary: {{ .Annotations.summary }}\nDescription: {{ .Annotations.description }}\nMessage: {{ .Annotations.message }}\n\n{{ end }}"
+        footer: "{{ .CommonAnnotations.runbook_url }}"
+    - notificationPolicy:
+        # empty notification policy means that no alerts will be sent to this contact point
+        group_by:
+        matchers:
+      webhook:
+        name: "ilert-receiver"
+        url: "$kontext-ilert"
+        send_resolved: true
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!

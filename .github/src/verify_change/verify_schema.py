@@ -34,7 +34,7 @@ def check_mandatory(input, schema):
             if not check_mandatory(input[new_key], value):
                 return False
     elif isinstance(schema, list):
-        for i in input:
+        for i in input or []:
             if not check_mandatory(i, schema[0]):
                 return False
     return True

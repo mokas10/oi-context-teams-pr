@@ -13,6 +13,36 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+  # will define contact points for this team to be synced to the Mimir Alertmanager
+  contactPoints:
+    # notification policy is mandatory for each contact point, one policy per point
+    - notificationPolicy:
+        group_by:
+          - "alertname"
+          - "pod"
+        matchers:
+          - cluster=ccoe-europe-west4-stage-1
+          - namespace=zz-developer-portal
+          - severity=~(critical|warning)
+      # one and exactly one type of contact point has to be provided
+      # supported (for now) are: webhook, slack, teams, email
+      webhook:
+        # name is mandatory, will be used combined with team name
+        name: "staging-ilert-receiver"
+        url: "$devport-ilertstaging"
+        send_resolved: true
+    - notificationPolicy:
+        group_by:
+          - "alertname"
+          - "pod"
+        matchers:
+          - cluster=ccoe-europe-west4-prod-1
+          - namespace=zz-developer-portal
+          - severity=~(critical|warning)
+      webhook:
+        name: "production-ilert-receiver"
+        url: "$devport-ilertproduction"
+        send_resolved: true
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
