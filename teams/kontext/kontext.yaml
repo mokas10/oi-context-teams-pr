@@ -65,6 +65,20 @@ spec:
         name: "ilert-receiver"
         url: "$kontext-ilert"
         send_resolved: true
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - ""
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - "IAM_AAD_Team_DPS-OI-NextGen"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
