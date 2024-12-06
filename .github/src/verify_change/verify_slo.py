@@ -1,6 +1,6 @@
 import requests
 from util import findDiff
-import os
+import re
 from verify_schema import verify_schema
 
 mandatory_labels = [
@@ -35,11 +35,28 @@ def check_mandatory_labels(yaml_data, any_error):
     return any_error
 
 
-def verify_slo(old_yaml, new_yaml, changes):
-    any_error = False
+def check_resource_name(team_name, yaml_data, any_error):
+    # check if resource name is prefixed by team name
+    resource_name = yaml_data["metadata"]["name"]
+    if not resource_name.startswith(team_name):
+        print(f"ERROR: resource name must be prefixed by team name '{team_name}'")
+        any_error = True
 
-    # TODO:
-    # resource name has to be unique
+    # check if resource name fulfill the naming convention
+    if not re.match(r"^[a-z0-9][-a-z0-9]*$", resource_name):
+        print("ERROR: resource name must be lowercase alphanumeric and '-'")
+        any_error = True
+
+    # check if max length of resource name is 63
+    if len(resource_name) > 63:
+        print("ERROR: resource name must be less than 63 characters")
+        any_error = True
+
+    return any_error
+
+
+def verify_slo(file_path, old_yaml, new_yaml, changes):
+    any_error = False
 
     # verify k8s schema
     if not verify_schema(
@@ -47,6 +64,10 @@ def verify_slo(old_yaml, new_yaml, changes):
     ):
         print("ERROR: schema validation failed")
         any_error = True
+
+    # check if resource name is prefixed by team name
+    team_name = file_path.split("/")[1]
+    any_error = check_resource_name(team_name, new_yaml, any_error)
 
     # check if target is a string and a number
     if "spec.target" in changes:

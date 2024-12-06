@@ -2,7 +2,7 @@ import sys
 import yaml
 import os
 from verify_schema import verify_schema
-from verify_slo import check_mandatory_labels
+from verify_slo import check_mandatory_labels, check_resource_name
 
 max_per_kind = {"Team": 1, "SLO": 5}
 
@@ -29,6 +29,11 @@ any_error = False
 main_folders = []
 
 for file in file_list:
+    # get the first two folders, as under team can be subfolders
+    folder_path = "/".join(file.split("/")[:2])
+    if folder_path not in main_folders:
+        main_folders.append(folder_path)
+
     print("checking file: ", file)
     # if file doesn't end in .yaml, skip
     if not file.endswith(".yaml"):
@@ -59,16 +64,14 @@ for file in file_list:
             any_error = True
         else:
             any_error = check_mandatory_labels(yaml_data, any_error)
+            team_name = file.split("/")[1]
+            any_error = check_resource_name(team_name, yaml_data, any_error)
 
     else:
         print(f"ERROR: unknown kind '{kind}'")
         sys.exit(1)
     print("schema validation passed")
 
-    # get the first two folders, as under team can be subfolders
-    folder_path = "/".join(file.split("/")[:2])
-    if folder_path not in main_folders:
-        main_folders.append(folder_path)
 
 # check if max count is exceeded
 for folder in main_folders:

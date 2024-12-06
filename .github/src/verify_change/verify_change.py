@@ -52,7 +52,8 @@ if kind == "Team":
     any_error = verify_team(old_yaml, new_yaml, changes)
 
 elif kind == "SLO":
-    any_error = verify_slo(old_yaml, new_yaml, changes)
+    file_path = new_file
+    any_error = verify_slo(file_path, old_yaml, new_yaml, changes)
 
 if any_error:
     print("ERROR: found errors in changes, exiting...")
