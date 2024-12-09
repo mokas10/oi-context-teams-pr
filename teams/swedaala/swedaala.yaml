@@ -44,3 +44,8 @@ spec:
         - "swedaala"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "monthlyprice_write_swedaala_1733746081"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "monthlyprice"
+      expires: "False"
