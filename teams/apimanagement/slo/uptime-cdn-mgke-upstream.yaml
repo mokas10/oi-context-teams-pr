@@ -22,7 +22,7 @@ spec:
     - name: "ingka.version"
       value: "0.5.0"
     - name: "testing"
-      value: "true"
+      value: "yes"
   indicator:
     bool_gauge:
       metric: probe_success{context_tenant="apim", gateway="api.ingka.ikea.com", testing!="true", deployment_environment=~".*prod", platform="mgke/internal"}
