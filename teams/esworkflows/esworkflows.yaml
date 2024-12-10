@@ -28,7 +28,7 @@ spec:
       webhook:
         # name is mandatory, will be used combined with team name
         name: "staging-ilert-receiver"
-        url: "$workflows-ilertstaging"
+        url: "$es-workflows-workflows-ilertstaging"
         send_resolved: true
   # role definitions for this team
   roles:
