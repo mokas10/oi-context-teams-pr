@@ -13,6 +13,23 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+  contactPoints:
+    # notification policy is mandatory for each contact point, one policy per point
+    - notificationPolicy:
+        group_by:
+          - "alertname"
+          - "pod"
+        matchers:
+          - cluster=ccoe-europe-west4-stage-1
+          - namespace=zz-workflows
+          - severity=~(critical|warning)
+      # one and exactly one type of contact point has to be provided
+      # supported (for now) are: webhook, slack, teams, email
+      webhook:
+        # name is mandatory, will be used combined with team name
+        name: "staging-ilert-receiver"
+        url: "$workflows-ilertstaging"
+        send_resolved: true
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
