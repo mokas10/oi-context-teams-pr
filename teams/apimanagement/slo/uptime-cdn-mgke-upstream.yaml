@@ -2,7 +2,7 @@
 apiVersion: "context.ingka.com/v1"
 kind: SLO
 metadata:
-  name: apimanagement-cdn-uptime-mgke-upstream
+  name: apimanagement-uptime-cdn-mgke-upstream
 spec:
   description: "Monthly uptime SLO for API Buckets served by the CDN and using MGKE as the upstream"
   location: "gcp-eu"
