@@ -44,3 +44,8 @@ spec:
         - "spectre"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "spectre-production_write_Spectre_1733921184"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "spectre-production"
+      expires: "False"
