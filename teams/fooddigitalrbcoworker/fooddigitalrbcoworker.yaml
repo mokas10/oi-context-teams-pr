@@ -49,3 +49,8 @@ spec:
       permissions: "write"
       tenant: "IKEA"
       expires: "False"
+    - name: "IKEA_write_food-digital-rb-coworker_1733905465"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "IKEA"
+      expires: "False"
