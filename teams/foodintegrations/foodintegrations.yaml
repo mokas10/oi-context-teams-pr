@@ -49,3 +49,8 @@ spec:
       permissions: "write"
       tenant: "food-integrations"
       expires: "False"
+    - name: "food-integrations_write_food-integrations_1734091849"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "food-integrations"
+      expires: "False"
