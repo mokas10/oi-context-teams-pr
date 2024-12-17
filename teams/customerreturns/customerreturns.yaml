@@ -44,3 +44,8 @@ spec:
         - "customerreturns"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Returns_write_Customer-Returns_1734445591"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Returns"
+      expires: "False"
