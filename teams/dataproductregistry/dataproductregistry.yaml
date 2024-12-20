@@ -44,3 +44,8 @@ spec:
         - "dataproductregistry"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "dpr_write_DataProductRegistry_1734698751"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "dpr"
+      expires: "False"
