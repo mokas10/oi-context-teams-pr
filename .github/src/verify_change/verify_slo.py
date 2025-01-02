@@ -11,10 +11,14 @@ mandatory_labels = [
     "ingka.version",
 ]
 
+allow_grouping = [  # allow these labels to be grouping instead
+    ["deployment.environment", "deployment.environment.name"],
+]
+
 
 def check_mandatory_labels(yaml_data, any_error):
-    cur_labels = yaml_data["spec"]["labels"]
     # get a list of labels
+    cur_labels = yaml_data["spec"]["labels"]
     label_list = []
     for each_label in cur_labels:
         if "value" not in each_label or not each_label["value"]:
@@ -23,15 +27,30 @@ def check_mandatory_labels(yaml_data, any_error):
             continue
         label_list.append(each_label["name"])
 
+    # get a list of grouping labels
+    grouping_labels = []
+    field_name = list(yaml_data["spec"]["indicator"].keys())[0]
+    grouping_list = yaml_data["spec"]["indicator"][field_name].get("grouping", [])
+    for each_label in grouping_list:
+        grouping_labels.append(each_label.replace(".", "_"))
+
     # check if all mandatory labels are present
     for label in mandatory_labels:
         if type(label) is list:
-            if not any(key in label_list for key in label):
+            if not any(
+                key in label_list or key.replace(".", "_") in grouping_labels
+                for key in label
+            ):
                 print(f"ERROR: one of the labels {label} is missing")
                 any_error = True
         elif label not in label_list:
-            print(f"ERROR: label {label} is missing")
-            any_error = True
+            if (
+                label not in allow_grouping
+                or label.replace(".", "_") not in grouping_labels
+            ):
+                print(f"ERROR: label {label} is missing")
+                any_error = True
+
     return any_error
 
 
