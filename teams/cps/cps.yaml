@@ -50,3 +50,8 @@ spec:
       permissions: "write"
       tenant: "CPS"
       expires: "False"
+    - name: "CPS_write_CPS_1735822374"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "CPS"
+      expires: "False"
