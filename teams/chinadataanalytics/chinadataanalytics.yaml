@@ -44,3 +44,8 @@ spec:
         - "chinadataanalytics"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "china-data-analytics_write_china-data-analytics_1735896139"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "china-data-analytics"
+      expires: "False"
