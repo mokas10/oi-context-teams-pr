@@ -44,3 +44,8 @@ spec:
         - "testpython312"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "TestPython312_write_TestPython312_1736161088"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "TestPython312"
+      expires: "False"
