@@ -44,3 +44,8 @@ spec:
         - "ingkab2bmarsholm"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "SaljaProB2B_write_ingka-b2b-marsholm_1737028545"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SaljaProB2B"
+      expires: "False"
