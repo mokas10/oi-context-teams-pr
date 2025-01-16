@@ -44,3 +44,8 @@ spec:
         - "sellingrange"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "SellingRange_write_SellingRange_1737033095"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SellingRange"
+      expires: "False"
