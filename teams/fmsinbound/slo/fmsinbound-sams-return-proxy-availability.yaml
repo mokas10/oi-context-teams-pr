@@ -7,7 +7,6 @@ spec:
   description: "SLO for FMS Inbound SAMS Return Proxy availability based on the error rate"
   target: "99.7"
   location: "gcp-eu"
-  dev: false
   window: "30d"
   labels:
     - name: "service.name"
