@@ -24,6 +24,6 @@ spec:
   indicator:
     ratio:
       errors:
-        metric: sum(rate(http_server_requests_seconds_count{service_name="sams-return-proxy", deployment_environment="prod", status=~"500|400|401|403"}[5m]))
+        metric: sum(increase(http_server_requests_seconds_count{service_name="sams-return-proxy", deployment_environment="prod", status=~"500|400|401|403"}[5m]))
       total:
-        metric: sum(rate(http_server_requests_seconds_count{service_name="sams-return-proxy", deployment_environment="prod"}[5m]))
+        metric: sum(increase(http_server_requests_seconds_count{service_name="sams-return-proxy", deployment_environment="prod"}[5m]))
