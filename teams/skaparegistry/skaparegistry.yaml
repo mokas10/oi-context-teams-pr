@@ -44,3 +44,8 @@ spec:
         - "skaparegistry"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "skaparegistrytenant_write_skapa-registry_1737386001"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "skaparegistrytenant"
+      expires: "False"
