@@ -28,7 +28,22 @@ spec:
       webhook:
         # name is mandatory, will be used combined with team name
         name: "staging-ilert-receiver"
-        url: "$es-workflows-workflows-ilertstaging"
+        url: "$es-workflows-ilertstaging"
+        send_resolved: true
+    - notificationPolicy:
+        group_by:
+          - "alertname"
+          - "pod"
+        matchers:
+          - cluster=ccoe-europe-west4-prod-1
+          - namespace=zz-workflows
+          - severity=~(critical|warning)
+      # one and exactly one type of contact point has to be provided
+      # supported (for now) are: webhook, slack, teams, email
+      webhook:
+        # name is mandatory, will be used combined with team name
+        name: "production-ilert-receiver"
+        url: "$es-workflows-ilertproduction"
         send_resolved: true
   # role definitions for this team
   roles:
