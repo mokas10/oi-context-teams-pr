@@ -31,6 +31,7 @@
 /teams/outbound @ingka-group-digital/dt-fcs-outbound
 /teams/pdppcodp @ingka-group-digital/pdpp-core-codp
 /teams/asisonline @ingka-group-digital/asisonline-engineering
+/teams/cir @ingka-group-digital/asisonline-engineering
 /teams/rhsatellite @ingka-group-digital/glinux
 /teams/providedservices @ingka-group-digital/cs-provided-services
 /teams/peopleplatform @ingka-group-digital/people-platform
