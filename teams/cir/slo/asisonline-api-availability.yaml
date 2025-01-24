@@ -24,6 +24,6 @@ spec:
   indicator:
     ratio:
       errors:
-        metric: http_server_request_duration_seconds_count{service_name="asisonline-api", deployment_environment="prod", status=~"500|400|401|403"}
+        metric: http_server_request_duration_seconds_count{http_response_status_code=~"500|401|400|403",service_name="asisonline-api, deployment_environment="prod"}
       total:
         metric: http_server_request_duration_seconds_count{service_name="asisonline-api", deployment_environment="prod"}
