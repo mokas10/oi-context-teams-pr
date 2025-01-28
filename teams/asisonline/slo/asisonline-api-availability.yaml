@@ -1,0 +1,29 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: SLO
+metadata:
+  name: asisonline-api-availability
+spec:
+  description: "SLO for As Is Online API availability based on the error rate"
+  target: "90"
+  location: "gcp-eu"
+  window: "30d"
+  labels:
+    - name: "service.name"
+      value: "asisonline-api"
+    - name: "deployment.environment.name"
+      value: "prod"
+    - name: "ingka.legal_company"
+      value: "ingka"
+    - name: "ingka.system_name"
+      value: "cir"
+    - name: "ingka.team"
+      value: "asisonline"
+    - name: "ingka.version"
+      value: "0.5.0"
+  indicator:
+    ratio:
+      errors:
+        metric: http_server_request_duration_seconds_count{http_response_status_code=~"500|401|400|403",service_name="asisonline-api, deployment_environment="prod"}
+      total:
+        metric: http_server_request_duration_seconds_count{service_name="asisonline-api", deployment_environment="prod"}
