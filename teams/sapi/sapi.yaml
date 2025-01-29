@@ -44,3 +44,8 @@ spec:
         - "sapi"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "iSell_write_SAPI_1738145339"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "iSell"
+      expires: "False"
