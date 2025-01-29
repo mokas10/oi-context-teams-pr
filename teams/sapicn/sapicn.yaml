@@ -44,3 +44,8 @@ spec:
         - "sapicn"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "iSell-CN_write_SAPI-CN_1738146165"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "iSell-CN"
+      expires: "False"
