@@ -44,3 +44,8 @@ spec:
         - "dsup"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "DSUP_write_DSUP_1738230007"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "DSUP"
+      expires: "False"
