@@ -44,3 +44,8 @@ spec:
         - "marketengineering"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "MarketEngineering_write_Market-Engineering_1738225843"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "MarketEngineering"
+      expires: "False"
