@@ -44,3 +44,8 @@ spec:
         - "slm"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "slm_write_SLM_1738239885"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "slm"
+      expires: "False"
