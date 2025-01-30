@@ -18,7 +18,7 @@ spec:
     # allowed to view / query data, create READ token
     - name: "0-Viewer"
       groups:
-        - "IAM_AAD_Team_PaymentsCore"
+        - "IAM_AAD_Team_Payments-Core"
         - "IAM_AAD_Team_payments-prepaid"
         - "IAM_AAD_Team_Payments-Payments-Execution"
         - "IAM_AAD_Team_Payments-iPay"
