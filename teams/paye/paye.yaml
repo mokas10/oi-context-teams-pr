@@ -44,3 +44,8 @@ spec:
         - "paye"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "paye_write_paye_1738600130"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "paye"
+      expires: "False"
