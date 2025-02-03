@@ -18,7 +18,9 @@ spec:
     - notificationPolicy:
         group_by:
           - "alertname"
+          - "cluster"
           - "pod"
+          - "node"
         matchers:
           - cluster=ccoe-europe-west4-stage-1
           - namespace=zz-workflows
@@ -33,7 +35,9 @@ spec:
     - notificationPolicy:
         group_by:
           - "alertname"
+          - "cluster"
           - "pod"
+          - "node"
         matchers:
           - cluster=ccoe-europe-west4-prod-1
           - namespace=zz-workflows
