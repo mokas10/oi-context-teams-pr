@@ -26,7 +26,6 @@ spec:
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - "IAM_AAD_Team_fms_enablement"
         - "IAM_AAD_Team_MHS_infrastructure"
   # tenants OWNED by this team, information about these tenants
   tenants:
