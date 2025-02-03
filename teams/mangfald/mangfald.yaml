@@ -44,3 +44,8 @@ spec:
         - "mangfald"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "bcm_write_mangfald_1738593584"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "bcm"
+      expires: "False"
