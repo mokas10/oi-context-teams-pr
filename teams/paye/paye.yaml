@@ -6,7 +6,7 @@ metadata:
   name: paye
 spec:
   # display name in Grafana
-  displayName: "paye"
+  displayName: "PAYE "
   # owner / responsible for the team
   owner: "lawal.adekunle.olusegun@ingka.ikea.com"
   # locations where team will be added
@@ -18,7 +18,12 @@ spec:
     # allowed to view / query data, create READ token
     - name: "0-Viewer"
       groups:
-        - "IAM_AAD_Team_Payments-PSP-Integration, IAM_AAD_Team_Payments-Core, IAM_AAD_Team_payments-prepaid, IAM_AAD_Team_Payments-iPay, IAM_AAD_Team_payments-direct-integration, DL sp supportpod SE"
+        - "IAM_AAD_Team_Payments-PSP-Integration"
+        - "IAM_AAD_Team_Payments-Core"
+        - "IAM_AAD_Team_payments-prepaid"
+        - "IAM_AAD_Team_Payments-iPay"
+        - "IAM_AAD_Team_payments-direct-integration"
+        - "DL sp supportpod SE"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
