@@ -6,7 +6,7 @@ metadata:
   name: paye
 spec:
   # display name in Grafana
-  displayName: "PAYE "
+  displayName: "PAYE"
   # owner / responsible for the team
   owner: "lawal.adekunle.olusegun@ingka.ikea.com"
   # locations where team will be added
