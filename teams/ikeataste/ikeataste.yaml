@@ -22,11 +22,11 @@ spec:
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
-        - "DL food.digital ofx.engineering GL"
+        - ""
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - ""
+        - "DL food.digital ofx.engineering GL"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
