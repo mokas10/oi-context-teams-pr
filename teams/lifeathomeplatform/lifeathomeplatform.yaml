@@ -44,3 +44,8 @@ spec:
         - "lifeathomeplatform"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Spain_write_LifeAtHomePlatform_1738777908"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Spain"
+      expires: "False"
