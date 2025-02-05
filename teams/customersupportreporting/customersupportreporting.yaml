@@ -44,3 +44,8 @@ spec:
         - "customersupportreporting"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "CSIR_write_Customer-Support-Reporting_1738764811"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "CSIR"
+      expires: "False"
