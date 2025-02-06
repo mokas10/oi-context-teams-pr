@@ -1,0 +1,46 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: nges
+spec:
+  # display name in Grafana
+  displayName: "NGES"
+  # owner / responsible for the team
+  owner: "stephan.agerley@ingka.ikea.com"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - "NGES (ITSEMAL)"
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - ""
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "NGES"
+      # cost center associated with this tenant
+      cost_center: "CC5522"
+      # project code associated with this tenant
+      project_code: "IN_005501"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "nges"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "nges"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
