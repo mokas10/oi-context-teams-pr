@@ -44,3 +44,8 @@ spec:
         - "nges"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "NGES_write_NGES_1738847002"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "NGES"
+      expires: "False"
