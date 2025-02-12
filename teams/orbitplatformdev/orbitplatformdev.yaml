@@ -44,3 +44,8 @@ spec:
         - "orbitplatformdev"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Orbit-Demo-App_write_orbit-platform-dev_1739353520"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Orbit-Demo-App"
+      expires: "False"
