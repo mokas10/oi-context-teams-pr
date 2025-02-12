@@ -44,3 +44,8 @@ spec:
         - "ingkaanthospocbm"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "orbit-demo_write_ingka-anthos-poc-bm_1739360848"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "orbit-demo"
+      expires: "False"
