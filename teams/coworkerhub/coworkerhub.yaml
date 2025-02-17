@@ -44,11 +44,6 @@ spec:
         - "coworkerhub"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
-    - name: "coworkerhub_write_coworkerhub_1730829883"
-      location: "gcp-eu"
-      permissions: "write"
-      tenant: "coworkerhub"
-      expires: "False"
     - name: "coworkerhub_write_coworkerhub_1739371470"
       location: "gcp-eu"
       permissions: "write"
