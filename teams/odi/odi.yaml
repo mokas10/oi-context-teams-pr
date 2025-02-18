@@ -44,3 +44,8 @@ spec:
         - "odi"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "odi_write_ODI_1739894700"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "odi"
+      expires: "False"
