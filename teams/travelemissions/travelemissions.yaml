@@ -44,3 +44,8 @@ spec:
         - "travelemissions"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "travelemissions_write_travel-emissions_1739971351"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "travelemissions"
+      expires: "False"
