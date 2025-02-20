@@ -122,3 +122,8 @@ spec:
       permissions: "write"
       tenant: "evs"
       expires: "False"
+    - name: "cmp-cdn_write_Cmp-Web-Framework_1740046529"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cmp-cdn"
+      expires: "False"
