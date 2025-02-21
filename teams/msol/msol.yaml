@@ -44,3 +44,8 @@ spec:
         - "msol"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "MSOL_write_MSOL_1740147566"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "MSOL"
+      expires: "False"
