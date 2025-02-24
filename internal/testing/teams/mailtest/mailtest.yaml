@@ -44,3 +44,8 @@ spec:
         - "mailtest"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "mailtest_write_MailTest_1740402810"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "mailtest"
+      expires: "False"
