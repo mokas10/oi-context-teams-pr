@@ -44,3 +44,8 @@ spec:
         - "teperformancecontextprod"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "te-performance-prod_write_te-performance-context-prod_1740652396"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "te-performance-prod"
+      expires: "False"
