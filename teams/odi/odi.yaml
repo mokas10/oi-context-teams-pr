@@ -22,11 +22,11 @@ spec:
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
-        - "Splunk_itsi_admin"
+        - ""
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - ""
+        - "SplunkAdmins"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
