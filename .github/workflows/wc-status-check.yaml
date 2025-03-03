@@ -93,7 +93,7 @@ jobs:
 
       - name: GKE auth
         if: inputs.targetPlatform == 'gcp'
-        uses: google-github-actions/get-gke-credentials@7a108e64ed8546fe38316b4086e91da13f4785e1 # v2.3.1
+        uses: google-github-actions/get-gke-credentials@d0cee45012069b163a631894b98904a9e6723729 # v2.3.3
         with:
           cluster_name: "${{ vars.GKE_CLUSTER_NAME }}"
           location: "${{ vars.GKE_LOCATION }}"
