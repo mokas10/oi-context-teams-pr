@@ -44,3 +44,8 @@ spec:
         - "cloudflare"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Cloudflare_write_Cloudflare_1741273462"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Cloudflare"
+      expires: "False"
