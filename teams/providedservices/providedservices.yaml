@@ -8,7 +8,7 @@ spec:
   # display name in Grafana
   displayName: "provided-services"
   # owner / responsible for the team
-  owner: "tarekben.guiza@ingka.com"
+  owner: "tarekben.guiza@ingka.ikea.com"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
