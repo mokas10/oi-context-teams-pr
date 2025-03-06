@@ -22,7 +22,7 @@ spec:
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
-        - ""
+        - "China Digital Hub Context Auditing Editor Group (ITCNSHG)"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
