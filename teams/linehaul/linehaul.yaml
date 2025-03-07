@@ -8,7 +8,7 @@ spec:
   # display name in Grafana
   displayName: "Linehaul"
   # owner / responsible for the team
-  owner: "andre.baudeau1@ingka.ikea.com"
+  owner: "dimitra.zafeiropoulou@ingka.ikea.com"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
@@ -27,7 +27,8 @@ spec:
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - ""
+        - "DPS-DSMStevedores"
+        - "DSM-Linehaul"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
