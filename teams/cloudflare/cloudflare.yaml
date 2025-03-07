@@ -49,3 +49,8 @@ spec:
       permissions: "write"
       tenant: "Cloudflare"
       expires: "False"
+    - name: "Cloudflare_write_Cloudflare_1741352063"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "Cloudflare"
+      expires: "False"
