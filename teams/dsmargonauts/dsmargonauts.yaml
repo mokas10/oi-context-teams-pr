@@ -44,3 +44,8 @@ spec:
         - "dsmargonauts"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "dsm-argonauts_write_dsm-argonauts_1741618918"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "dsm-argonauts"
+      expires: "False"
