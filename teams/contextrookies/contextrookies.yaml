@@ -44,3 +44,8 @@ spec:
         - "contextrookies"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Rookies_write_ContextRookies_1741594864"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Rookies"
+      expires: "False"
