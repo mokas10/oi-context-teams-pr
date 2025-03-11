@@ -44,3 +44,8 @@ spec:
         - "outputmanagementcn"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "outputmanagementcn_write_outputmanagementcn_1741686390"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "outputmanagementcn"
+      expires: "False"
