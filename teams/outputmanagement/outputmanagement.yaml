@@ -44,3 +44,8 @@ spec:
         - "outputmanagement"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "outputmanagement_write_outputmanagement_1741685810"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "outputmanagement"
+      expires: "False"
