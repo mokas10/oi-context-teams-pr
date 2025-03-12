@@ -44,3 +44,8 @@ spec:
         - "cdhengineeringauditing"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "CDH-Engineering-Auditing_write_CDH-Engineering-Auditing_1741764495"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "CDH-Engineering-Auditing"
+      expires: "False"
