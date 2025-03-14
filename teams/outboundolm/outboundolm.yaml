@@ -44,3 +44,8 @@ spec:
         - "outboundolm"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "OutboundOLM_write_OutboundOLM_1741941309"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "OutboundOLM"
+      expires: "False"
