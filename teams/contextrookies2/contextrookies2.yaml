@@ -39,6 +39,7 @@ spec:
       # for these teams
       read_access:
         - "contextrookies2"
+        - "pipeline"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "contextrookies2"
