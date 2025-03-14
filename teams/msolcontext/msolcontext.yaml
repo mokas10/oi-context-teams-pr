@@ -44,3 +44,8 @@ spec:
         - "msolcontext"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "MSOL-context_write_MSOL-Context_1741942874"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "MSOL-context"
+      expires: "False"
