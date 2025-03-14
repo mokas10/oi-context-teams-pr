@@ -44,3 +44,8 @@ spec:
         - "csworkorderscheduling"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "cs-work-order-scheduling_write_cs-work-order-scheduling_1741951484"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cs-work-order-scheduling"
+      expires: "False"
