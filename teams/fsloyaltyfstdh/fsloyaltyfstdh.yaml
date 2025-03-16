@@ -44,3 +44,8 @@ spec:
         - "fsloyaltyfstdh"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "fs-loyalty-fstdh_write_fs-loyalty-fstdh_1742160208"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "fs-loyalty-fstdh"
+      expires: "False"
