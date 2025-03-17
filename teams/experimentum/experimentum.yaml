@@ -44,3 +44,8 @@ spec:
         - "experimentum"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Experimentum-logs_write_Experimentum_1742208905"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Experimentum-logs"
+      expires: "False"
