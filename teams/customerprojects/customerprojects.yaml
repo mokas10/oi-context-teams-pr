@@ -44,3 +44,8 @@ spec:
         - "customerprojects"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "customer-projects_write_customer-projects_1742384455"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "customer-projects"
+      expires: "False"
