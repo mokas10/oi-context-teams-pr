@@ -57,3 +57,8 @@ spec:
         - "asl"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "asl-sdm_write_ASL_1742469478"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "asl-sdm"
+      expires: "False"
