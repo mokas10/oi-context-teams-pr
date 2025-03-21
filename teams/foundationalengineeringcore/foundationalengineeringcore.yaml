@@ -22,7 +22,7 @@ spec:
           - "alertname"
           - "cluster"
         matchers:
-          - cluster=~(jfrog-platform-staging|vault-west1-staging|vault-west4-staging)
+          - cluster=~(jfrog-platform-staging|vault-west1-staging|vault-west4-staging|vault-shanghai-two-staging|vault-shanghai-one-staging)
       # one and exactly one type of contact point has to be provided
       # supported (for now) are: webhook, slack, teams, email
       webhook:
@@ -35,7 +35,7 @@ spec:
           - "alertname"
           - "cluster"
         matchers:
-          - cluster=~(jfrog-platform-production|vault-west1|vault-west4)
+          - cluster=~(jfrog-platform-production|vault-west1|vault-west4|vault-shanghai-two|vault-shanghai-one)
       webhook:
         name: "production-ilert-receiver"
         url: "$foundationalengineeringcore-ilertproduction"
