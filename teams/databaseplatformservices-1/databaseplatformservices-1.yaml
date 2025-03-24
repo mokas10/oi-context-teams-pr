@@ -46,3 +46,8 @@ spec:
         - "databaseplatformservices-1"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Database-Platform-Services_write_Database-Platform-Services_1742833575"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Database-Platform-Services"
+      expires: "False"
