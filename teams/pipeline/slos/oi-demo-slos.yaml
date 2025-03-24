@@ -1,0 +1,27 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: SLO
+metadata:
+  name: pipeline-demo-availability
+spec:
+  description: "99% of frontend proxy spans are not 500s"
+  location: "gcp-eu"
+  target: "99"
+  window: "4w"
+  labels:
+    - name: "deployment.environment.name"
+      value: "dev"
+    - name: "ingka.legal_company"
+      value: "ingka"
+    - name: "ingka.system_name"
+      value: "oi_demo"
+    - name: "ingka.team"
+      value: "oi-op"
+    - name: "ingka.version"
+      value: "0.5.0"
+  indicator:
+    ratio:
+      errors:
+        metric: traces_span_metrics_calls_total{ingka_system_name="oi_demo", service_name="frontend-proxy",http_status=~"5.."}
+      total:
+        metric: traces_span_metrics_calls_total{ingka_system_name="oi_demo", service_name="frontend-proxy"}
