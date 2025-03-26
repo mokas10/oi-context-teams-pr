@@ -22,13 +22,12 @@ spec:
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
-        - "IAM_AAD_Externals_Database_Platforms"
-        - "IAM_AAD_Team_Database_Platform_Services"
-        - "IAM_AAD_DBPS-DatabasePlatformServices"
+        - ""
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - ""
+        - "SplunkDatabasePlatformServicesExternal"
+        - "IAM_AAD_Team_Database_Platforms"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
