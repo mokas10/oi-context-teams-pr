@@ -44,3 +44,8 @@ spec:
         - "csprovidedservices"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "cs-provided-services_write_cs-provided-services_1742983318"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cs-provided-services"
+      expires: "False"
