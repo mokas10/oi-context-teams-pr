@@ -44,3 +44,8 @@ spec:
         - "cslfmcapacitymanagement"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "cs-lfm-capacity-management_write_cs-lfm-capacity-management_1742979941"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cs-lfm-capacity-management"
+      expires: "False"
