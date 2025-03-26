@@ -26,6 +26,7 @@
 /teams/reexpansion @ingka-group-digital/igd-re-devops
 /teams/fmsenablement @ingka-group-digital/fms-enablement
 /teams/databaseplatformservices @ingka-group-digital/dps
+/teams/databaseplatformservices-1 @ingka-group-digital/dps-automation-sre
 /teams/cps @ingka-group-digital/dt-fl-fms-cps
 /teams/ccoe @ingka-group-digital/ccoe-cn
 /teams/outbound @ingka-group-digital/dt-fcs-outbound
@@ -94,4 +95,3 @@
 /teams/foundationalengineeringcore @ingka-group-digital/engineering-services-core
 /teams/pipeline @ingka-group-digital/oi-o11y-contributors
 /teams/cslfmcapacitymanagement @ingka-group-digital/cs-lfm-capacity-management
-/teams/csprovidedservices @ingka-group-digital/tarekben.guiza@ingka.ikea.com
