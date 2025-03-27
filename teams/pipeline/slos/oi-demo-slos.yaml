@@ -4,7 +4,7 @@ kind: SLO
 metadata:
   name: pipeline-demo-availability
 spec:
-  description: "99% of frontend proxy spans are not 500s"
+  description: "99% of frontend proxy spans are not server errors"
   location: "gcp-eu"
   target: "99"
   window: "4w"
@@ -22,6 +22,6 @@ spec:
   indicator:
     ratio:
       errors:
-        metric: traces_span_metrics_calls_total{ingka_system_name="oi_demo", service_name="frontend-proxy",http_status=~"5.."}
+        metric: traces_span_metrics_calls_total{ingka_system_name="oi_demo", span_kind="SPAN_KIND_SERVER",http_status=~"5.."}
       total:
-        metric: traces_span_metrics_calls_total{ingka_system_name="oi_demo", service_name="frontend-proxy"}
+        metric: traces_span_metrics_calls_total{ingka_system_name="oi_demo", span_kind="SPAN_KIND_SERVER"}
