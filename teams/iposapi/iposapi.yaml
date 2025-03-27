@@ -44,3 +44,8 @@ spec:
         - "iposapi"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "IPOSAPI_write_IPOSAPI_1743080081"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "IPOSAPI"
+      expires: "False"
