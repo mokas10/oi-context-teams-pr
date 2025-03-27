@@ -7,7 +7,6 @@ spec:
   description: "This is a test SLO for Kontext"
   target: "99.0"
   location: "gcp-eu"
-  dev: true
   window: "30d"
   labels:
     - name: "service.name"
