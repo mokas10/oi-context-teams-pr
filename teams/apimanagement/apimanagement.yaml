@@ -55,6 +55,7 @@ spec:
         - "customermessage"
         - "onewebprofiles"
         - "customerprojects"
+        - "iposapi"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "apimanagement"
