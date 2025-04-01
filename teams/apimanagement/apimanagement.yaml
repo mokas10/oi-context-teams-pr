@@ -50,6 +50,7 @@ spec:
         - "cps"
         - "prepaidpayments"
         - "aol"
+        - "schreg"
         - "servicepricing"
         - "customerreturns"
         - "customermessage"
