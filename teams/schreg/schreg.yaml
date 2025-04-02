@@ -49,3 +49,8 @@ spec:
       permissions: "write"
       tenant: "schreg"
       expires: "False"
+    - name: "schreg_write_SCHREG_1743580806"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "schreg"
+      expires: "False"
