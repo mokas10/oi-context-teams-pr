@@ -44,3 +44,8 @@ spec:
         - "upptacka"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "upptackaCN_write_Upptacka_1743578161"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "upptackaCN"
+      expires: "False"
