@@ -44,11 +44,6 @@ spec:
         - "schreg"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
-    - name: "schreg_write_SCHREG_1707223972"
-      location: "gcp-eu"
-      permissions: "write"
-      tenant: "schreg"
-      expires: "False"
     - name: "schreg_write_SCHREG_1743580806"
       location: "gcp-eu"
       permissions: "write"
