@@ -44,3 +44,8 @@ spec:
         - "tim"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "TIM_write_TIM_1743673039"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "TIM"
+      expires: "False"
