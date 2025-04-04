@@ -53,6 +53,7 @@ spec:
         - "schreg"
         - "servicepricing"
         - "customerreturns"
+        - "csop"
         - "customermessage"
         - "onewebprofiles"
         - "customerprojects"
