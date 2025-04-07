@@ -44,3 +44,8 @@ spec:
         - "processintelligence"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "proiq_write_ProcessIntelligence_1744004885"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "proiq"
+      expires: "False"
