@@ -44,3 +44,8 @@ spec:
         - "fulfillmentoptions"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "fulfillment-options_write_fulfillment-options_1744024479"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "fulfillment-options"
+      expires: "False"
