@@ -63,3 +63,8 @@ spec:
       permissions: "write"
       tenant: "upptackaCN"
       expires: "False"
+    - name: "upptacka_write_Upptacka_1744114011"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "upptacka"
+      expires: "False"
