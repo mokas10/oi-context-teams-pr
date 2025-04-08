@@ -31,6 +31,19 @@ spec:
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
+      name: "upptacka"
+      # cost center associated with this tenant
+      cost_center: "IN_007254"
+      # project code associated with this tenant
+      project_code: "CC5124"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "upptacka"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "upptacka"
+    - # READ ONLY! tenant name - CANNOT be changed!
       name: "upptackaCN"
       # cost center associated with this tenant
       cost_center: "CC5124"
