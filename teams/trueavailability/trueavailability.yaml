@@ -44,3 +44,8 @@ spec:
         - "trueavailability"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "TrueAvailability_write_TrueAvailability_1744200825"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "TrueAvailability"
+      expires: "False"
