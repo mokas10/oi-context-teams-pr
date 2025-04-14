@@ -44,3 +44,8 @@ spec:
         - "itomtransformation"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ITOMTransformation_write_ITOMTransformation_1744624197"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ITOMTransformation"
+      expires: "False"
