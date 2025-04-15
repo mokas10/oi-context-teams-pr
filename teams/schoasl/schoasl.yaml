@@ -44,3 +44,8 @@ spec:
         - "schoasl"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "asl-discount_write_SCHOASL_1744715238"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "asl-discount"
+      expires: "False"
