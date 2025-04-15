@@ -44,3 +44,8 @@ spec:
         - "kitchenimagination"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Kitchen-Imagination_write_Kitchen-Imagination_1744720157"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Kitchen-Imagination"
+      expires: "False"
