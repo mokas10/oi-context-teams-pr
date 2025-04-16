@@ -44,3 +44,8 @@ spec:
         - "ingkafuliip"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Ingka-FulIIP_write_Ingka-FulIIP_1744813293"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Ingka-FulIIP"
+      expires: "False"
