@@ -44,3 +44,8 @@ spec:
         - "payrollintegration"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "payroll-integration_write_payroll-integration_1745334340"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "payroll-integration"
+      expires: "False"
