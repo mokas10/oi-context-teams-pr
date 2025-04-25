@@ -44,3 +44,8 @@ spec:
         - "windowssoe"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "windowssoe-t1_write_WindowsSOE_1745568887"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "windowssoe-t1"
+      expires: "False"
