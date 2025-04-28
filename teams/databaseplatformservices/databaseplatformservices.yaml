@@ -494,3 +494,8 @@ spec:
       permissions: "write"
       tenant: "dbps-6544b094dac69930afd46424"
       expires: "False"
+    - name: "dbps-64255440fff26579cd981fcc_write_DatabasePlatformServices_1745826891"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "dbps-64255440fff26579cd981fcc"
+      expires: "False"
