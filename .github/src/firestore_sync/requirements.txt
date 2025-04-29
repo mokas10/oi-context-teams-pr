@@ -1,2 +1,2 @@
-google-cloud-firestore==2.20.1
+google-cloud-firestore==2.20.2
 pyyaml
