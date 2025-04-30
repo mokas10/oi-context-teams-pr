@@ -6,7 +6,7 @@ metadata:
   name: cffinsights
 spec:
   # display name in Grafana
-  displayName: "cff-insights"
+  displayName: "FCS-Insights"
   # owner / responsible for the team
   owner: "michael.fallows@ingka.ikea.com"
   # locations where team will be added
@@ -26,7 +26,7 @@ spec:
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - ""
+        - "IAM_AAD_Team_CFF_Insights_Admin"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
