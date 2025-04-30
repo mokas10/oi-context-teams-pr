@@ -44,3 +44,8 @@ spec:
         - "ansibleautomationplatform"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "AAP_write_Ansible-Automation-Platform_1746007851"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "AAP"
+      expires: "False"
