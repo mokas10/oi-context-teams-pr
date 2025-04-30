@@ -44,3 +44,8 @@ spec:
         - "saljaot"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Salja-OT_write_Salja-OT_1746011466"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Salja-OT"
+      expires: "False"
