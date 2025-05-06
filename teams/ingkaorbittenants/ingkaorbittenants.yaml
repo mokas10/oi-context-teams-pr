@@ -84,3 +84,8 @@ spec:
         - "ingkaorbittenants"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ingka-cloud-orbit-dev_write_ingka-orbit-tenants_1746521041"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "ingka-cloud-orbit-dev"
+      expires: "False"
