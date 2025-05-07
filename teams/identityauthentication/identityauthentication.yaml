@@ -44,3 +44,8 @@ spec:
         - "identityauthentication"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "icow_write_IdentityAuthentication_1746608623"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "icow"
+      expires: "False"
