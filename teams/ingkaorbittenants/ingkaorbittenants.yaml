@@ -99,3 +99,8 @@ spec:
       permissions: "write"
       tenant: "ingka-cloud-orbit-lab"
       expires: "False"
+    - name: "ingka-cloud-orbit-dev_write_ingka-orbit-tenants_1746620486"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ingka-cloud-orbit-dev"
+      expires: "False"
