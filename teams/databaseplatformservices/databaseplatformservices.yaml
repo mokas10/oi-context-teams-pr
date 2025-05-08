@@ -130,6 +130,7 @@ spec:
       # for these teams
       read_access:
         - "databaseplatformservices"
+        - "mlops"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "databaseplatformservices"
