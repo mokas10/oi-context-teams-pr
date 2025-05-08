@@ -44,3 +44,8 @@ spec:
         - "socialimpactreportingtool"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Social-Impact-Reporting-Tool_write_Social-Impact-Reporting-Tool_1746690891"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Social-Impact-Reporting-Tool"
+      expires: "False"
