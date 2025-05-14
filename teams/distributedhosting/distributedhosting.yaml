@@ -44,3 +44,8 @@ spec:
         - "distributedhosting"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "dh-dpc_write_Distributed-Hosting_1747227576"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "dh-dpc"
+      expires: "False"
