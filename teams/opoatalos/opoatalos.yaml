@@ -23,6 +23,7 @@ spec:
         - "IAM_AAD_Team_OPDL"
         - "IAM_AAD_Team_Phoenix"
         - "IAM_AAD_Team_Kopoa"
+        - "IAM_AAD_Team_OPOA-Nebula"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
