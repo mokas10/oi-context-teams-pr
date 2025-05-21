@@ -45,3 +45,8 @@ spec:
         - "ipay"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "iPay_write_iPay_1747820006"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "iPay"
+      expires: "False"
