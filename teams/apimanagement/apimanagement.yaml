@@ -62,6 +62,7 @@ spec:
         - "tim"
         - "payrollintegration"
         - "dsmpickuppointmanager"
+        - "dsmteamsett"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "apimanagement"
