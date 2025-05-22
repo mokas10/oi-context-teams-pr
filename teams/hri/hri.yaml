@@ -44,3 +44,8 @@ spec:
         - "hri"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "HRI_write_HRI_1747897414"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "HRI"
+      expires: "False"
