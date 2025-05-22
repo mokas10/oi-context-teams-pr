@@ -70,3 +70,8 @@ spec:
         - "dpbsprc"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "DPBSPRC-Loki_write_DPBSPRC_1747935615"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "DPBSPRC-Loki"
+      expires: "False"
