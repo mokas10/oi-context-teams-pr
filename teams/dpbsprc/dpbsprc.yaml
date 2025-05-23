@@ -90,3 +90,8 @@ spec:
       permissions: "write"
       tenant: "DPBSPRC-Metric"
       expires: "False"
+    - name: "DPBSPRC-Trace_write_DPBSPRC_1747999317"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "DPBSPRC-Trace"
+      expires: "False"
