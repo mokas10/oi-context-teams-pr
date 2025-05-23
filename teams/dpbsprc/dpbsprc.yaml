@@ -80,3 +80,8 @@ spec:
       permissions: "write"
       tenant: "DPBSPRC-Trace"
       expires: "False"
+    - name: "DPBSPRC-Loki_write_DPBSPRC_1747999254"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "DPBSPRC-Loki"
+      expires: "False"
