@@ -44,3 +44,8 @@ spec:
         - "takt"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "TAKT_write_TAKT_1748245166"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "TAKT"
+      expires: "False"
