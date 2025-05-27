@@ -57,3 +57,8 @@ spec:
         - "isomplatformengineering"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ISOMPROD_write_ISOM-PLATFORM-ENGINEERING_1748336972"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ISOMPROD"
+      expires: "False"
