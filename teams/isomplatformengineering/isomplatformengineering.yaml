@@ -67,3 +67,8 @@ spec:
       permissions: "write"
       tenant: "ISOMPROD"
       expires: "False"
+    - name: "ISOMNONPROD_write_ISOM-PLATFORM-ENGINEERING_1748352509"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ISOMNONPROD"
+      expires: "False"
