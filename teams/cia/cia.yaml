@@ -44,3 +44,8 @@ spec:
         - "cia"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "cia_write_CIA_1748432694"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cia"
+      expires: "False"
