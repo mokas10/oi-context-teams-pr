@@ -49,3 +49,8 @@ spec:
       permissions: "write"
       tenant: "iSell"
       expires: "False"
+    - name: "iSell_write_SAPI_1748513770"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "iSell"
+      expires: "False"
