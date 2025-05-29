@@ -49,3 +49,8 @@ spec:
       permissions: "write"
       tenant: "iSell-CN"
       expires: "False"
+    - name: "iSell-CN_write_SAPI-CN_1748514141"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "iSell-CN"
+      expires: "False"
