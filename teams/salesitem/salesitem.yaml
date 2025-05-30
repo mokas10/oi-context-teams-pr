@@ -44,3 +44,8 @@ spec:
         - "salesitem"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "SalesItem_write_SalesItem_1748614716"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SalesItem"
+      expires: "False"
