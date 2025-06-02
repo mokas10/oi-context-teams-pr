@@ -140,3 +140,8 @@ spec:
       permissions: "write"
       tenant: "cmp-cdn"
       expires: "False"
+    - name: "cmp-cdn-prod_write_Cmp-Web-Framework_1748843150"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cmp-cdn-prod"
+      expires: "False"
