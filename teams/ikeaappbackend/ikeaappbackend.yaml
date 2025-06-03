@@ -44,3 +44,8 @@ spec:
         - "ikeaappbackend"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "AppBackend_write_IKEA-App-Backend_1748951679"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "AppBackend"
+      expires: "False"
