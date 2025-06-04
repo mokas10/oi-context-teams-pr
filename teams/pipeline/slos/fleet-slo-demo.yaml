@@ -1,0 +1,27 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: SLO
+metadata:
+  name: pipeline-fleet-availability-demo
+spec:
+  description: "99% of fleet ingestion events are not server errors"
+  location: "gcp-eu"
+  target: "99"
+  window: "4w"
+  labels:
+    - name: "deployment.environment.name"
+      value: "dev"
+    - name: "ingka.legal_company"
+      value: "ingka"
+    - name: "ingka.system_name"
+      value: "O11YF"
+    - name: "ingka.team"
+      value: "oi-op"
+    - name: "ingka.version"
+      value: "0.5.0"
+  indicator:
+    ratio:
+      errors:
+        metric: loadbalancing_googleapis_com_https_request_count{backend_target_name=~"gkegw1-.*", response_code_class="500"}
+      total:
+        metric: loadbalancing_googleapis_com_https_request_count{backend_target_name=~"gkegw1-.*"}
