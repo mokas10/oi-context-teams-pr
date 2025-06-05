@@ -49,3 +49,8 @@ spec:
       permissions: "write"
       tenant: "dh-dpc"
       expires: "False"
+    - name: "dh-dpc_write_Distributed-Hosting_1749139684"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "dh-dpc"
+      expires: "False"
