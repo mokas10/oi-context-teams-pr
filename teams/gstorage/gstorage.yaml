@@ -44,3 +44,8 @@ spec:
         - "gstorage"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "hnas_write_GSTORAGE_1749476414"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "hnas"
+      expires: "False"
