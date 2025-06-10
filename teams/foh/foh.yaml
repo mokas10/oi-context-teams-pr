@@ -45,3 +45,8 @@ spec:
         - "foh"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "FOH_write_FOH_1749588906"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "FOH"
+      expires: "False"
