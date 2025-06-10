@@ -77,3 +77,8 @@ spec:
       permissions: "write"
       tenant: "ISOMPROD"
       expires: "False"
+    - name: "ISOMNONPROD_write_ISOM-PLATFORM-ENGINEERING_1749554932"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "ISOMNONPROD"
+      expires: "False"
