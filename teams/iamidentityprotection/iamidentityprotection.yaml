@@ -44,3 +44,8 @@ spec:
         - "iamidentityprotection"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "IAM-IdentityProtection-ADDS_write_IAM-IdentityProtection_1749639584"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "IAM-IdentityProtection-ADDS"
+      expires: "False"
