@@ -49,3 +49,8 @@ spec:
         - "pac"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "PAC_write_PAC_1750149627"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "PAC"
+      expires: "False"
