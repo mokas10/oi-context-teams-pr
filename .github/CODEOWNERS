@@ -120,6 +120,5 @@
 /teams/cia @ingka-group-digital/cia
 /teams/salesitem @ingka-group-digital/selling-range
 /teams/ikeaappbackend @ingka-group-digital/ikea-app-backend
-/teams/gstorage @ingka-group-digital/storage-data-protection
-/teams/foh @ingka-group-digital/Fulfilment Order Hub
+/teams/foh @ingka-group-digital/fulfillment-order-execution
 /teams/iamidentityprotection @ingka-group-digital/iam-identity-protection
