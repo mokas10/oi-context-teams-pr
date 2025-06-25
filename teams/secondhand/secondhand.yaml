@@ -44,3 +44,8 @@ spec:
         - "secondhand"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "second-hand_write_Second-hand_1750852691"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "second-hand"
+      expires: "False"
