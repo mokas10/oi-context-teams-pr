@@ -50,3 +50,8 @@ spec:
       permissions: "write"
       tenant: "EVENTM"
       expires: "False"
+    - name: "EVENTM_write_event-mesh_1750944517"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "EVENTM"
+      expires: "False"
