@@ -44,3 +44,8 @@ spec:
         - "fuliip"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "FULIIP_write_FULIIP_1751363891"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "FULIIP"
+      expires: "False"
