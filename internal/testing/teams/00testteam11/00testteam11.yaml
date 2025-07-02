@@ -144,3 +144,8 @@ spec:
       permissions: "write"
       tenant: "newexampletenant00"
       expires: "False"
+    - name: "newexampletenant01_write_00TestTeam11_1751456875"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "newexampletenant01"
+      expires: "False"
