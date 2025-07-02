@@ -50,3 +50,8 @@ spec:
       permissions: "write"
       tenant: "MHS-Tech"
       expires: "False"
+    - name: "MHS-Tech_write_MHS-Tech_1751455783"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "MHS-Tech"
+      expires: "False"
