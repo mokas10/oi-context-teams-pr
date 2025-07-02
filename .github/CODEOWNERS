@@ -118,7 +118,7 @@
 /teams/dpbsprc @ingka-group-digital/dpbs
 /teams/takt @ingka-group-digital/camp-takt
 /teams/cia @ingka-group-digital/cia
-/teams/salesitem @ingka-group-digital/selling-range
+/teams/salesitem @ingka-group-digital/selling-range @ingka-group-digital/cia @ingka-group-digital/range-categorisation @erzz
 /teams/ikeaappbackend @ingka-group-digital/ikea-app-backend
 /teams/foh @ingka-group-digital/fulfillment-order-execution
 /teams/iamidentityprotection @ingka-group-digital/iam-identity-protection

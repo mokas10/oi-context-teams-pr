@@ -26,7 +26,9 @@ spec:
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - ""
+        - "IAM_AAD_Team_Selling_Range"
+        - "IAM_AAD_Team_Customer_Item_Availability"
+        - "IAM_AAD_Team_Range_Categorisation"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
@@ -39,9 +41,13 @@ spec:
       # for these teams
       read_access:
         - "salesitem"
+        - "sellingrange"
+        - "cia"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "salesitem"
+        - "sellingrange"
+        - "cia"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
     - name: "SalesItem_write_SalesItem_1748614716"
