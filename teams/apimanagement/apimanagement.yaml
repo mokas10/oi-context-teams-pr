@@ -53,6 +53,8 @@ spec:
         - "schreg"
         - "servicepricing"
         - "customerreturns"
+        - "outputmanagement"
+        - "outputmanagementcn"
         - "csop"
         - "customermessage"
         - "onewebprofiles"
