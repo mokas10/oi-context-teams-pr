@@ -30,6 +30,19 @@ spec:
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
+      name: "newexampletenant01"
+      # cost center associated with this tenant
+      cost_center: "CC1010"
+      # project code associated with this tenant
+      project_code: "IN_1010"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "00testteam11"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "00testteam11"
+    - # READ ONLY! tenant name - CANNOT be changed!
       name: "newexampletenant00"
       # cost center associated with this tenant
       cost_center: "CC1010"
