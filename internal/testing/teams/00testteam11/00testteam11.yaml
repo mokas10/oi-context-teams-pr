@@ -75,3 +75,8 @@ spec:
       permissions: "write"
       tenant: "00TestTeam11"
       expires: "False"
+    - name: "multitenant2_write_00TestTeam11_1751455769"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "multitenant2"
+      expires: "False"
