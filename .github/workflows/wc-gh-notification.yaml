@@ -1,0 +1,84 @@
+---
+name: Notify on action status
+run-name: "Notify on action status"
+
+on:
+  workflow_dispatch:
+    inputs:
+      status:
+        description: "Status to be send"
+        required: false
+        type: string
+        default: "failure"
+      targetEnvironment:
+        description: "Environment to send notifications to"
+        required: false
+        type: string
+        default: "dev"
+      message:
+        description: "Message to be send"
+        required: false
+        type: string
+        default: "GitHub Action build result"
+  workflow_call:
+    inputs:
+      status:
+        description: "Status to be send"
+        required: false
+        type: string
+        default: "failure"
+      targetEnvironment:
+        description: "Environment to send notifications to"
+        required: false
+        type: string
+        default: "dev"
+      message:
+        description: "Message to be send"
+        required: false
+        type: string
+        default: "GitHub Action build result"
+
+permissions:
+  contents: "read"
+  id-token: "write"
+  checks: "write"
+
+jobs:
+  send-notification:
+    name: "Send notification"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get slack webhook
+        id: vault
+        uses: hashicorp/vault-action@7709c609789c5e27b757a85817483caadbb5939a # v3.3.0
+        with:
+          url: "https://vault-prod.build.ingka.ikea.com"
+          namespace: "oi-ng-prod"
+          method: jwt
+          jwtGithubAudience: oi-ng
+          role: "github-repo-read"
+          exportToken: true
+          exportEnv: true
+          secrets: |
+            secret/data/slack ${{ inputs.targetEnvironment }} | slack ;
+
+      - name: Send notification
+        id: slack
+        # https://github.com/slackapi/slack-github-action
+        uses: slackapi/slack-github-action@485a9d42d3a73031f12ec201c457e2162c45d02d # v2.0.0
+        with:
+          payload: |
+            {
+              "text": "${{ inputs.message }}: ${{ inputs.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "${{ inputs.message }}: ${{ inputs.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                  }
+                }
+              ]
+            }
+          webhook: "${{ fromJson(steps.vault.outputs.slack).webhook }}"
+          webhook-type: webhook-trigger

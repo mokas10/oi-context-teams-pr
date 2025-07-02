@@ -65,3 +65,12 @@ jobs:
               -f "permission=push"
             fi
           done
+  notify:
+    name: "Notify on deployment failure"
+    needs: [add_permissions]
+    # run this if any of the previous jobs failed
+    if: ${{ always() && contains(needs.*.result, 'failure') }}
+    uses: ./.github/workflows/wc-gh-notification.yaml
+    with:
+      targetEnvironment: prod
+      message: "Codeowner push result"
