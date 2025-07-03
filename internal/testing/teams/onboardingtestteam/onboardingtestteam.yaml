@@ -44,3 +44,8 @@ spec:
         - "onboardingtestteam"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "OnboardingTestTenant_write_OnboardingTestTeam_1751532440"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "OnboardingTestTenant"
+      expires: "False"
