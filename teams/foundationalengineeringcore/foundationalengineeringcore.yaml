@@ -117,3 +117,8 @@ spec:
       permissions: "write"
       tenant: "vault"
       expires: "False"
+    - name: "argo_write_Foundational Engineering - Core_1751610682"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "argo"
+      expires: "False"
