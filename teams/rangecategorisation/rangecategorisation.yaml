@@ -44,3 +44,8 @@ spec:
         - "rangecategorisation"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "range-categorisation_write_range-categorisation_1751884805"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "range-categorisation"
+      expires: "False"
