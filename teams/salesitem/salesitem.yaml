@@ -43,11 +43,13 @@ spec:
         - "salesitem"
         - "sellingrange"
         - "cia"
+        - "rangecategorisation"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "salesitem"
         - "sellingrange"
         - "cia"
+        - "rangecategorisation"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
     - name: "SalesItem_write_SalesItem_1748614716"
