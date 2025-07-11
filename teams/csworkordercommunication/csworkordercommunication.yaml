@@ -44,3 +44,8 @@ spec:
         - "csworkordercommunication"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "cs-work-order-communication_write_cs-work-order-communication_1752221954"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "cs-work-order-communication"
+      expires: "False"
