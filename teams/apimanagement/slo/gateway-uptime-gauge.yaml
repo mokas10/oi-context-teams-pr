@@ -26,5 +26,6 @@ spec:
         - api_bucket
         - plugin
         - platform
-        - deployment_environment
+        - deployment_environment # Will be removed in the future, as it's replaced by deployment_environment_name
+        - deployment_environment_name
         - gateway
