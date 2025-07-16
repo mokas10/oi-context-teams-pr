@@ -44,3 +44,8 @@ spec:
         - "somtestautomation"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "SOMTestAutomationGlobal_write_SOM-Test-Automation_1752648648"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SOMTestAutomationGlobal"
+      expires: "False"
