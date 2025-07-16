@@ -119,3 +119,8 @@ spec:
       permissions: "write"
       tenant: "ASL-CUSTOMER"
       expires: "False"
+    - name: "ASL-DISCOUNT-COUPON_write_STORE-CHECKOUT_1752674675"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ASL-DISCOUNT-COUPON"
+      expires: "False"
