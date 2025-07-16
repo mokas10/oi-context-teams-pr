@@ -44,3 +44,8 @@ spec:
         - "somtestautomationcn"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "SOMTestAutomationCN_write_SOM-Test-Automation-CN_1752667119"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "SOMTestAutomationCN"
+      expires: "False"
