@@ -109,3 +109,8 @@ spec:
         - "storecheckout"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ASL-CART_write_STORE-CHECKOUT_1752674670"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ASL-CART"
+      expires: "False"
