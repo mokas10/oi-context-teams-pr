@@ -114,3 +114,8 @@ spec:
       permissions: "write"
       tenant: "ASL-CART"
       expires: "False"
+    - name: "ASL-CUSTOMER_write_STORE-CHECKOUT_1752674672"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ASL-CUSTOMER"
+      expires: "False"
