@@ -129,3 +129,8 @@ spec:
       permissions: "write"
       tenant: "ASL-ORDERS"
       expires: "False"
+    - name: "ASL-RANGE_write_STORE-CHECKOUT_1752674686"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ASL-RANGE"
+      expires: "False"
