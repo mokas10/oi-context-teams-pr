@@ -44,3 +44,8 @@ spec:
         - "ceenggsupportpod"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "CE-Engg-Support-POD_write_CE-Engg-Support-POD_1752761587"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "CE-Engg-Support-POD"
+      expires: "False"
