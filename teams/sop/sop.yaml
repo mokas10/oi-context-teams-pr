@@ -44,3 +44,8 @@ spec:
         - "sop"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "SOP_write_SOP_1753089578"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SOP"
+      expires: "False"
