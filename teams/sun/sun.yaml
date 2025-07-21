@@ -44,3 +44,8 @@ spec:
         - "sun"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "sun_write_sun_1753101325"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "sun"
+      expires: "False"
