@@ -18,14 +18,13 @@ spec:
     # allowed to view / query data
     - name: "0-Viewer"
       groups:
+        - "IAM_AAD_Team_DPS-OI-NextGen"
     # allowed to create dashboards
     - name: "1-Editor"
       groups:
-        - "IAM_AAD_Team_DPS-OI-NextGen"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - "IAM_AAD_Team_DPS-OI-NextGen"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
