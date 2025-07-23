@@ -23,6 +23,7 @@ spec:
     - name: "1-Editor"
       groups:
         - "IAM_AAD_Team_dsm-argonauts"
+        - "IAM_AAD_Team_dsm-mercury"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
