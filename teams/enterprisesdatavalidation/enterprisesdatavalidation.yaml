@@ -44,3 +44,8 @@ spec:
         - "enterprisesdatavalidation"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "EnterprisesDataValidation_write_EnterprisesDataValidation_1753777466"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "EnterprisesDataValidation"
+      expires: "False"
