@@ -44,3 +44,8 @@ spec:
         - "icip"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ICIP_write_ICIP_1753962690"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ICIP"
+      expires: "False"
