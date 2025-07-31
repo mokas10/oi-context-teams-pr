@@ -20,7 +20,7 @@ spec:
       groups:
         - "IAM_AAD_opoa-on-call"
         - "IAM_AAD_Team_Spectre"
-        - "IAM_AAD_OPOA_Talos"
+        - "IAM_AAD_Team_OPOA-Talos"
         - "IAM_AAD_Team_Phoenix"
         - "IAM_AAD_Team_Kopoa"
         - "Available to Promise (ITNL012)"
