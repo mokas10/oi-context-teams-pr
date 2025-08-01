@@ -44,3 +44,8 @@ spec:
         - "integrationplatform"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ICIP-Tenants_write_INtegration-Platform_1754025993"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ICIP-Tenants"
+      expires: "False"
