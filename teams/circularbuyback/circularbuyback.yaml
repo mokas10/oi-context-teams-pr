@@ -27,6 +27,8 @@ spec:
     - name: "2-Admin"
       groups:
         - "DL digital.vs.circularventures engineering GL"
+        - "IAM_AAD_Team_Circular"
+
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
