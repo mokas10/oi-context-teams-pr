@@ -44,3 +44,8 @@ spec:
         - "csfreightmanagement"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "cs-freight-management_write_cs-freight-management_1754320942"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cs-freight-management"
+      expires: "False"
