@@ -44,3 +44,8 @@ spec:
         - "buyback"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "buyback_write_Buyback_1754298761"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "buyback"
+      expires: "False"
