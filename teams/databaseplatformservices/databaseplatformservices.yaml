@@ -30,6 +30,19 @@ spec:
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
+      name: "dbps-686bae9a68ecb57632d656a1"
+      # cost center associated with this tenant
+      cost_center: "CC5329"
+      # project code associated with this tenant
+      project_code: "PRJ004137"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "databaseplatformservices"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "databaseplatformservices"
+    - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-685bf31f729db2283aaf8dbe"
       # cost center associated with this tenant
       cost_center: "CC5329"
