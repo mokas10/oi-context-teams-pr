@@ -26,7 +26,8 @@ spec:
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - ""
+        - "IAM_AAD_Team_ICA_AzureArc"
+        - "ICA (ITSEHBG)"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
