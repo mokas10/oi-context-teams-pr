@@ -44,3 +44,8 @@ spec:
         - "iisdqcoreteam"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "IIS-DQ-CoreTeam_write_IIS-DQ-CoreTeam_1754473595"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "IIS-DQ-CoreTeam"
+      expires: "False"
