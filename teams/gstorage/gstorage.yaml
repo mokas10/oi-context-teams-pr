@@ -27,6 +27,7 @@ spec:
     - name: "2-Admin"
       groups:
         - "IAM_AD_IAM_AAD_INGKA_Data_Protection"
+        - "IAM_AAD_HNAS"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
