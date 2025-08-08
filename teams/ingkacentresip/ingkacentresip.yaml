@@ -44,3 +44,8 @@ spec:
         - "ingkacentresip"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ICIP-Tenants4_write_INGKACentres-IP_1754651691"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ICIP-Tenants4"
+      expires: "False"
