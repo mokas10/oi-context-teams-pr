@@ -115,3 +115,8 @@ spec:
       permissions: "write"
       tenant: "ingka-cloud-orbit-prod"
       expires: "False"
+    - name: "ingka-cloud-orbit-prod_write_ingka-orbit-tenants_1754918051"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "ingka-cloud-orbit-prod"
+      expires: "False"
