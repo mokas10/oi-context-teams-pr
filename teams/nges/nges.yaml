@@ -23,6 +23,7 @@ spec:
     - name: "1-Editor"
       groups:
         - "NGES (ITSEMAL)"
+        - "IAM_AAD_NGES_Cloudflare_WAF_Logs"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
