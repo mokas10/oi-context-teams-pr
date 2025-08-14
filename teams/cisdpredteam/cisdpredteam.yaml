@@ -44,3 +44,8 @@ spec:
         - "cisdpredteam"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "CNISDP_write_CISDP-RedTeam_1755159829"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "CNISDP"
+      expires: "False"
