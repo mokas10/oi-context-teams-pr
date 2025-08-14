@@ -44,3 +44,8 @@ spec:
         - "cisdpredteamsie"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "redteam_write_CISDP-RedTeam-Sie_1755161914"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "redteam"
+      expires: "False"
