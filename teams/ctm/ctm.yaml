@@ -44,3 +44,8 @@ spec:
         - "ctm"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "CTM_write_CTM_1755240585"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "CTM"
+      expires: "False"
