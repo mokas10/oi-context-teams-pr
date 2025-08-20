@@ -30,6 +30,19 @@ spec:
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
+      name: "QRPin"
+      # cost center associated with this tenant
+      cost_center: "CC5268"
+      # project code associated with this tenant
+      project_code: "PRD0010104"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "identityauthentication"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "identityauthentication"
+    - # READ ONLY! tenant name - CANNOT be changed!
       name: "icow"
       # cost center associated with this tenant
       cost_center: "CC5268"
