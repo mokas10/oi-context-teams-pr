@@ -62,3 +62,8 @@ spec:
       permissions: "write"
       tenant: "icow"
       expires: "False"
+    - name: "QRPin_write_IdentityAuthentication_1755767159"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "QRPin"
+      expires: "False"
