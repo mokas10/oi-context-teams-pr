@@ -1,0 +1,31 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: SLO
+metadata:
+  name: apimanagement-gateway-uptime-gauge-china
+spec:
+  description: "Monthly uptime SLO for API Buckets China"
+  location: "alicloud-cn"
+  target: "99.97"
+  window: "30d"
+  labels:
+    - name: "deployment.environment"
+      value: "ingka-apim-prod"
+    - name: "ingka.legal_company"
+      value: "ingka"
+    - name: "ingka.system_name"
+      value: "api-gateway"
+    - name: "ingka.team"
+      value: "api-management"
+    - name: "ingka.version"
+      value: "0.4.1"
+  indicator:
+    bool_gauge:
+      metric: probe_success{context_tenant="apim", testing!="true"}
+      grouping:
+        - api_bucket
+        - plugin
+        - platform
+        - deployment_environment # Will be removed in the future, as it's replaced by deployment_environment_name
+        - deployment_environment_name
+        - gateway
