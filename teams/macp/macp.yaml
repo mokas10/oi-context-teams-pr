@@ -44,3 +44,8 @@ spec:
         - "macp"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "macp_write_MACP_1756101324"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "macp"
+      expires: "False"
