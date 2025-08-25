@@ -44,3 +44,8 @@ spec:
         - "omdmdataanalytics"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "OMDMDataAnalytics_write_OMDM-Data-Analytics_1756116707"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "OMDMDataAnalytics"
+      expires: "False"
