@@ -50,3 +50,8 @@ spec:
       permissions: "write"
       tenant: "Salja-OT"
       expires: "False"
+    - name: "Salja-OT_write_Salja-OT_1756450429"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Salja-OT"
+      expires: "False"
