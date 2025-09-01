@@ -52,3 +52,8 @@ spec:
       permissions: "write"
       tenant: "Application-Hosting"
       expires: "False"
+    - name: "Application-Hosting_write_Application-Hosting_1756726728"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "Application-Hosting"
+      expires: "False"
