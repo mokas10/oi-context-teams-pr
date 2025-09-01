@@ -13,17 +13,18 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+    - "alicloud-cn"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
     - name: "0-Viewer"
       groups:
-        - "IAM_AAD_Team_iSell_client_devs"
-        - "IAM_AAD_Team_iSell_devs"
+        - ""
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
-        - ""
+        - "IAM_AAD_Team_iSell_client_devs"
+        - "IAM_AAD_Team_iSell_devs"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
