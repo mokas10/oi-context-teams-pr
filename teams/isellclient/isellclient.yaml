@@ -44,3 +44,8 @@ spec:
         - "isellclient"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "IsellClient_write_Isell-Client_1756726540"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "IsellClient"
+      expires: "False"
