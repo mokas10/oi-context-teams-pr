@@ -101,7 +101,7 @@ def validate_conditions(input, schema, condition):
 
 
 def check_quantors(input, schema):
-    if "type" not in schema:
+    if input is None or "type" not in schema:
         return True
 
     if schema["type"] == "object":
