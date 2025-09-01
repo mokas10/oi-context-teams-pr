@@ -19,6 +19,7 @@ spec:
     - name: "0-Viewer"
       groups:
         - "IAM_AAD_Team_iSell_client_devs"
+        - "IAM_AAD_Team_iSell_devs"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
