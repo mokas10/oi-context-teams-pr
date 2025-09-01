@@ -6,7 +6,7 @@ metadata:
   name: isellclient
 spec:
   # display name in Grafana
-  displayName: "Isell-Client"
+  displayName: "iSell-Client"
   # owner / responsible for the team
   owner: "adam.prescott2@ingka.ikea.com"
   # locations where team will be added
