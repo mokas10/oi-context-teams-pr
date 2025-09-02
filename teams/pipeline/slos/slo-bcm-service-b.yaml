@@ -26,7 +26,7 @@ spec:
           http_server_duration_milliseconds_bucket{service_name="bcm-comapanies-api", 
           http_route="/v2/retail-units/:retailUnit/companies/:companyId/addresses/:addressId", 
           http_status_code=~"2..", 
-          le="20"}
+          le="25"}
       total:
         metric: >-
           http_server_duration_milliseconds_count{service_name="bcm-comapanies-api", 
