@@ -44,3 +44,8 @@ spec:
         - "journeydecisioning"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "jode_write_JourneyDecisioning_1756812942"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "jode"
+      expires: "False"
