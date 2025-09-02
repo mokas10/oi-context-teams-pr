@@ -22,9 +22,9 @@ spec:
   indicator:
     ratio:
       errors:
-        metric: >
+        metric: >-
           http_server_duration_milliseconds_bucket{service_name="bcm-comapanies-api", 
           http_status_code=~"5.."}
       total:
-        metric: >
+        metric: >-
           http_server_duration_milliseconds_count{service_name="bcm-comapanies-api"}
