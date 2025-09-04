@@ -24,6 +24,6 @@ spec:
   indicator:
     ratio:
       errors:
-        metric: kong_statsd_status_count_total{code=~"500|503",service="cart-context", deployment_environment="prod"}
+        metric: kong_statsd_status_count_total{code=~"50.",service=~"cart-context", deployment_environment="ingka-apim-prod"}
       total:
-        metric: kong_statsd_requests_proxy_total{service="cart-context", deployment_environment="prod"}
+        metric: kong_statsd_requests_proxy_total{service=~"cart-context", deployment_environment="ingka-apim-prod"}
