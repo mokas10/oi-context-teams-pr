@@ -44,3 +44,8 @@ spec:
         - "cptesto11y1969"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "CP-Test-O11Y-1969_write_CP-Test-O11Y-1969_1756990543"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "CP-Test-O11Y-1969"
+      expires: "False"
