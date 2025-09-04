@@ -1,0 +1,29 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: SLO
+metadata:
+  name: fulfillmentoptions-cart-context-availability
+spec:
+  description: "SLO for Cart-Context API availability based on the HTTP Status Codes"
+  target: "99.7"
+  location: "gcp-eu"
+  window: "30d"
+  labels:
+    - name: "service.name"
+      value: "cart-context"
+    - name: "deployment.environment.name"
+      value: "prod"
+    - name: "ingka.legal_company"
+      value: "ingka"
+    - name: "ingka.system_name"
+      value: "FOP"
+    - name: "ingka.team"
+      value: "FulfillmentOptions"
+    - name: "ingka.version"
+      value: "0.5.0"
+  indicator:
+    ratio:
+      errors:
+        metric: kong_statsd_status_count_total{code=~"500|503",service="cart-context", deployment_environment="prod"}
+      total:
+        metric: kong_statsd_requests_proxy_total{service="cart-context", deployment_environment="prod"}

@@ -13,6 +13,19 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+  contactPoints:
+    # notification policy is mandatory for each contact point, one policy per point
+    - notificationPolicy:
+        group_by:
+          - "alertname"
+        matchers:
+          - "ingka_system_name=FOP"
+          - "ingka_team=FulfillmentOptions"
+          - "severity=warning"
+      webhook:
+        name: "fop-ilert-receiver"
+        url: "$fulfillment-options-ilertwebhooksl2"
+        send_resolved: true
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
