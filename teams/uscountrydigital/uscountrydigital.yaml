@@ -44,3 +44,8 @@ spec:
         - "uscountrydigital"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "YMSProject_write_us-country-digital_1757011762"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "YMSProject"
+      expires: "False"
