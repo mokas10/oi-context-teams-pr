@@ -1219,3 +1219,8 @@ spec:
       permissions: "write"
       tenant: "MONGODB-643d276019b0726551abc58c"
       expires: "False"
+    - name: "MONGODB-65a54305be0f7d03b9cde8ea_write_DatabasePlatformServices_1757073172"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "MONGODB-65a54305be0f7d03b9cde8ea"
+      expires: "False"
