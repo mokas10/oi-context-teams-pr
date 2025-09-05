@@ -30,6 +30,19 @@ spec:
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
+      name: "MONGODB-642161cdce93a02b9d135ae8"
+      # cost center associated with this tenant
+      cost_center: "CC5329"
+      # project code associated with this tenant
+      project_code: "PRJ004137"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "databaseplatformservices"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "databaseplatformservices"
+    - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-65cb456b5ad1c65220991a14"
       # cost center associated with this tenant
       cost_center: "CC5329"
