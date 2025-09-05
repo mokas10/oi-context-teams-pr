@@ -44,3 +44,8 @@ spec:
         - "eftic"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "EFTIC-Global_write_EFTIC_1757073177"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "EFTIC-Global"
+      expires: "False"
