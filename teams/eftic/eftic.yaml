@@ -42,18 +42,5 @@ spec:
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "eftic"
-    - # READ ONLY! tenant name - CANNOT be changed!
-      name: "EFTIC Global"
-      # cost center associated with this tenant
-      cost_center: "CC5299"
-      # project code associated with this tenant
-      project_code: "IN_004921"
-      # teams allowed to read - automatically adding loki datasources
-      # for these teams
-      read_access:
-        - "eftic"
-      # teams allowed to write - will in the future add permissions to create write token
-      write_access:
-        - "eftic"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
