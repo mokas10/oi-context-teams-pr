@@ -44,3 +44,8 @@ spec:
         - "erix"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "eRIX_write_eRIX_1757357534"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "eRIX"
+      expires: "False"
