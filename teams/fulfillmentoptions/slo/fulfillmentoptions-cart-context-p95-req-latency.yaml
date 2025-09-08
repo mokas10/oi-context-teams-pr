@@ -24,6 +24,6 @@ spec:
   indicator:
     latency:
       success:
-        metric: kong_statsd_request_latency_ms_bucket{service=~"cart-context", deployment_environment="ingka-apim-prod",le="0.1"}
+        metric: kong_statsd_request_latency_ms_bucket{service=~"cart-context", deployment_environment="ingka-apim-prod",le="100"}
       total:
         metric: kong_statsd_request_latency_ms_bucket{service=~"cart-context", deployment_environment="ingka-apim-prod"}
