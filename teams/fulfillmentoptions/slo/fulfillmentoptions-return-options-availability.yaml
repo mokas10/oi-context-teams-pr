@@ -1,0 +1,29 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: SLO
+metadata:
+  name: fulfillmentoptions-return-options-availability
+spec:
+  description: "SLO for Return Options API availability based on the HTTP Status Codes"
+  target: "99.7"
+  location: "gcp-eu"
+  window: "30d"
+  labels:
+    - name: "service.name"
+      value: "return-options"
+    - name: "deployment.environment.name"
+      value: "prod"
+    - name: "ingka.legal_company"
+      value: "ingka"
+    - name: "ingka.system_name"
+      value: "FOP"
+    - name: "ingka.team"
+      value: "FulfillmentOptions"
+    - name: "ingka.version"
+      value: "0.5.0"
+  indicator:
+    ratio:
+      errors:
+        metric: kong_statsd_status_count_total{code=~"50.",service=~"return-options", deployment_environment="ingka-apim-prod"}
+      total:
+        metric: kong_statsd_requests_proxy_total{service=~"return-options", deployment_environment="ingka-apim-prod"}
