@@ -29,7 +29,7 @@ jobs:
       # authenticate to GCP to allow changes in Firestore
       - name: GCP auth
         id: gcp-auth
-        uses: google-github-actions/auth@c200f3691d83b41bf9bbd8638997a462592937ed # v2.1.13
+        uses: google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093 # v3.0.0
         with:
           workload_identity_provider: projects/${{ vars.GCP_PROJECT_NUM }}/locations/global/workloadIdentityPools/github/providers/github
           service_account: ${{ github.event.repository.name }}@${{ vars.GCP_PROJECT_ID }}.iam.gserviceaccount.com
