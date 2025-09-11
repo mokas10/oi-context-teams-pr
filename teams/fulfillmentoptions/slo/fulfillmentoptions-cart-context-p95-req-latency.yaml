@@ -22,7 +22,8 @@ spec:
     - name: "ingka.version"
       value: "0.5.0"
   indicator:
-    latencyNative:
-      latency: 150ms
+    latency:
+      success:
+        metric: kong_statsd_request_latency_ms_bucket{service=~"cart-context", deployment_environment="ingka-apim-prod", le="100"}
       total:
-        metric: kong_statsd_request_latency_ms_bucket{service=~"cart-context", deployment_environment="ingka-apim-prod"}
+        metric: kong_statsd_request_latency_ms_count{service=~"cart-context", deployment_environment="ingka-apim-prod"}
