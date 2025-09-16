@@ -44,3 +44,8 @@ spec:
         - "sams"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "SAMS_write_SAMS_1758017442"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SAMS"
+      expires: "False"
