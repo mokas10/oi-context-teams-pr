@@ -44,3 +44,8 @@ spec:
         - "personalizationkgm"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "p13n_write_personalization-kgm_1758140840"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "p13n"
+      expires: "False"
