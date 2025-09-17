@@ -44,3 +44,8 @@ spec:
         - "metalmodelapp"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "metal-model-app_write_Metal-Model-App_1758106883"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "metal-model-app"
+      expires: "False"
