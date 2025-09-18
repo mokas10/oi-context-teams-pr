@@ -44,3 +44,8 @@ spec:
         - "p13nkgm"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "kgm_write_p13n-kgm_1758201299"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "kgm"
+      expires: "False"
