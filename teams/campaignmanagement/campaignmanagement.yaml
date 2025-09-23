@@ -44,3 +44,8 @@ spec:
         - "campaignmanagement"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "CMP_write_Campaign-management_1758635798"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "CMP"
+      expires: "False"
