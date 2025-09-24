@@ -49,3 +49,8 @@ spec:
       permissions: "write"
       tenant: "CMP"
       expires: "False"
+    - name: "CMP_write_Campaign-management_1758696766"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "CMP"
+      expires: "False"
