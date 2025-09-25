@@ -38,10 +38,12 @@ spec:
       project_code: "IN_004833"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
+      # NOTE: if you add a team here,
+      # make sure the name matches what you have specified in metadata.name in <your_team>.yaml
       read_access:
         - "eventmesh"
         - "iposapi"
-        - "iRecover"
+        - "irecover"
         - "gis"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
