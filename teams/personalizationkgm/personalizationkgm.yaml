@@ -49,3 +49,8 @@ spec:
       permissions: "write"
       tenant: "p13n"
       expires: "False"
+    - name: "p13n_write_personalization-kgm_1758811911"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "p13n"
+      expires: "False"
