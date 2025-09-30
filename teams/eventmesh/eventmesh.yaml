@@ -49,6 +49,8 @@ spec:
         - "customerreturns"
         - "csop"
         - "dsmargonauts"
+        - "somtestautomation"
+        - "somtestautomationcn"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "eventmesh"
