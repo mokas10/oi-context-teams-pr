@@ -45,3 +45,8 @@ spec:
         - "sapis"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "SAPISPROD_write_SAPIS_1759743555"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SAPISPROD"
+      expires: "False"
