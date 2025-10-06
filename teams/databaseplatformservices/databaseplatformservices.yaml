@@ -78,6 +78,7 @@ spec:
       # for these teams
       read_access:
         - "databaseplatformservices"
+        - "Application-Hosting"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "databaseplatformservices"
@@ -247,6 +248,7 @@ spec:
       # for these teams
       read_access:
         - "databaseplatformservices"
+        - "dsm-pickup-point-manager"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "databaseplatformservices"
@@ -286,6 +288,7 @@ spec:
       # for these teams
       read_access:
         - "databaseplatformservices"
+        - "foe"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "databaseplatformservices"
