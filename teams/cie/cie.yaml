@@ -78,3 +78,8 @@ spec:
       permissions: "write"
       tenant: "cie-prod"
       expires: "False"
+    - name: "cie-dev_write_CIE_1759829533"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cie-dev"
+      expires: "False"
