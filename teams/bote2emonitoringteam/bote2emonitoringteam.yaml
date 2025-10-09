@@ -44,3 +44,8 @@ spec:
         - "bote2emonitoringteam"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "BOTE2EMONITORINGTEAM_write_BOTE2EMONITORINGTEAM_1760014189"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "BOTE2EMONITORINGTEAM"
+      expires: "False"
