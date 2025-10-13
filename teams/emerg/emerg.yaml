@@ -44,3 +44,8 @@ spec:
         - "emerg"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "EMERG_write_EMERG_1760345261"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "EMERG"
+      expires: "False"
