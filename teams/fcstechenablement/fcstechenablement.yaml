@@ -44,3 +44,8 @@ spec:
         - "fcstechenablement"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "fcste_write_FCS-Tech-Enablement_1760424573"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "fcste"
+      expires: "False"
