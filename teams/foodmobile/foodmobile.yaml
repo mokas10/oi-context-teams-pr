@@ -46,3 +46,8 @@ spec:
         - "foodmobile"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "FoodMobile_write_food-mobile_1760447145"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "FoodMobile"
+      expires: "False"
