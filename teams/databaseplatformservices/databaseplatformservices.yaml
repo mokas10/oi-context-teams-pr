@@ -1383,3 +1383,8 @@ spec:
       permissions: "write"
       tenant: "DPS-MSSQL"
       expires: "False"
+    - name: "DPS-POSTGRESQL_write_DatabasePlatformServices_1760523274"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "DPS-POSTGRESQL"
+      expires: "False"
