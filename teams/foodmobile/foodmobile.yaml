@@ -25,6 +25,7 @@ spec:
         - "DL food.digital ofx.engineering GL"
         - "IAM_AAD_Team_FoodDigitalServices"
         - "IAM_AAD_Team_Food_Digital_Restaurant_Bistro"
+        - "IAM_AAD_IAM_Team_Food_Mobile"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
