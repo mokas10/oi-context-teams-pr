@@ -54,3 +54,8 @@ spec:
       permissions: "write"
       tenant: "ICIP"
       expires: "False"
+    - name: "ICIP_write_ICIP_1760690863"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ICIP"
+      expires: "False"
