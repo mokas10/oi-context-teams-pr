@@ -44,3 +44,8 @@ spec:
         - "glsorchestrator"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "gls-orchestrator_write_gls-orchestrator_1761035697"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "gls-orchestrator"
+      expires: "False"
