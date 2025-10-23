@@ -43,7 +43,7 @@ spec:
           - "alertname"
         matchers:
           - "ingka_system_name=CONTEXT"
-          - "ingka_team=OI-NextGen"
+          - "ingka_team=DPS-OI-NextGen"
           - "severity=critical"
       slack:
         name: "slack-$kontext-slackchannelhigh"
