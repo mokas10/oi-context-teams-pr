@@ -24,7 +24,7 @@ spec:
           - "alertname"
         matchers:
           - "ingka_system_name=CONTEXT"
-          - "ingka_team=OI-NextGen"
+          - "ingka_team=DPS-OI-NextGen"
           - "severity=warning"
       # one and exactly one type of contact point has to be provided
       # supported (for now) are: webhook, slack, teams, email
