@@ -44,3 +44,8 @@ spec:
         - "yms"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ymsfourkites_write_yms_1761569055"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ymsfourkites"
+      expires: "False"
