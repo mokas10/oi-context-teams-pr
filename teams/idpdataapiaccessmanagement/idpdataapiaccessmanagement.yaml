@@ -44,3 +44,8 @@ spec:
         - "idpdataapiaccessmanagement"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "daam_write_idp-data-api-access-management_1761576187"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "daam"
+      expires: "False"
