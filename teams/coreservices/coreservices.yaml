@@ -44,3 +44,8 @@ spec:
         - "coreservices"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "core-services-common-platform_write_Core-Services_1761833628"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "core-services-common-platform"
+      expires: "False"
