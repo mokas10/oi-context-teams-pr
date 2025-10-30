@@ -26,6 +26,7 @@ spec:
         - "IAM_AAD_Team_iSell_client_devs"
         - "IAM_AAD_Team_iSell_devs"
         - "IAM_AAD_Team_DFP"
+        - "IAM_AAD_Team_DCI"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
