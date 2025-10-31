@@ -54,3 +54,8 @@ spec:
       permissions: "write"
       tenant: "PSPI"
       expires: "False"
+    - name: "PSPI_write_PSPI_1761923160"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "PSPI"
+      expires: "False"
