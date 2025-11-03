@@ -57,3 +57,8 @@ spec:
         - "dwpdexengineers"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "commandcenter_write_DWP-DEX-Engineers_1762165434"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "commandcenter"
+      expires: "False"
