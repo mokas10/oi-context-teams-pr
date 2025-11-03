@@ -80,3 +80,8 @@ spec:
       permissions: "write"
       tenant: "Precog"
       expires: "False"
+    - name: "cutovertransform_write_FMS-Fusion-team_1762185222"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cutovertransform"
+      expires: "False"
