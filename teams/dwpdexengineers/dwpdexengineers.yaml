@@ -62,3 +62,8 @@ spec:
       permissions: "write"
       tenant: "commandcenter"
       expires: "False"
+    - name: "systrack_write_DWP-DEX-Engineers_1762165435"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "systrack"
+      expires: "False"
