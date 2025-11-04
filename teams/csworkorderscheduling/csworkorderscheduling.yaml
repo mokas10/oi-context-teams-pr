@@ -20,6 +20,7 @@ spec:
       groups:
         - "IAM_AAD_Team_dsm-argonauts"
         - "IAM_AAD_Team_dsm-pickup-point-manager"
+        - "CS Provided Services (ITNL012)"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
@@ -41,6 +42,7 @@ spec:
       read_access:
         - "csworkorderscheduling"
         - "dsmpickuppointmanager"
+        - "providedservices"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "csworkorderscheduling"

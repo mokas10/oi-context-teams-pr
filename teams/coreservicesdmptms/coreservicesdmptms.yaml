@@ -18,7 +18,7 @@ spec:
     # allowed to view / query data, create READ token
     - name: "0-Viewer"
       groups:
-        - ""
+        - "CS Provided Services (ITNL012)"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
@@ -39,6 +39,7 @@ spec:
       # for these teams
       read_access:
         - "coreservicesdmptms"
+        - "providedservices"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "coreservicesdmptms"
