@@ -8,7 +8,7 @@ spec:
   # display name in Grafana
   displayName: "FMS-Fusion-team"
   # owner / responsible for the team
-  owner: "daniel.jakandre2@ingka.com"
+  owner: "nikolay.diakov@ingka.ikea.com"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
@@ -32,9 +32,9 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "cutovertransform"
       # cost center associated with this tenant
-      cost_center: "CC5208"
+      cost_center: "CC5171"
       # project code associated with this tenant
-      project_code: "IN_009703"
+      project_code: "IN_008761"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -45,9 +45,9 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Precog"
       # cost center associated with this tenant
-      cost_center: "CC5208"
+      cost_center: "CC5171"
       # project code associated with this tenant
-      project_code: "IN_009703"
+      project_code: "IN_008761"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -58,9 +58,9 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "CCSync"
       # cost center associated with this tenant
-      cost_center: "CC5208"
+      cost_center: "CC5171"
       # project code associated with this tenant
-      project_code: "IN_009703"
+      project_code: "IN_008761"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
