@@ -100,10 +100,7 @@ def validate_conditions(input, schema, condition):
     return True
 
 
-def check_quantors(input, schema):
-    if input is None or "type" not in schema:
-        return True
-
+def verify_object(input, schema):
     if schema["type"] == "object":
         for condition in [
             "allOf",
@@ -121,10 +118,32 @@ def check_quantors(input, schema):
             for key, value in schema["properties"].items():
                 if key in input and not check_quantors(input[key], value):
                     return False
+    return True
+
+
+def check_quantors(input, schema):
+    if input is None or "type" not in schema:
+        return True
+
+    success = verify_object(input, schema)
+    if not success:
+        return False
 
     elif schema["type"] == "array":
-        return check_quantors(input, schema["items"])
+        all_items = []
+        for item in input:
+            if not check_quantors(item, schema["items"]):
+                return False
+            all_items.append(item)
+        if False in all_items:
+            return False
 
+    elif schema["type"] == "string":
+        if not isinstance(input, str):
+            print(
+                f"ERROR: expected type string but got {type(input).__name__} for value {input}"
+            )
+            return False
     return True
 
 

@@ -8,9 +8,7 @@ spec:
   # display name in Grafana
   displayName: "iPay"
   # owner / responsible for the team
-  owner:
-    - "ramesh.choudhary2@ingka.com"
-    - "payments-ipay-developer-group@ingka.com"
+  owner: "ramesh.choudhary2@ingka.com"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
