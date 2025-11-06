@@ -44,3 +44,8 @@ spec:
         - "recommerce"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "buyback-cn_write_Recommerce_1762420265"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "buyback-cn"
+      expires: "False"
