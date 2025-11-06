@@ -23,10 +23,11 @@ spec:
     - name: "1-Editor"
       groups:
         - "IAM_AAD_Team_Critical_Flow_Enablement"
+        - "IAM_AAD_Team_ITOM_Transformation"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - ""
+        - "IAM_AAD_ITOM_TRF_Admins"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
