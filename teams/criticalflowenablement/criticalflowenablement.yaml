@@ -44,3 +44,8 @@ spec:
         - "criticalflowenablement"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "CriticalFlowEnablement_write_CriticalFlowEnablement_1762438258"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "CriticalFlowEnablement"
+      expires: "False"
