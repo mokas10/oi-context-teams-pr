@@ -98,3 +98,8 @@ spec:
       permissions: "write"
       tenant: "cutovertransform"
       expires: "False"
+    - name: "topologybuildup_write_FMS-Fusion-team_1762863473"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "topologybuildup"
+      expires: "False"
