@@ -38,7 +38,6 @@ spec:
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
-        - "eventmesh"
         - "iposapi"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
