@@ -44,3 +44,8 @@ spec:
         - "networkmonitor"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "NetworkMonitor_write_NetworkMonitor_1763125803"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "NetworkMonitor"
+      expires: "False"
