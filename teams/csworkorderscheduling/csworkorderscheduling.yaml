@@ -21,6 +21,7 @@ spec:
         - "IAM_AAD_Team_dsm-argonauts"
         - "IAM_AAD_Team_dsm-pickup-point-manager"
         - "CS Provided Services (ITNL012)"
+        - "IAM_AAD_CS_WOMGR_OM_Support"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
