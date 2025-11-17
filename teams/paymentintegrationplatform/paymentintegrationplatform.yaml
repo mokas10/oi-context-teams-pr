@@ -44,3 +44,8 @@ spec:
         - "paymentintegrationplatform"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "PIP_write_Payment-Integration-Platform_1763388838"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "PIP"
+      expires: "False"
