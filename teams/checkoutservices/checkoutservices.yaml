@@ -19,6 +19,7 @@ spec:
     - name: "0-Viewer"
       groups:
         - "IAM_AAD_Team_CCmonitoring"
+        - "Tech LT Omni Meeting Points"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:

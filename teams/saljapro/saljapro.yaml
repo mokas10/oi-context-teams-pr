@@ -19,7 +19,7 @@ spec:
     # allowed to view / query data, create READ token
     - name: "0-Viewer"
       groups:
-        - ""
+        - "Tech LT Omni Meeting Points"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
