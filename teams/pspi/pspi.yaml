@@ -26,6 +26,7 @@ spec:
         - "IAM_AAD_Team_payments-direct-integration"
         - "DL sp supportpod SE"
         - "Tech LT Omni Meeting Points"
+        - "DL FT MONITORING-TEAM SE"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
@@ -34,6 +35,7 @@ spec:
     - name: "2-Admin"
       groups:
         - "IAM_AAD_Team_Payments-PSP-Integration"
+        - "IAM_AAD_Team_Payments-OPI"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
