@@ -176,3 +176,8 @@ spec:
       permissions: "write"
       tenant: "cwf-evs"
       expires: "False"
+    - name: "cmp-workers_write_Cmp-Web-Framework_1763635549"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cmp-workers"
+      expires: "False"
