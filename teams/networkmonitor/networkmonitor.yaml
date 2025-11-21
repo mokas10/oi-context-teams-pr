@@ -18,15 +18,15 @@ spec:
     # allowed to view / query data, create READ token
     - name: "0-Viewer"
       groups:
-        - "NetworkMonitorViewers"
+        - "IAM_AAD_NetworkMonitorViewers"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
-        - "NetworkMonitorEditors"
+        - "IAM_AAD_NetworkMonitorEditors"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - "NetorkMonitorAdmins"
+        - "IAM_AAD_NetworkMonitorAdmins"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
