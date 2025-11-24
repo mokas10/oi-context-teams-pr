@@ -44,3 +44,8 @@ spec:
         - "identityprotection"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "safeguard_write_IdentityProtection_1763980002"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "safeguard"
+      expires: "False"
