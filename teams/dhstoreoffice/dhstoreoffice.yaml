@@ -44,3 +44,8 @@ spec:
         - "dhstoreoffice"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "DH-StoreOffice_write_DH-StoreOffice_1764019164"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "DH-StoreOffice"
+      expires: "False"
