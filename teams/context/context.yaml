@@ -67,3 +67,8 @@ spec:
       permissions: "write"
       tenant: "context"
       expires: "False"
+    - name: "context_write_context_1764245043"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "context"
+      expires: "False"
