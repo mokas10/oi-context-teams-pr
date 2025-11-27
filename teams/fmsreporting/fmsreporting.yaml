@@ -50,3 +50,8 @@ spec:
       permissions: "write"
       tenant: "FMS-Reporting"
       expires: "False"
+    - name: "FMS-Reporting_write_FMS-Reporting_1764249771"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "FMS-Reporting"
+      expires: "False"
