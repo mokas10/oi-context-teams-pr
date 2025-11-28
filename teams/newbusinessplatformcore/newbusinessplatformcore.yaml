@@ -44,3 +44,8 @@ spec:
         - "newbusinessplatformcore"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "platform-core_write_new-business-platform-core_1764335035"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "platform-core"
+      expires: "False"
