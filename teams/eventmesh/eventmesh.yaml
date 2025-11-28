@@ -58,11 +58,6 @@ spec:
         - "eventmesh"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
-    - name: "EVENTM_write_event-mesh_1686319221"
-      location: "gcp-eu"
-      permissions: "write"
-      tenant: "EVENTM"
-      expires: "False"
     - name: "EVENTM_write_event-mesh_1750944517"
       location: "alicloud-cn"
       permissions: "write"
