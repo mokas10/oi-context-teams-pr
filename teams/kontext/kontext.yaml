@@ -165,3 +165,8 @@ spec:
       permissions: "read"
       tenant: "self-monitoring"
       expires: "False"
+    - name: "fleet-testing_write_KONTEXT_1764577047"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "fleet-testing"
+      expires: "False"
