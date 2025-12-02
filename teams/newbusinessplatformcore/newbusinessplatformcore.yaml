@@ -49,3 +49,8 @@ spec:
       permissions: "write"
       tenant: "platform-core"
       expires: "False"
+    - name: "platform-core_write_new-business-platform-core_1764673228"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "platform-core"
+      expires: "False"
