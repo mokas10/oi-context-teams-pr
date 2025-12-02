@@ -70,16 +70,6 @@ spec:
         - "accessgovernance"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
-    - name: "Atkomst_write_AccessGovernance_1706527813"
-      location: "gcp-eu"
-      permissions: "write"
-      tenant: "Atkomst"
-      expires: "False"
-    - name: "Atkomst_write_AccessGovernance_1706538504"
-      location: "gcp-eu"
-      permissions: "write"
-      tenant: "Atkomst"
-      expires: "False"
     - name: "DFP_write_AccessGovernance_1706538526"
       location: "gcp-eu"
       permissions: "write"
