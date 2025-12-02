@@ -197,3 +197,8 @@ spec:
       permissions: "write"
       tenant: "ASL-TAX-INVOICE"
       expires: "False"
+    - name: "ASL-REWARDS_write_STORE-CHECKOUT_1764670786"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ASL-REWARDS"
+      expires: "False"
