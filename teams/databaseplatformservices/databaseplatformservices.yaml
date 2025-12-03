@@ -39,6 +39,7 @@ spec:
       # for these teams
       read_access:
         - "databaseplatformservices"
+        - "databasemanagementservices"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "databaseplatformservices"
@@ -52,6 +53,7 @@ spec:
       # for these teams
       read_access:
         - "databaseplatformservices"
+        - "databasemanagementservices"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "databaseplatformservices"
@@ -235,6 +237,7 @@ spec:
       # for these teams
       read_access:
         - "databaseplatformservices"
+        - "webbuyingexperience"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "databaseplatformservices"
@@ -380,6 +383,7 @@ spec:
       # for these teams
       read_access:
         - "databaseplatformservices"
+        - "mlops"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "databaseplatformservices"
@@ -679,7 +683,6 @@ spec:
       # for these teams
       read_access:
         - "databaseplatformservices"
-        - "mlops"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "databaseplatformservices"
