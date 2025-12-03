@@ -20,6 +20,7 @@ spec:
       groups:
         - "IAM_AAD_Team_SCHO_ASLMAX"
         - "IAM_AAD_Team_SCHO_ASLPRIME"
+        - "IAM_AAD_PIP_Grafan_Admin"
         - "Tech LT Omni Meeting Points"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
