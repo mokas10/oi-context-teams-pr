@@ -95,3 +95,8 @@ spec:
       permissions: "write"
       tenant: "Atkomst"
       expires: "False"
+    - name: "Atkomst_write_AccessGovernance_1764940176"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Atkomst"
+      expires: "False"
