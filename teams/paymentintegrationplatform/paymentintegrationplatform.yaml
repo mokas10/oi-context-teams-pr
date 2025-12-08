@@ -49,3 +49,8 @@ spec:
       permissions: "write"
       tenant: "PIP"
       expires: "False"
+    - name: "PIP_write_Payment-Integration-Platform_1765180975"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "PIP"
+      expires: "False"
