@@ -44,3 +44,8 @@ spec:
         - "customerconsentmanagement"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "customer-consent-management_write_customer-consent-management_1765269152"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "customer-consent-management"
+      expires: "False"
