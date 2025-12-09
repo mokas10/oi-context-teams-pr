@@ -70,3 +70,8 @@ spec:
         - "ngesmt"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "NGES-HTTP_write_NGES-MT_1765242783"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "NGES-HTTP"
+      expires: "False"
