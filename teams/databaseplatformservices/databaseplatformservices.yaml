@@ -1392,3 +1392,8 @@ spec:
       permissions: "write"
       tenant: "DPS-POSTGRESQL"
       expires: "False"
+    - name: "DPS-POSTGRESQL_write_DatabasePlatformServices_1765358672"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "DPS-POSTGRESQL"
+      expires: "False"
