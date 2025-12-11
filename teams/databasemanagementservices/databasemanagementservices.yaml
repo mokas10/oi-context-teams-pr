@@ -55,3 +55,8 @@ spec:
       permissions: "write"
       tenant: "DBMS-Prometheus"
       expires: "False"
+    - name: "DBMS-Prometheus_write_Database-Management-Services_1765446699"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "DBMS-Prometheus"
+      expires: "False"
