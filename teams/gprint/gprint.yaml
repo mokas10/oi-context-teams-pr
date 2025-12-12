@@ -44,3 +44,8 @@ spec:
         - "gprint"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "GPRINT_write_GPRINT_1765534430"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "GPRINT"
+      expires: "False"
