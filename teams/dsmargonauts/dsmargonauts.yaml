@@ -52,3 +52,8 @@ spec:
       permissions: "write"
       tenant: "dsm-argonauts"
       expires: "False"
+    - name: "dsm-argonauts_write_dsm-argonauts_1765875609"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "dsm-argonauts"
+      expires: "False"
