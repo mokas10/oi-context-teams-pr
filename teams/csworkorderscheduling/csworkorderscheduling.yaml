@@ -57,3 +57,8 @@ spec:
       permissions: "write"
       tenant: "cs-work-order-scheduling"
       expires: "False"
+    - name: "cs-work-order-scheduling_write_cs-work-order-scheduling_1765904268"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "cs-work-order-scheduling"
+      expires: "False"
