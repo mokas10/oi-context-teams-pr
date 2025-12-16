@@ -44,3 +44,8 @@ spec:
         - "fcsroutemanagementteam"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "fcs-route-manager_write_fcs-route-management-team_1765879561"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "fcs-route-manager"
+      expires: "False"
