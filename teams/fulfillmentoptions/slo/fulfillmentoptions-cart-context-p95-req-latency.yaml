@@ -4,7 +4,7 @@ kind: SLO
 metadata:
   name: fulfillmentoptions-cart-context-p95-req-latency
 spec:
-  description: "SLO for Cart-Context API Latency. 95 percentile of request latency are below 150ms"
+  description: "SLO for Cart-Context API Latency. 95 percentile of request latency are below 100ms"
   target: "95"
   location: "gcp-eu"
   window: "30d"
@@ -24,6 +24,6 @@ spec:
   indicator:
     latency:
       success:
-        metric: kong_statsd_request_latency_ms_bucket{service=~"cart-context", deployment_environment="ingka-apim-prod", le="0.15"}
+        metric: kong_statsd_request_latency_ms_bucket{service=~"cart-context", deployment_environment="ingka-apim-prod", le="0.1"}
       total:
         metric: kong_statsd_request_latency_ms_count{service=~"cart-context", deployment_environment="ingka-apim-prod"}
