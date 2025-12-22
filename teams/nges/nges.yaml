@@ -100,3 +100,8 @@ spec:
       permissions: "write"
       tenant: "Page-Shield"
       expires: "False"
+    - name: "NGES-HTTP-1_write_NGES_1766401101"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "NGES-HTTP-1"
+      expires: "False"
