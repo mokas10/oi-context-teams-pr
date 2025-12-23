@@ -44,3 +44,8 @@ spec:
         - "membershipfoundationengineers"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "membership-foundation-engineers_write_membership-foundation-engineers_1766491069"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "membership-foundation-engineers"
+      expires: "False"
