@@ -44,3 +44,8 @@ spec:
         - "lastfirstmiletransmgmt"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "last-first-mile-trans-mgmt_write_last-first-mile-trans-mgmt_1766494769"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "last-first-mile-trans-mgmt"
+      expires: "False"
