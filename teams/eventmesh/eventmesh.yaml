@@ -84,3 +84,8 @@ spec:
       permissions: "write"
       tenant: "EVENTM"
       expires: "False"
+    - name: "EVENTM_write_event-mesh_1766486946"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "EVENTM"
+      expires: "False"
