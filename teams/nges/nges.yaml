@@ -105,3 +105,8 @@ spec:
       permissions: "write"
       tenant: "NGES-HTTP-1"
       expires: "False"
+    - name: "NGES-Magictransit_write_NGES_1766497718"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "NGES-Magictransit"
+      expires: "False"
