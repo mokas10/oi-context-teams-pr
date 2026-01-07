@@ -49,3 +49,8 @@ spec:
       permissions: "write"
       tenant: "TrueAvailability"
       expires: "False"
+    - name: "TrueAvailability_write_TrueAvailability_1767789865"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "TrueAvailability"
+      expires: "False"
