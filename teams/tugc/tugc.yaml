@@ -44,3 +44,8 @@ spec:
         - "tugc"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "TUGC_write_TUGC_1767797517"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "TUGC"
+      expires: "False"
