@@ -23,7 +23,7 @@ spec:
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
-        - ""
+        - "IAM_AAD_DPS_Context_Editors"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
