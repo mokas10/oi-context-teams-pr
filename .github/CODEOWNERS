@@ -164,7 +164,7 @@
 /teams/paymentintegrationplatform @ingka-group-digital/pip_cognizant
 /teams/identityprotection @ingka-group-digital/identity-protection
 /teams/newbusinessplatformcore @ingka-group-digital/life-at-home-code-owners
-/teams/ngesmt @ingka-group-digital/@ingka-group-digital/nges
+/teams/ngesmt @ingka-group-digital/nges
 /teams/customerconsentmanagement @ingka-group-digital/customer-consent-management
 /teams/connectivitydclb @ingka-group-digital/lbservices-core-team
 /teams/connectivitydclbchn @ingka-group-digital/lbservices-core-team @ingka-group-digital/iam_aad_team_iam_aad_frontlineenablement
