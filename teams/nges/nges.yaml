@@ -31,32 +31,6 @@ spec:
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
-      name: "NGES-HTTP-1"
-      # cost center associated with this tenant
-      cost_center: "CC5522"
-      # project code associated with this tenant
-      project_code: "IN_005501"
-      # teams allowed to read - automatically adding loki datasources
-      # for these teams
-      read_access:
-        - "nges"
-      # teams allowed to write - will in the future add permissions to create write token
-      write_access:
-        - "nges"
-    - # READ ONLY! tenant name - CANNOT be changed!
-      name: "NGES-Magictransit"
-      # cost center associated with this tenant
-      cost_center: "CC5522"
-      # project code associated with this tenant
-      project_code: "IN_005501"
-      # teams allowed to read - automatically adding loki datasources
-      # for these teams
-      read_access:
-        - "nges"
-      # teams allowed to write - will in the future add permissions to create write token
-      write_access:
-        - "nges"
-    - # READ ONLY! tenant name - CANNOT be changed!
       name: "Page-Shield"
       # cost center associated with this tenant
       cost_center: "CC5522"
@@ -138,14 +112,4 @@ spec:
       location: "gcp-eu"
       permissions: "write"
       tenant: "Page-Shield"
-      expires: "False"
-    - name: "NGES-HTTP-1_write_NGES_1766401101"
-      location: "gcp-eu"
-      permissions: "write"
-      tenant: "NGES-HTTP-1"
-      expires: "False"
-    - name: "NGES-Magictransit_write_NGES_1766497718"
-      location: "gcp-eu"
-      permissions: "write"
-      tenant: "NGES-Magictransit"
       expires: "False"
