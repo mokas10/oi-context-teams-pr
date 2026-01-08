@@ -20,7 +20,7 @@ spec:
     - name: "ingka.system_name"
       value: "FMSRR"
     - name: "ingka.team"
-      value: "dt-fl-fms-receiving"
+      value: "eureka"
     - name: "ingka.version"
       value: "0.5.0"
   indicator:
