@@ -23,7 +23,7 @@ spec:
           - "inga_team=dt-fl-fms-receiving"
       webhook:
         name: "fms-inbound-ilert-receiver"
-        url: "$fms-inbound-ilert-webhook"
+        url: "$fms-inbound-ilertwebhook"
         send_resolved: true
   # role definitions for this team
   roles:
