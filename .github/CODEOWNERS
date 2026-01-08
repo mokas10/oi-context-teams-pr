@@ -20,7 +20,7 @@
 /teams/saljacn @ingka-group-digital/selling-as-ordertaking
 /teams/cie @ingka-group-digital/cie
 /teams/foe @ingka-group-digital/fulfillment-order-execution
-/teams/customermessage @ingka-group-digital/customer-message-developers
+/teams/customermessage @ingka-group-digital/customer-message
 /teams/productpresentation @ingka-group-digital/product-presentation
 /teams/mlops @ingka-group-digital/machine-learning-operations
 /teams/reexpansion @ingka-group-digital/igd-re-devops
@@ -167,7 +167,7 @@
 /teams/ngesmt @ingka-group-digital/@ingka-group-digital/nges
 /teams/customerconsentmanagement @ingka-group-digital/customer-consent-management
 /teams/connectivitydclb @ingka-group-digital/lbservices-core-team
-/teams/connectivitydclbchn @ingka-group-digital/lbservices-core-team/teams/gprint @ingka-group-digital/iam_aad_team_iam_aad_frontlineenablement
+/teams/connectivitydclbchn @ingka-group-digital/lbservices-core-team @ingka-group-digital/iam_aad_team_iam_aad_frontlineenablement
 /teams/fcsroutemanagementteam @ingka-group-digital/fcs-route-management-team
 /teams/membershipfoundationengineers @ingka-group-digital/membership-foundation
 /teams/lastfirstmiletransmgmt @ingka-group-digital/dsm-argonauts
