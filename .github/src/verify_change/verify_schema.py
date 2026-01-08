@@ -76,7 +76,7 @@ def get_count(input, required_values):
     elif isinstance(input, dict):
         total_counter = 0
         for each in required_values:
-            if each in i:
+            if each in input:
                 total_counter += 1
         total_counter_num.append(total_counter)
     return total_counter_num

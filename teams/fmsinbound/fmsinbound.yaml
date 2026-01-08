@@ -14,6 +14,17 @@ spec:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
     - "alicloud-cn"
+  contactPoints:
+    - notificationPolicy:
+        group_by:
+          - "alertname"
+        matchers:
+          - "ingka_system_name=FMSRR"
+          - "inga_team=dt-fl-fms-receiving"
+      webhook:
+        name: "fms-inbound-ilert-receiver"
+        url: "$fms-inbound-ilert-webhook"
+        send_resolved: true
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token

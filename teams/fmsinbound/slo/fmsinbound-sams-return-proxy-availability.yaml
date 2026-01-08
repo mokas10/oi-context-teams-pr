@@ -16,7 +16,7 @@ spec:
     - name: "ingka.legal_company"
       value: "ingka"
     - name: "ingka.system_name"
-      value: "CONTEXT"
+      value: "FMSRR"
     - name: "ingka.team"
       value: "dt-fl-fms-receiving"
     - name: "ingka.version"
