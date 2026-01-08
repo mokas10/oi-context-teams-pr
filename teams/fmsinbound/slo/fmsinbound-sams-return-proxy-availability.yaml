@@ -5,9 +5,7 @@ metadata:
   name: fmsinbound-sams-return-proxy-availability
 spec:
   description: "SLO for FMS Inbound SAMS Return Proxy availability based on the error rate"
-  # Temporarily set target to 100% to trigger the alert and see if we get notified correctly
-  # target: "99.7"
-  target: "100"
+  target: "99.7"
   location: "gcp-eu"
   window: "30d"
   labels:
@@ -26,6 +24,8 @@ spec:
   indicator:
     ratio:
       errors:
-        metric: http_server_requests_seconds_count{service_name="fms-inbound-sams-return-proxy", deployment_environment="prod", status=~"500|503|401|403"}
+        # metric: http_server_requests_seconds_count{service_name="fms-inbound-sams-return-proxy", deployment_environment="prod", status=~"500|503|401|403"}
+        metric: "1"
       total:
-        metric: http_server_requests_seconds_count{service_name="fms-inbound-sams-return-proxy", deployment_environment="prod"}
+        # metric: http_server_requests_seconds_count{service_name="fms-inbound-sams-return-proxy", deployment_environment="prod"}
+        metric: "1"
