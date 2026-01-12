@@ -25,6 +25,9 @@ spec:
         name: "fms-inbound-ilert-receiver"
         url: "$fms-inbound-ilertwebhook"
         send_resolved: true
+  otherDatasources:
+    - type: alertmanager
+      tenant: "FMS-Inbound"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
