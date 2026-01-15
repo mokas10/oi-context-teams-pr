@@ -47,3 +47,8 @@ spec:
         - "testteamsmc2"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "TestTeamSMC2_write_TestTeamSMC2_1768483077"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "TestTeamSMC2"
+      expires: "False"
