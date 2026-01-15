@@ -44,3 +44,8 @@ spec:
         - "salesplanningdigital"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "SalesPlanningDigital_write_SalesPlanningDigital_1768481535"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SalesPlanningDigital"
+      expires: "False"
