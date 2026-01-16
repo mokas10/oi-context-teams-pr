@@ -9,6 +9,9 @@ spec:
   displayName: "pipeline"
   # owner / responsible for the team
   owner: "patrik.nystrom1@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "pipeline"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
