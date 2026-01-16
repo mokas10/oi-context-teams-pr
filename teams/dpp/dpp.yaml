@@ -9,6 +9,9 @@ spec:
   displayName: "dpp"
   # owner / responsible for the team
   owner: "jayesh.kalappurakkal@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Data Pipeline Platform"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
