@@ -9,6 +9,9 @@ spec:
   displayName: "GPRINT"
   # owner / responsible for the team
   owner: "rakshan.chengappa.cd@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-105053"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
