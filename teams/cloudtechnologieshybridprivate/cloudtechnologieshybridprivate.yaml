@@ -9,6 +9,9 @@ spec:
   displayName: "CloudTechnologiesHybridPrivate"
   # owner / responsible for the team
   owner: "ola.olsson@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Servicemesh"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
