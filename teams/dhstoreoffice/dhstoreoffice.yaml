@@ -9,6 +9,9 @@ spec:
   displayName: "DH-StoreOffice"
   # owner / responsible for the team
   owner: "haixiang.zhou1@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-116421"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
