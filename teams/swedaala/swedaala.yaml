@@ -9,6 +9,9 @@ spec:
   displayName: "swedaala"
   # owner / responsible for the team
   owner: "oliver.kastler@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "applynpay"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
