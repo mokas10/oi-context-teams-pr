@@ -9,6 +9,9 @@ spec:
   displayName: "CSSP"
   # owner / responsible for the team
   owner: "mohammad.kashif1@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "CSSP"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
