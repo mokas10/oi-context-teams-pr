@@ -9,6 +9,9 @@ spec:
   displayName: "LifeAtHomePlatform"
   # owner / responsible for the team
   owner: "german.retamosa@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Life at Home Platform"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
