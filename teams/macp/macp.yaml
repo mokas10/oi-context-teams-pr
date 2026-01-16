@@ -9,6 +9,9 @@ spec:
   displayName: "MACP"
   # owner / responsible for the team
   owner: "wayne.shi1@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-100638"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
