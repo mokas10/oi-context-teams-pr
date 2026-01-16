@@ -9,6 +9,9 @@ spec:
   displayName: "orbit-platform-dev"
   # owner / responsible for the team
   owner: "daniel.gonzalez15@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "not provided"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
