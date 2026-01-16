@@ -9,6 +9,9 @@ spec:
   displayName: "food-digital-rb-coworker"
   # owner / responsible for the team
   owner: "carlosjavier.sevillano@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "DOR"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
