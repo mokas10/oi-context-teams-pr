@@ -9,6 +9,9 @@ spec:
   displayName: "FMS-Goods-Movement"
   # owner / responsible for the team
   owner: "daniel.jakandre2@ingka.com"
+  # systems connected to this team
+  smc:
+    - "FLT"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
