@@ -9,6 +9,9 @@ spec:
   displayName: "oi-o11y-context-demo"
   # owner / responsible for the team
   owner: "javier.ubillos@ingka.com"
+  # systems connected to this team
+  smc:
+    - "not provided"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
