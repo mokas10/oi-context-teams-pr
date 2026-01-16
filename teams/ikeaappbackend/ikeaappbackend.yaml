@@ -9,6 +9,9 @@ spec:
   displayName: "IKEA-App-Backend"
   # owner / responsible for the team
   owner: "bjorn.ekberg@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "not provided"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
