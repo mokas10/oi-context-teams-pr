@@ -9,6 +9,9 @@ spec:
   displayName: "MSOL-Context"
   # owner / responsible for the team
   owner: "ravishankar.mandakki@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "180327"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
