@@ -9,6 +9,9 @@ spec:
   displayName: "es-workflows"
   # owner / responsible for the team
   owner: "ljupcho.kotev@ingka.com"
+  # systems connected to this team
+  smc:
+    - "WORKFLOWS"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
