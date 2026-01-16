@@ -9,6 +9,9 @@ spec:
   displayName: "fulfillment-options"
   # owner / responsible for the team
   owner: "justyna.szczepankowska@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Fulfillment Options"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
