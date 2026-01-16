@@ -9,6 +9,9 @@ spec:
   displayName: "outputmanagement"
   # owner / responsible for the team
   owner: "urban.martinsson@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SMC-114295"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
