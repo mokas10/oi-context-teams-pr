@@ -9,6 +9,9 @@ spec:
   displayName: "payroll-integration"
   # owner / responsible for the team
   owner: "mirsad.krasniqi@ingka.com"
+  # systems connected to this team
+  smc:
+    - "PYDH (Payroll Data Hub) - SM-116208"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
