@@ -9,6 +9,9 @@ spec:
   displayName: "TestR2"
   # owner / responsible for the team
   owner: "enrique.pernia@ingka.com"
+  # systems connected to this team
+  smc:
+    - "12345"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
