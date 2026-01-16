@@ -9,6 +9,9 @@ spec:
   displayName: "membership-foundation-engineers"
   # owner / responsible for the team
   owner: "lovely.gupta@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-117760"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
