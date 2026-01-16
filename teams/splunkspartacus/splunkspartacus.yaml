@@ -9,6 +9,9 @@ spec:
   displayName: "SplunkSpartacus"
   # owner / responsible for the team
   owner: "muratcan.celayir@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SMC-114888"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
