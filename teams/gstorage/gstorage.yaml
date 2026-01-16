@@ -9,6 +9,9 @@ spec:
   displayName: "GSTORAGE"
   # owner / responsible for the team
   owner: "david.johansson3@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Hybrid Network Attached Storage"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
