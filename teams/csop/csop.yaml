@@ -9,6 +9,9 @@ spec:
   displayName: "CSOP"
   # owner / responsible for the team
   owner: "belma.katkic@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "CSOP"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
