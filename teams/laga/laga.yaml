@@ -9,6 +9,9 @@ spec:
   displayName: "laga"
   # owner / responsible for the team
   owner: "giuseppe.colello1@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "iwad"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
