@@ -9,6 +9,9 @@ spec:
   displayName: "TIM"
   # owner / responsible for the team
   owner: "jens.lundberg2@ingka.com"
+  # systems connected to this team
+  smc:
+    - "TIM"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
