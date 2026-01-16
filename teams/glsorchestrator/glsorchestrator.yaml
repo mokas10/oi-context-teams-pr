@@ -9,6 +9,9 @@ spec:
   displayName: "gls-orchestrator"
   # owner / responsible for the team
   owner: "johan.sporre@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-116525"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
