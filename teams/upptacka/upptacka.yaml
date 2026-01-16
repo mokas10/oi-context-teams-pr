@@ -9,6 +9,9 @@ spec:
   displayName: "Upptacka"
   # owner / responsible for the team
   owner: "martin.sternebring@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "UPPTACKA"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
