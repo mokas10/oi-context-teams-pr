@@ -9,6 +9,9 @@ spec:
   displayName: "circularservices"
   # owner / responsible for the team
   owner: "christoph.kieslich@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "BUYBACKS"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
