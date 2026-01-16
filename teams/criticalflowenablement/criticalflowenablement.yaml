@@ -9,6 +9,9 @@ spec:
   displayName: "CriticalFlowEnablement"
   # owner / responsible for the team
   owner: "satish.kunjir1@ingka.com"
+  # systems connected to this team
+  smc:
+    - "SM-105268"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
