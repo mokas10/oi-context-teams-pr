@@ -9,6 +9,9 @@ spec:
   displayName: "NGES"
   # owner / responsible for the team
   owner: "stephan.agerley@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SecOps_NGES"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
