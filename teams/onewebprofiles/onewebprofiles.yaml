@@ -9,6 +9,9 @@ spec:
   displayName: "OneWebProfiles"
   # owner / responsible for the team
   owner: "paria.aghaeifar@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "WPL"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
