@@ -9,6 +9,9 @@ spec:
   displayName: "cir"
   # owner / responsible for the team
   owner: "melik.erfidan@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "cir"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
