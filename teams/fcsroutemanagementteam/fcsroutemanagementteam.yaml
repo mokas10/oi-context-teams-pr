@@ -9,6 +9,9 @@ spec:
   displayName: "fcs-route-management-team"
   # owner / responsible for the team
   owner: "mikhail.sycheuski@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-116105"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
