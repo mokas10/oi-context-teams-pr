@@ -9,6 +9,9 @@ spec:
   displayName: "Database-Management-Services"
   # owner / responsible for the team
   owner: "pontus.skog@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Prometheus DBMS"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
