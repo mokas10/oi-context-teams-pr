@@ -9,6 +9,9 @@ spec:
   displayName: "circularselling"
   # owner / responsible for the team
   owner: "christoph.kieslich@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "ASISO"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
