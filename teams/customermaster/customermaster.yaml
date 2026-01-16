@@ -9,6 +9,9 @@ spec:
   displayName: "CUSTOMERMASTER"
   # owner / responsible for the team
   owner: "mohammed.ather@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "CMA"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
