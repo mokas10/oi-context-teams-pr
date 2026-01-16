@@ -9,6 +9,9 @@ spec:
   displayName: "Edge-Event-Streaming"
   # owner / responsible for the team
   owner: "tusar.pattnaik3@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Edge Event Streaming"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
