@@ -9,6 +9,9 @@ spec:
   displayName: "Outbound"
   # owner / responsible for the team
   owner: "anatolii.krivchenko@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "OSOT"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
