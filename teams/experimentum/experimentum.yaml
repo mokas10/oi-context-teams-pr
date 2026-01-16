@@ -9,6 +9,9 @@ spec:
   displayName: "Experimentum"
   # owner / responsible for the team
   owner: "anette.kamf@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Experimentum - A/B-test - SMC-609751"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
