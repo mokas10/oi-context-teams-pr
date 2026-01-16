@@ -9,6 +9,9 @@ spec:
   displayName: "CDH-Auditing"
   # owner / responsible for the team
   owner: "michael.huang1@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "China Engineering Platform"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
