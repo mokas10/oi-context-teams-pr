@@ -9,6 +9,9 @@ spec:
   displayName: "INGKACentres-IP"
   # owner / responsible for the team
   owner: "sivasankar.arjunan@ingka.com"
+  # systems connected to this team
+  smc:
+    - "SMC2"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
