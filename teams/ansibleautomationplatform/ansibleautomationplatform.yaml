@@ -9,6 +9,9 @@ spec:
   displayName: "Ansible-Automation-Platform"
   # owner / responsible for the team
   owner: "joerg.mieth1@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Ansible Automation Platform"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
