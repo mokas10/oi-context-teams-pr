@@ -9,6 +9,9 @@ spec:
   displayName: "range-categorisation"
   # owner / responsible for the team
   owner: "manoj.manickath1@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Range Categorisation"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
