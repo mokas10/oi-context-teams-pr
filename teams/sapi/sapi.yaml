@@ -9,6 +9,9 @@ spec:
   displayName: "SAPI"
   # owner / responsible for the team
   owner: "peter.nilsson6@ingka.com"
+  # systems connected to this team
+  smc:
+    - "SMC-114870"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
