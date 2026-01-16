@@ -9,6 +9,9 @@ spec:
   displayName: "IHS-Salesforce"
   # owner / responsible for the team
   owner: "benjamin.schilke@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "IHS Capacity and Delivery Management Platform"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
