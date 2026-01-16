@@ -9,6 +9,9 @@ spec:
   displayName: "ISXD"
   # owner / responsible for the team
   owner: "fredrik.arbin3@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SCO"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
