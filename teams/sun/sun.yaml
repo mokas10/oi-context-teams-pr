@@ -9,6 +9,9 @@ spec:
   displayName: "sun"
   # owner / responsible for the team
   owner: "ankit.bharti@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SUN"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
