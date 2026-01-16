@@ -9,6 +9,9 @@ spec:
   displayName: "Application-Hosting"
   # owner / responsible for the team
   owner: "jonas.wennberg@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Application-Hosting-as-a-Service"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
