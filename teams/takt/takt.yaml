@@ -9,6 +9,9 @@ spec:
   displayName: "TAKT"
   # owner / responsible for the team
   owner: "muhamed.morsi@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "105155"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
