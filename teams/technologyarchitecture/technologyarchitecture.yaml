@@ -9,6 +9,9 @@ spec:
   displayName: "Technology-Architecture"
   # owner / responsible for the team
   owner: "martin.gudmundsson@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Capsify"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
