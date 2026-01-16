@@ -9,6 +9,9 @@ spec:
   displayName: "EnterprisesDataValidation"
   # owner / responsible for the team
   owner: "arvind.jothiprakash@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SMC-909323"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
