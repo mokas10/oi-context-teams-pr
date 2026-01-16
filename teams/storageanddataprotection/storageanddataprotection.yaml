@@ -9,6 +9,9 @@ spec:
   displayName: "Storage-and-Data-protection"
   # owner / responsible for the team
   owner: "deping.ning@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Backup and Storage Infrastructure Software Services"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
