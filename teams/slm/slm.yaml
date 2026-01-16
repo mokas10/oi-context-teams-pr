@@ -9,6 +9,9 @@ spec:
   displayName: "SLM"
   # owner / responsible for the team
   owner: "matteo.merola@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SLM"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
