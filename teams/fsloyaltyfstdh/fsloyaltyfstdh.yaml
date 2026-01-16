@@ -9,6 +9,9 @@ spec:
   displayName: "fs-loyalty-fstdh"
   # owner / responsible for the team
   owner: "vinayagamurthy.harikrishnan@ingka.com"
+  # systems connected to this team
+  smc:
+    - "SMC-115977"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
