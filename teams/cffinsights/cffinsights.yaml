@@ -9,6 +9,9 @@ spec:
   displayName: "FCS-Insights"
   # owner / responsible for the team
   owner: "michael.fallows@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SMC-125796"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
