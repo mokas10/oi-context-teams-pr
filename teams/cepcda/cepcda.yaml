@@ -9,6 +9,9 @@ spec:
   displayName: "CEP-CDA"
   # owner / responsible for the team
   owner: "almir.osmanovic@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Interaction Core"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
