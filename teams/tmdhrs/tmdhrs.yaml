@@ -9,6 +9,9 @@ spec:
   displayName: "TMDHRS"
   # owner / responsible for the team
   owner: "udipi.bhargava@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "TMDH Recruitment & Sourcing"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
