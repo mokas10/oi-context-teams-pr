@@ -9,6 +9,9 @@ spec:
   displayName: "Core-Services"
   # owner / responsible for the team
   owner: "farshad.nematdoust.haghi@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-117497"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
