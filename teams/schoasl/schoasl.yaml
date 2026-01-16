@@ -9,6 +9,9 @@ spec:
   displayName: "SCHOASL"
   # owner / responsible for the team
   owner: "wojciech.iskierka@ingka.com"
+  # systems connected to this team
+  smc:
+    - "POS - Adapter Service Layer"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
