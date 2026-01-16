@@ -9,6 +9,9 @@ spec:
   displayName: "ingka-b2b-marsholm"
   # owner / responsible for the team
   owner: "maria.lahoz@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SäljaPro B2B"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
