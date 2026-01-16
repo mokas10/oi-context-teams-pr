@@ -9,6 +9,9 @@ spec:
   displayName: "CentralHosting"
   # owner / responsible for the team
   owner: "annika.aronsson@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "HCI Management"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
