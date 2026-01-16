@@ -9,6 +9,9 @@ spec:
   displayName: "Knowledge"
   # owner / responsible for the team
   owner: "martin.hultman@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SMC-116378"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
