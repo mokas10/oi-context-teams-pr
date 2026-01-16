@@ -9,6 +9,9 @@ spec:
   displayName: "china-data-analytics"
   # owner / responsible for the team
   owner: "ewen.guo@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "China DAP"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
