@@ -9,6 +9,9 @@ spec:
   displayName: "CUSIS"
   # owner / responsible for the team
   owner: "balaguru.soundararajan@ingka.com"
+  # systems connected to this team
+  smc:
+    - "not provided"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
