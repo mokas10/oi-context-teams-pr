@@ -9,6 +9,9 @@ spec:
   displayName: "MGKE"
   # owner / responsible for the team
   owner: "makeshkumar.kasinathan@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "MGKE"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
