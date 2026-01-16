@@ -9,6 +9,9 @@ spec:
   displayName: "eRIX"
   # owner / responsible for the team
   owner: "johan.artberger2@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-100898"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
