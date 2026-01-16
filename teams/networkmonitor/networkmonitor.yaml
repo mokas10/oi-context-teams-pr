@@ -9,6 +9,9 @@ spec:
   displayName: "NetworkMonitor"
   # owner / responsible for the team
   owner: "anders.bengtsson@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-117064"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
