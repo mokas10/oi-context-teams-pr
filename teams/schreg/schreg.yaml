@@ -9,6 +9,9 @@ spec:
   displayName: "SCHREG"
   # owner / responsible for the team
   owner: "nihar.shah@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SCHREG"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
