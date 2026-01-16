@@ -9,6 +9,9 @@ spec:
   displayName: "circular-buyback"
   # owner / responsible for the team
   owner: "asimeet.padhee@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "BUYBACKS"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
