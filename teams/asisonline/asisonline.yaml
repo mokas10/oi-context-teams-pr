@@ -9,6 +9,9 @@ spec:
   displayName: "As-Is-Online"
   # owner / responsible for the team
   owner: "christopher.salerno@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "ASISO"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
