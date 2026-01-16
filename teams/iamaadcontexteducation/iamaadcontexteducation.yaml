@@ -9,6 +9,9 @@ spec:
   displayName: "IAM-AAD-Context-Education"
   # owner / responsible for the team
   owner: "sandhya.valsappan.sasikumari@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "CONTEXT"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
@@ -49,3 +52,4 @@ spec:
       permissions: "write"
       tenant: "ContextEducation"
       expires: "False"
+
