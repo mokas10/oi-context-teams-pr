@@ -9,6 +9,9 @@ spec:
   displayName: "travel-emissions"
   # owner / responsible for the team
   owner: "zlatko.ristevski@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Customer and Coworker Travel Emissions"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
