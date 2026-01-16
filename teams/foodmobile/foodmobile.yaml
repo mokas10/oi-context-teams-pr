@@ -9,6 +9,9 @@ spec:
   displayName: "food-mobile"
   # owner / responsible for the team
   owner: "akshi.agrawal@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-105254"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
