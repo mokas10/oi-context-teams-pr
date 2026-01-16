@@ -9,6 +9,9 @@ spec:
   displayName: "RH-Satellite"
   # owner / responsible for the team
   owner: "magnus.olsson8@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "RH Satellite"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
