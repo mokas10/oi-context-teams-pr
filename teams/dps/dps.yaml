@@ -9,6 +9,9 @@ spec:
   displayName: "DPS"
   # owner / responsible for the team
   owner: "matteo.merola@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SMC-117226"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
