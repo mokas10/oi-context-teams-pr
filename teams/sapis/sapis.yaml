@@ -9,6 +9,9 @@ spec:
   displayName: "SAPIS"
   # owner / responsible for the team
   owner: "ramasatyasrinivasvarma.ganapathiraju@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-116385"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
