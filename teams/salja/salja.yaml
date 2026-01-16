@@ -9,6 +9,9 @@ spec:
   displayName: "Salja"
   # owner / responsible for the team
   owner: "anil.kumar3@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SMC-518808"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
