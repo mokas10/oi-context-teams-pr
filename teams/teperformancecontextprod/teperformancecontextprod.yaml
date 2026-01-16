@@ -9,6 +9,9 @@ spec:
   displayName: "te-performance-context-prod"
   # owner / responsible for the team
   owner: "mattias.melin1@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "LOADRUNE"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
