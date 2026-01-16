@@ -9,6 +9,9 @@ spec:
   displayName: "order-deviation-management"
   # owner / responsible for the team
   owner: "pooja.panchal@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-105099"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
