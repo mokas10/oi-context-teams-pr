@@ -9,6 +9,9 @@ spec:
   displayName: "energy-services"
   # owner / responsible for the team
   owner: "andre.bazaglia@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "ENRGMNG"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
