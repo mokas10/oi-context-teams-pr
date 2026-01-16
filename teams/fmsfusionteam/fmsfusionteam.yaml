@@ -9,6 +9,9 @@ spec:
   displayName: "FMS-Fusion-team"
   # owner / responsible for the team
   owner: "nikolay.diakov@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "FMS CC Sync"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
