@@ -9,6 +9,9 @@ spec:
   displayName: "Customer-Message"
   # owner / responsible for the team
   owner: "hassan.sojod@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "CME"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
