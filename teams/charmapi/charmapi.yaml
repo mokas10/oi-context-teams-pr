@@ -9,6 +9,9 @@ spec:
   displayName: "CHARM-API"
   # owner / responsible for the team
   owner: "robin.jonsson7@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "CHARM"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
