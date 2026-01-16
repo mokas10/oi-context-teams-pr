@@ -9,6 +9,9 @@ spec:
   displayName: "foe"
   # owner / responsible for the team
   owner: "suresh.kolangi@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "ORDEXE"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
