@@ -9,6 +9,9 @@ spec:
   displayName: "new-business-platform-core"
   # owner / responsible for the team
   owner: "hamid.othman@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-116664"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
