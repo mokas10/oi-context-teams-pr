@@ -9,6 +9,9 @@ spec:
   displayName: "Customer-Returns"
   # owner / responsible for the team
   owner: "belma.katkic@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-100887"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
