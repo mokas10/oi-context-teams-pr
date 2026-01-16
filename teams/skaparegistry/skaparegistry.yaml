@@ -9,6 +9,9 @@ spec:
   displayName: "skapa-registry"
   # owner / responsible for the team
   owner: "nouman.tariq@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SMC-873367"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
