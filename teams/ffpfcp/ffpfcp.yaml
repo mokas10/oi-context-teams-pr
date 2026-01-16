@@ -9,6 +9,9 @@ spec:
   displayName: "FFPFCP"
   # owner / responsible for the team
   owner: "vangelis.katikaridis@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "OCP_Flow_and_Capacity_Planning"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
