@@ -9,6 +9,9 @@ spec:
   displayName: "People-Platform"
   # owner / responsible for the team
   owner: "ashwin.kumar@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "PPPLATFORM"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
