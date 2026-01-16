@@ -9,6 +9,9 @@ spec:
   displayName: "OMDM-Data-Analytics"
   # owner / responsible for the team
   owner: "yan.jia@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-116717"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
