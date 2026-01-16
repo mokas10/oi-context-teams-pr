@@ -9,6 +9,9 @@ spec:
   displayName: "centres-leasingtool"
   # owner / responsible for the team
   owner: "haohao.xing@ingka.com"
+  # systems connected to this team
+  smc:
+    - "Ingka Centres Leasing Interactive Map"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
