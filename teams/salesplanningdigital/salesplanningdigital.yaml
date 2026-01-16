@@ -9,6 +9,9 @@ spec:
   displayName: "SalesPlanningDigital"
   # owner / responsible for the team
   owner: "timothy.collins@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-117963"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
