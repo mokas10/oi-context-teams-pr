@@ -9,6 +9,9 @@ spec:
   displayName: "CTM"
   # owner / responsible for the team
   owner: "thomas.kuhne@ingka.com"
+  # systems connected to this team
+  smc:
+    - "SM-100891"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
