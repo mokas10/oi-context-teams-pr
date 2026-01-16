@@ -9,6 +9,9 @@ spec:
   displayName: "DataProductRegistry"
   # owner / responsible for the team
   owner: "siddharth.gupta@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Data Product Registry"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
