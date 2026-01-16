@@ -9,6 +9,9 @@ spec:
   displayName: "rewards-experience"
   # owner / responsible for the team
   owner: "srilakshmi.shankar@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Reward Keys Experience"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
