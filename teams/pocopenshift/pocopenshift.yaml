@@ -9,6 +9,9 @@ spec:
   displayName: "poc-openshift"
   # owner / responsible for the team
   owner: "anand.loganathan1@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "ikea container platform"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
