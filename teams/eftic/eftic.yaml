@@ -9,6 +9,9 @@ spec:
   displayName: "EFTIC"
   # owner / responsible for the team
   owner: "per.larsson@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-117260"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
