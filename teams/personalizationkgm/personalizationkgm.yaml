@@ -9,6 +9,9 @@ spec:
   displayName: "personalization-kgm"
   # owner / responsible for the team
   owner: "manjula.kyasa@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-117448"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
