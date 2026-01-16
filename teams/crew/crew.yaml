@@ -9,6 +9,9 @@ spec:
   displayName: "CREW"
   # owner / responsible for the team
   owner: "joe.attram@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Customer Rewards"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
