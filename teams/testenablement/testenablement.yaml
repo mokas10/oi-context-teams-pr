@@ -9,6 +9,9 @@ spec:
   displayName: "test-enablement"
   # owner / responsible for the team
   owner: "martin.berg1@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SERVPRO"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
