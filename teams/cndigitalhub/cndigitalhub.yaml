@@ -9,6 +9,9 @@ spec:
   displayName: "cn-digital-hub"
   # owner / responsible for the team
   owner: "hongda.wang@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "cn-dtc"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
