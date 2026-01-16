@@ -9,6 +9,9 @@ spec:
   displayName: "KONTEXT"
   # owner / responsible for the team
   owner: "niclas.nilsson@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "KONTEXT"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
