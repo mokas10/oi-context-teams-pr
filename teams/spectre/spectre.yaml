@@ -9,6 +9,9 @@ spec:
   displayName: "Spectre"
   # owner / responsible for the team
   owner: "mikael.mansson2@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "ORDORC"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
