@@ -9,6 +9,9 @@ spec:
   displayName: "Puffa"
   # owner / responsible for the team
   owner: "magnus.pettersson@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Nudging Framework"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
