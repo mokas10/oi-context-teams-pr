@@ -9,6 +9,9 @@ spec:
   displayName: "dsm-pickup-point-manager"
   # owner / responsible for the team
   owner: "diego.lopez.osuna@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "PUP Manager"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
