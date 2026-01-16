@@ -9,6 +9,9 @@ spec:
   displayName: "pddp-framework"
   # owner / responsible for the team
   owner: "vijayabhaskar.kakarla@ingka.ikea.com,marcus.lagstrom@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "pdpp-framework"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
