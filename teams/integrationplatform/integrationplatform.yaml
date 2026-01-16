@@ -9,6 +9,9 @@ spec:
   displayName: "INtegration-Platform"
   # owner / responsible for the team
   owner: "sebastien.peirone@ingka.com"
+  # systems connected to this team
+  smc:
+    - "SMC_IP"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
