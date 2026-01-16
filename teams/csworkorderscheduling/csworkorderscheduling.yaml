@@ -9,6 +9,9 @@ spec:
   displayName: "cs-work-order-scheduling"
   # owner / responsible for the team
   owner: "antonio.calvo.perello@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "WOMGR"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
