@@ -23,11 +23,16 @@ spec:
                 - displayName
                 - locations
                 - roles
+                - smc
               properties:
                 displayName:
                   type: string
                 owner:
                   type: string
+                smc:
+                  type: array
+                  items:
+                    type: string
                 locations:
                   type: array
                   items:
