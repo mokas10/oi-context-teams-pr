@@ -9,6 +9,9 @@ spec:
   displayName: "Social-Impact-Reporting-Tool"
   # owner / responsible for the team
   owner: "rostyslav.trotsiuk@ingka.com"
+  # systems connected to this team
+  smc:
+    - "SMC-631654 Social Impact Reporting Tool"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
