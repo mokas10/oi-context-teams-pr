@@ -9,6 +9,9 @@ spec:
   displayName: "GIS"
   # owner / responsible for the team
   owner: "sinan.ulker@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "GIS"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
