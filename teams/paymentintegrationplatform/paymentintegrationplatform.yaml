@@ -9,6 +9,9 @@ spec:
   displayName: "Payment-Integration-Platform"
   # owner / responsible for the team
   owner: "sherry.loveland@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-100439"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
