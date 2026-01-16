@@ -9,6 +9,9 @@ spec:
   displayName: "ATO-Collect-At-Store"
   # owner / responsible for the team
   owner: "diego.lopez.osuna@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Capacity Hub"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
