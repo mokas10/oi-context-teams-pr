@@ -9,6 +9,9 @@ spec:
   displayName: "OPOA-Talos"
   # owner / responsible for the team
   owner: "robert.nilsson2@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SMC-674903"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
