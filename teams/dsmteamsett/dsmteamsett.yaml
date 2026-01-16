@@ -9,6 +9,9 @@ spec:
   displayName: "dsm-team-sett"
   # owner / responsible for the team
   owner: "tiago.de.oliveira.stutz@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SBSMANAGER"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
