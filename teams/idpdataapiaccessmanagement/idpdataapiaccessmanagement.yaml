@@ -9,6 +9,9 @@ spec:
   displayName: "IDP Data API Access Management"
   # owner / responsible for the team
   owner: "jayesh.kalappurakkal@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-117135"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
