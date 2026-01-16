@@ -9,6 +9,9 @@ spec:
   displayName: "Scheduling-Capability"
   # owner / responsible for the team
   owner: "kumarramana.nyalakonda@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "Scheduling"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
