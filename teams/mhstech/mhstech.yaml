@@ -9,6 +9,9 @@ spec:
   displayName: "MHS-Tech"
   # owner / responsible for the team
   owner: "kristian.bengtsson1@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "MHS"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
