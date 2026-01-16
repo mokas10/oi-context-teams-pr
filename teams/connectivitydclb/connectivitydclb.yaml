@@ -9,6 +9,9 @@ spec:
   displayName: "Connectivity-DCLB"
   # owner / responsible for the team
   owner: "janus.schimrosczik@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "DCLOADBA"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
