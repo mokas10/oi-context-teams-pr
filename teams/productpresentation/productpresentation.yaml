@@ -9,6 +9,9 @@ spec:
   displayName: "Product-Presentation"
   # owner / responsible for the team
   owner: "joacim.delamotte@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SMC-115024"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
