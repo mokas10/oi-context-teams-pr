@@ -9,6 +9,9 @@ spec:
   displayName: "CAP"
   # owner / responsible for the team
   owner: "chetan.patil2@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "AUD"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
