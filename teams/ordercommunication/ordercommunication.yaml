@@ -9,6 +9,9 @@ spec:
   displayName: "Order-Communication"
   # owner / responsible for the team
   owner: "niklas.jonsson1@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "OrderInformation"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
