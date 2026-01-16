@@ -9,6 +9,9 @@ spec:
   displayName: "Metal-Model-App"
   # owner / responsible for the team
   owner: "deepak.dwivedi1@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-116148"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
