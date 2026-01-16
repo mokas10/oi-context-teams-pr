@@ -9,6 +9,9 @@ spec:
   displayName: "IRIS"
   # owner / responsible for the team
   owner: "cecilia.samuelsson1@ingka.com"
+  # systems connected to this team
+  smc:
+    - "IRIS"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
