@@ -9,6 +9,9 @@ spec:
   displayName: "SCX"
   # owner / responsible for the team
   owner: "alexandru.oprescu@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SCExpert"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
