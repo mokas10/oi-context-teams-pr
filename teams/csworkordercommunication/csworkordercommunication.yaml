@@ -9,6 +9,9 @@ spec:
   displayName: "cs-work-order-communication"
   # owner / responsible for the team
   owner: "dl.dsm.argonauts.nl@ingka.com"
+  # systems connected to this team
+  smc:
+    - "SPCOMHUB"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
