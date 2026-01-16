@@ -9,6 +9,9 @@ spec:
   displayName: "ODAC-Phoenix"
   # owner / responsible for the team
   owner: "robert.nilsson2@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SMC-115014"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
