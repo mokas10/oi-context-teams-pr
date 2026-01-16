@@ -9,6 +9,9 @@ spec:
   displayName: "ProcessIntelligence"
   # owner / responsible for the team
   owner: "christoph.klamt2@ingka.com"
+  # systems connected to this team
+  smc:
+    - "Process Intelligence"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
