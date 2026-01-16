@@ -9,6 +9,9 @@ spec:
   displayName: "IdentityAuthentication"
   # owner / responsible for the team
   owner: "mamatha.gubbala@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SMC-114356"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
