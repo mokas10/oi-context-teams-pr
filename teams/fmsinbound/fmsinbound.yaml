@@ -29,8 +29,9 @@ spec:
       # url: "$fms-inbound-ilertwebhook"
       # send_resolved: true
       email:
-        name: "FMS Inbound Team"
+        name: "fms-inbound-team-email"
         to: "jaap.oudejans@ingka.com"
+        send_resolved: true
   otherDatasources:
     - type: alertmanager
       tenant: "FMS-Inbound"
