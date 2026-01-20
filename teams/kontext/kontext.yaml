@@ -11,13 +11,12 @@ spec:
   owner: "niclas.nilsson@ingka.ikea.com"
   # systems connected to this team
   smc:
-    - "KONTEXT"
+    - "CONTEXT"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
     - "alicloud-cn"
-
   # optional
   # will define contact points for this team to be synced to the Mimir Alertmanager
   contactPoints:
