@@ -47,3 +47,8 @@ spec:
         - "opoanomos"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "nomos_write_OPOA-NOMOS_1768975423"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "nomos"
+      expires: "False"
