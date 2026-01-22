@@ -47,3 +47,8 @@ spec:
         - "meettherange"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "DISEPO_write_MeetTheRange_1769075524"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "DISEPO"
+      expires: "False"
