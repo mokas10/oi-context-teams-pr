@@ -47,3 +47,8 @@ spec:
         - "opoanexus"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "OPOA-Nexus_write_OPOA-Nexus_1769510602"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "OPOA-Nexus"
+      expires: "False"
