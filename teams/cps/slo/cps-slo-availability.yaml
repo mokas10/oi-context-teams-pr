@@ -4,7 +4,7 @@ kind: SLO
 metadata:
   name: cps-pickbe-availability-prod-test
 spec:
-  description: "SLO for API availability based on the HTTP Status Codes"
+  description: "SLO for API availability based on the HTTP Status Codes -prod"
   location: "gcp-eu"
   target: "99"
   window: "30d"
@@ -24,6 +24,6 @@ spec:
   indicator:
     ratio:
       errors:
-        metric: sum(rate(http_server_requests_seconds_count{app="cps-pick-backend",status=~"5..",uri!~"/actuator/.*|root"}))
+        metric: http_server_requests_seconds_count{app="cps-pick-backend",status=~"5..",uri!~"/actuator/.*|root"}
       total:
-        metric: sum(rate(http_server_requests_seconds_count{app="cps-pick-backend",uri!~"/actuator/.*|root"}))
+        metric: http_server_requests_seconds_count{app="cps-pick-backend",uri!~"/actuator/.*|root"}
