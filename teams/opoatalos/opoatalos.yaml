@@ -28,6 +28,7 @@ spec:
         - "IAM_AAD_Team_Kopoa"
         - "IAM_AAD_Team_OPOA-Nebula"
         - "IAM_AAD_Team_OPOA-NOMOS"
+        - "IAM_AAD_Team_OPOA_FNM"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
