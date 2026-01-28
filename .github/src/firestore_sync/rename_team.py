@@ -7,25 +7,6 @@ def rename_team(old_name, new_name, requester):
 
     db = firestore.Client()
 
-    # Merge GrafanaOrgs entry
-    old_doc_ref = db.collection("GrafanaOrgs").document(old_name)
-    doc = old_doc_ref.get()
-    if not doc.exists:
-        print(f"No such document {old_name} in GrafanaOrgs!")
-    else:
-        dict_doc = doc.to_dict()
-        dict_doc["name"] = new_name
-        dict_doc["old_name"] = old_name
-        for operator in dict_doc["grafana_orgs"]:
-            dict_doc["grafana_orgs"][operator]["update"] = True
-        new_doc_ref = db.collection("GrafanaOrgs").document(new_name)
-        new_doc_ref.set(dict_doc, merge=True)
-        print(f"updated doc {new_name} in GrafanaOrgs")
-
-        # remove old entry
-        old_doc_ref.delete()
-        print(f"deleted old doc {old_name} in GrafanaOrgs")
-
     # Merge OITeams entry
     old_doc_ref = db.collection("OITeams").document(old_name)
     doc = old_doc_ref.get()

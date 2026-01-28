@@ -69,9 +69,6 @@ jobs:
             if git show ${{ steps.get-last-sha.outputs.last_sha || 'main' }}:$file > oldfile ; then
               echo "File $file found in base branch, updating team"
               python .github/src/firestore_sync/update_firestore.py oldfile $file
-            else
-              echo "File $file not found in base branch, new team"
-              python .github/src/firestore_sync/create_firestore.py $file
             fi
           python .github/src/firestore_sync/sync_status.py update_last_sha ${{ inputs.head_sha }}
           done
