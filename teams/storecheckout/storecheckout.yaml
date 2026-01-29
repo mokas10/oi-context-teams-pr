@@ -220,3 +220,8 @@ spec:
       permissions: "write"
       tenant: "ASL-REWARDS"
       expires: "False"
+    - name: "ASL-BUSINESS-CARDS_write_STORE-CHECKOUT_1769703198"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ASL-BUSINESS-CARDS"
+      expires: "False"
