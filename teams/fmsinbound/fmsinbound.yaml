@@ -24,13 +24,9 @@ spec:
         matchers:
           - "ingka_system_name=FMSRR"
           - "ingka_team=eureka"
-      # webhook:
-      # name: "fms-inbound-ilert-receiver"
-      # url: "$fms-inbound-ilertwebhook"
-      # send_resolved: true
-      email:
-        name: "fms-inbound-team-email"
-        to: "jaap.oudejans@ingka.com"
+      webhook:
+        name: "fms-inbound-ilert-receiver"
+        url: "$fms-inbound-ilertwebhook"
         send_resolved: true
   otherDatasources:
     - type: alertmanager
