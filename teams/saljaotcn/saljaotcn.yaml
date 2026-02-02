@@ -47,3 +47,8 @@ spec:
         - "saljaotcn"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "SALJAOT-CN_write_SALJAOT-CN_1770039798"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "SALJAOT-CN"
+      expires: "False"
