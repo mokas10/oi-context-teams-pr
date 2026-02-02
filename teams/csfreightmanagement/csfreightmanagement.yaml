@@ -22,6 +22,7 @@ spec:
     - name: "0-Viewer"
       groups:
         - "CS Provided Services (ITNL012)"
+        - "IAM_AAD_Team_cs-linehaul"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
