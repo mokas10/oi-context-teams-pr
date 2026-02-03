@@ -19,13 +19,13 @@ spec:
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
-    - name: "0-Viewer"
-      groups:
-        - "DL dsm general NL"
+    #- name: "0-Viewer"
+    #  groups:
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
         - "IAM_AAD_Team_cs-provided-services"
+        - "DL dsm general NL"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
