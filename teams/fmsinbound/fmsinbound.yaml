@@ -40,6 +40,7 @@ spec:
     - name: "1-Editor"
       groups:
         - "IAM_AAD_Team_FMS-Testing"
+        - "IAM_AAD_Team_FMS-ITSD" # first line of support before the SLF team
         - "IAM_AAD_Team_FMS-SLF"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
