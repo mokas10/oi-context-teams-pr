@@ -24,6 +24,6 @@ spec:
   indicator:
     ratio:
       errors:
-        metric: http_server_requests_seconds_count{service_name="fms-inbound-sams-return-proxy", deployment_environment="prod"}
-      total:
         metric: http_server_requests_seconds_count{service_name="fms-inbound-sams-return-proxy", deployment_environment="prod", status=~"500|501|503|401|403"}
+      total:
+        metric: http_server_requests_seconds_count{service_name="fms-inbound-sams-return-proxy", deployment_environment="prod"}
