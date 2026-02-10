@@ -28,6 +28,7 @@ spec:
         - "IAM_AAD_Team_payments-direct-integration"
         - "IAM_AAD_Team_Payments-PSP-Integration"
         - "Tech LT Omni Meeting Points"
+        - "IAM_AAD_Team_PAC_Context_Viewers"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
