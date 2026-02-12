@@ -1421,3 +1421,8 @@ spec:
       permissions: "write"
       tenant: "DPS-MSSQL"
       expires: "False"
+    - name: "DPS-DBAAS_write_DatabasePlatformServices_1770910742"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "DPS-DBAAS"
+      expires: "False"
