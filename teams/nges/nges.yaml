@@ -121,3 +121,8 @@ spec:
       permissions: "write"
       tenant: "NGES-MT"
       expires: "False"
+    - name: "NGES-MT_write_NGES_1771243895"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "NGES-MT"
+      expires: "False"
