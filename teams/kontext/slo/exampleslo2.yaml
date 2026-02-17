@@ -1,0 +1,29 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: SLO
+metadata:
+  name: kontext-exampleslo2
+spec:
+  description: "This is a new test SLO for Kontext"
+  target: "99.0"
+  location: "gcp-eu"
+  window: "30d"
+  labels:
+    - name: "service.name"
+      value: "k8s_operator"
+    - name: "deployment.environment.name"
+      value: "dev"
+    - name: "ingka.legal_company"
+      value: "ingka"
+    - name: "ingka.system_name"
+      value: "CONTEXT"
+    - name: "ingka.team"
+      value: "DPS-OI-NextGen"
+    - name: "ingka.version"
+      value: "0.5.0"
+  indicator:
+    ratio:
+      errors:
+        metric: o11ydemo_test_counter{success="false"}
+      total:
+        metric: o11ydemo_test_counter
