@@ -99,3 +99,8 @@ spec:
       permissions: "read"
       tenant: "oi"
       expires: "False"
+    - name: "oi-2_write_pipeline_1771417730"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "oi-2"
+      expires: "False"
