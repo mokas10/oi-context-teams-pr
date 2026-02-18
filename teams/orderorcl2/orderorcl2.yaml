@@ -47,3 +47,8 @@ spec:
         - "orderorcl2"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ORDERORC-L2_write_ORDERORC-L2_1771413130"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ORDERORC-L2"
+      expires: "False"
