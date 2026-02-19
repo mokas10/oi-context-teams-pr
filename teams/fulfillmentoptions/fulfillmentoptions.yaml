@@ -16,6 +16,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+  cost_center: "CC5207"
   contactPoints:
     # notification policy is mandatory for each contact point, one policy per point
     - notificationPolicy:
@@ -49,8 +50,10 @@ spec:
       name: "fulfillment-options"
       # cost center associated with this tenant
       cost_center: "CC5207"
-      # project code associated with this tenant
-      project_code: "IN_008735"
+      # wbs associated with this tenant
+      wbs: "IN_008735"
+      # smc associated with this tenant
+      smc: "Fulfillment Options"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

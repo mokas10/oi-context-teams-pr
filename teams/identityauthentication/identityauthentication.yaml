@@ -16,6 +16,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+  cost_center: "CC5268"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -36,8 +37,10 @@ spec:
       name: "QRPin"
       # cost center associated with this tenant
       cost_center: "CC5268"
-      # project code associated with this tenant
-      project_code: "PRD0010104"
+      # wbs associated with this tenant
+      wbs: "PRD0010104"
+      # smc associated with this tenant
+      smc: "SMC-114356"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -49,8 +52,10 @@ spec:
       name: "icow"
       # cost center associated with this tenant
       cost_center: "CC5268"
-      # project code associated with this tenant
-      project_code: "PRD001014"
+      # wbs associated with this tenant
+      wbs: "TBM-P1003-C01-IAM-OP2120"
+      # smc associated with this tenant
+      smc: "SMC-114356"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

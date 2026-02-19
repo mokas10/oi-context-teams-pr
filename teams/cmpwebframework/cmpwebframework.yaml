@@ -16,6 +16,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+  cost_center: "CC5350"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -37,8 +38,10 @@ spec:
       name: "cmp-workers"
       # cost center associated with this tenant
       cost_center: "CC5350"
-      # project code associated with this tenant
-      project_code: "IN_004956"
+      # wbs associated with this tenant
+      wbs: "IN_004956"
+      # smc associated with this tenant
+      smc: "EVS"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -50,8 +53,10 @@ spec:
       name: "cwf-evs"
       # cost center associated with this tenant
       cost_center: "CC5133"
-      # project code associated with this tenant
-      project_code: "IN_004956"
+      # wbs associated with this tenant
+      wbs: "IN_004956"
+      # smc associated with this tenant
+      smc: "EVS"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -63,8 +68,10 @@ spec:
       name: "cmp-cdn-prod"
       # cost center associated with this tenant
       cost_center: "CC5133"
-      # project code associated with this tenant
-      project_code: "IN_004956"
+      # wbs associated with this tenant
+      wbs: "IN_004956"
+      # smc associated with this tenant
+      smc: "EVS"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -76,8 +83,10 @@ spec:
       name: "cmp-cdn"
       # cost center associated with this tenant
       cost_center: "CC5133"
-      # project code associated with this tenant
-      project_code: "IN_004956"
+      # wbs associated with this tenant
+      wbs: "IN_004956"
+      # smc associated with this tenant
+      smc: "EVS"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -89,8 +98,10 @@ spec:
       name: "akamai"
       # cost center associated with this tenant
       cost_center: "CC5133"
-      # project code associated with this tenant
-      project_code: "IN_004956"
+      # wbs associated with this tenant
+      wbs: "IN_004956"
+      # smc associated with this tenant
+      smc: "EVS"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -102,8 +113,10 @@ spec:
       name: "dev-test"
       # cost center associated with this tenant
       cost_center: "CC5133"
-      # project code associated with this tenant
-      project_code: "IN_004956"
+      # wbs associated with this tenant
+      wbs: "IN_004956"
+      # smc associated with this tenant
+      smc: "EVS"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -115,8 +128,10 @@ spec:
       name: "evs"
       # cost center associated with this tenant
       cost_center: "CC5133"
-      # project code associated with this tenant
-      project_code: "IN_004956"
+      # wbs associated with this tenant
+      wbs: "IN_004956"
+      # smc associated with this tenant
+      smc: "EVS"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -128,8 +143,10 @@ spec:
       name: "csp"
       # cost center associated with this tenant
       cost_center: "CC5133"
-      # project code associated with this tenant
-      project_code: "IN_004956"
+      # wbs associated with this tenant
+      wbs: "IN_004956"
+      # smc associated with this tenant
+      smc: "EVS"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

@@ -17,6 +17,7 @@ spec:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
     - "alicloud-cn"
+  cost_center: "5320"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -41,8 +42,10 @@ spec:
       name: "Application-Hosting"
       # cost center associated with this tenant
       cost_center: "5320"
-      # project code associated with this tenant
-      project_code: "PRJ003657"
+      # wbs associated with this tenant
+      wbs: "PRJ003657"
+      # smc associated with this tenant
+      smc: "Application-Hosting-as-a-Service"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

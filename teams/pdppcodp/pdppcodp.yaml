@@ -16,6 +16,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+  cost_center: "CC5222"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -36,8 +37,10 @@ spec:
       name: "pdpp-codp-dev"
       # cost center associated with this tenant
       cost_center: "CC5222"
-      # project code associated with this tenant
-      project_code: "IN_006801"
+      # wbs associated with this tenant
+      wbs: "IN_006801"
+      # smc associated with this tenant
+      smc: "UKG Workforce Dimensions Suite"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -49,8 +52,10 @@ spec:
       name: "pdpp-codp"
       # cost center associated with this tenant
       cost_center: "IN_006801"
-      # project code associated with this tenant
-      project_code: "CC5222"
+      # wbs associated with this tenant
+      wbs: "CC5222"
+      # smc associated with this tenant
+      smc: "UKG Workforce Dimensions Suite"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

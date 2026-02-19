@@ -37,6 +37,8 @@ spec:
                   type: array
                   items:
                     type: string
+                cost_center:
+                  type: string
                 roles:
                   type: array
                   items:
@@ -149,8 +151,12 @@ spec:
                         type: string
                       cost_center:
                         type: string
-                      project_code:
+                      wbs:
                         type: string
+                      smc:
+                        type: array
+                        items:
+                          type: string
                       read_access:
                         type: array
                         items:

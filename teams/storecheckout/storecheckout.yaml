@@ -16,6 +16,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+  cost_center: "CC5125"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -40,8 +41,10 @@ spec:
       name: "ASL-BUSINESS-CARDS"
       # cost center associated with this tenant
       cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # smc associated with this tenant
+      smc: "not provided"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -53,8 +56,10 @@ spec:
       name: "ASL-REWARDS"
       # cost center associated with this tenant
       cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # smc associated with this tenant
+      smc: "not provided"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -66,8 +71,10 @@ spec:
       name: "ASL-TAX-INVOICE"
       # cost center associated with this tenant
       cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # smc associated with this tenant
+      smc: "not provided"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -79,8 +86,10 @@ spec:
       name: "ASL"
       # cost center associated with this tenant
       cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # smc associated with this tenant
+      smc: "not provided"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -92,8 +101,10 @@ spec:
       name: "ASL-CART"
       # cost center associated with this tenant
       cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # smc associated with this tenant
+      smc: "not provided"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -105,8 +116,10 @@ spec:
       name: "ASL-CUSTOMER"
       # cost center associated with this tenant
       cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # smc associated with this tenant
+      smc: "not provided"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -118,8 +131,10 @@ spec:
       name: "ASL-DISCOUNT-COUPON"
       # cost center associated with this tenant
       cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # smc associated with this tenant
+      smc: "not provided"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -131,8 +146,10 @@ spec:
       name: "ASL-ORDERS"
       # cost center associated with this tenant
       cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # smc associated with this tenant
+      smc: "not provided"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -144,8 +161,10 @@ spec:
       name: "ASL-RANGE"
       # cost center associated with this tenant
       cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # smc associated with this tenant
+      smc: "not provided"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

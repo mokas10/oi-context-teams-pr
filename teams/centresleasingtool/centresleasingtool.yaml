@@ -16,6 +16,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "alicloud-cn"
+  cost_center: "CC7611"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -36,8 +37,10 @@ spec:
       name: "leasingtool"
       # cost center associated with this tenant
       cost_center: "CC7611"
-      # project code associated with this tenant
-      project_code: "PJ4032"
+      # wbs associated with this tenant
+      wbs: "PJ4032"
+      # smc associated with this tenant
+      smc: "Ingka Centres Leasing Interactive Map"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

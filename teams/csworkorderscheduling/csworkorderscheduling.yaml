@@ -17,6 +17,7 @@ spec:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
     - "alicloud-cn"
+  cost_center: "CC5149"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -41,8 +42,10 @@ spec:
       name: "cs-work-order-scheduling"
       # cost center associated with this tenant
       cost_center: "CC5149"
-      # project code associated with this tenant
-      project_code: "IN009217"
+      # wbs associated with this tenant
+      wbs: "IN009217"
+      # smc associated with this tenant
+      smc: "WOMGR"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

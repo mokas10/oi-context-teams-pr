@@ -16,6 +16,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+  cost_center: "CC5442"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -37,8 +38,10 @@ spec:
       name: "boka"
       # cost center associated with this tenant
       cost_center: "CC5442"
-      # project code associated with this tenant
-      project_code: "IN_003966"
+      # wbs associated with this tenant
+      wbs: "IN_003966"
+      # smc associated with this tenant
+      smc: "BOKA"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

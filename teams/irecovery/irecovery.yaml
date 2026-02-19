@@ -16,6 +16,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+  cost_center: "5208"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -36,8 +37,10 @@ spec:
       name: "inventory"
       # cost center associated with this tenant
       cost_center: "5208"
-      # project code associated with this tenant
-      project_code: "PRJ006627"
+      # wbs associated with this tenant
+      wbs: "PRJ006627"
+      # smc associated with this tenant
+      smc: "IRECOV"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -49,8 +52,10 @@ spec:
       name: "pricing"
       # cost center associated with this tenant
       cost_center: "5208"
-      # project code associated with this tenant
-      project_code: "PRJ006627"
+      # wbs associated with this tenant
+      wbs: "PRJ006627"
+      # smc associated with this tenant
+      smc: "IRECOV"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -62,8 +67,10 @@ spec:
       name: "data"
       # cost center associated with this tenant
       cost_center: "5208"
-      # project code associated with this tenant
-      project_code: "PRJ006627"
+      # wbs associated with this tenant
+      wbs: "PRJ006627"
+      # smc associated with this tenant
+      smc: "IRECOV"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -75,8 +82,10 @@ spec:
       name: "infrastructure"
       # cost center associated with this tenant
       cost_center: "5208"
-      # project code associated with this tenant
-      project_code: "PRJ006627"
+      # wbs associated with this tenant
+      wbs: "PRJ006627"
+      # smc associated with this tenant
+      smc: "IRECOV"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

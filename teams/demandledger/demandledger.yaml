@@ -16,6 +16,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+  cost_center: "CC5207"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -41,8 +42,10 @@ spec:
       name: "Demand-Ledger"
       # cost center associated with this tenant
       cost_center: "CC5207"
-      # project code associated with this tenant
-      project_code: "IN009919"
+      # wbs associated with this tenant
+      wbs: "IN009919"
+      # smc associated with this tenant
+      smc: "Demand Ledger"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

@@ -17,6 +17,7 @@ spec:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
     - "alicloud-cn"
+  cost_center: "CC5260"
   # will define contact points for this team to be synced to the Mimir Alertmanager
   contactPoints:
     # notification policy is mandatory for each contact point, one policy per point
@@ -63,8 +64,10 @@ spec:
       name: "argo"
       # cost center associated with this tenant
       cost_center: "CC5260"
-      # project code associated with this tenant
-      project_code: "IN_005268"
+      # wbs associated with this tenant
+      wbs: "TBM-P1041-C01-COR-OP2120"
+      # smc associated with this tenant
+      smc: "Foundational Engineering - Core"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -76,8 +79,10 @@ spec:
       name: "vault"
       # cost center associated with this tenant
       cost_center: ""
-      # project code associated with this tenant
-      project_code: ""
+      # wbs associated with this tenant
+      wbs: ""
+      # smc associated with this tenant
+      smc: "Foundational Engineering - Core"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -89,8 +94,10 @@ spec:
       name: "artifactory"
       # cost center associated with this tenant
       cost_center: "CC5260"
-      # project code associated with this tenant
-      project_code: "IN_005268"
+      # wbs associated with this tenant
+      wbs: "TBM-P1041-C01-COR-OP2120"
+      # smc associated with this tenant
+      smc: "Foundational Engineering - Core"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

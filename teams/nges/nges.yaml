@@ -16,6 +16,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+  cost_center: "CC5522"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -37,8 +38,10 @@ spec:
       name: "Page-Shield"
       # cost center associated with this tenant
       cost_center: "CC5522"
-      # project code associated with this tenant
-      project_code: "IN_005501"
+      # wbs associated with this tenant
+      wbs: "TBM-P1032-C01-PPR-OP2120"
+      # smc associated with this tenant
+      smc: "SecOps_NGES"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -51,8 +54,10 @@ spec:
       name: "NGES"
       # cost center associated with this tenant
       cost_center: "CC5522"
-      # project code associated with this tenant
-      project_code: "IN_005501"
+      # wbs associated with this tenant
+      wbs: "TBM-P1032-C01-PPR-OP2120"
+      # smc associated with this tenant
+      smc: "SecOps_NGES"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -64,8 +69,10 @@ spec:
       name: "NGES-HTTP"
       # cost center associated with this tenant
       cost_center: "CC5522"
-      # project code associated with this tenant
-      project_code: "IN_005501"
+      # wbs associated with this tenant
+      wbs: "TBM-P1032-C01-PPR-OP2120"
+      # smc associated with this tenant
+      smc: "SecOps_NGES"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -77,8 +84,10 @@ spec:
       name: "NGES-MT"
       # cost center associated with this tenant
       cost_center: "CC5522"
-      # project code associated with this tenant
-      project_code: "IN_005501"
+      # wbs associated with this tenant
+      wbs: "TBM-P1032-C01-PPR-OP2120"
+      # smc associated with this tenant
+      smc: "SecOps_NGES"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -90,8 +99,10 @@ spec:
       name: "NGES-FW"
       # cost center associated with this tenant
       cost_center: "CC5522"
-      # project code associated with this tenant
-      project_code: "IN_005501"
+      # wbs associated with this tenant
+      wbs: "TBM-P1032-C01-PPR-OP2120"
+      # smc associated with this tenant
+      smc: "SecOps_NGES"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
