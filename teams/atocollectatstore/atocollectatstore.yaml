@@ -58,3 +58,8 @@ spec:
       permissions: "write"
       tenant: "ATO-Collect-At-Store"
       expires: "False"
+    - name: "ATO-Collect-At-Store_write_ATO-Collect-At-Store_1771841459"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "ATO-Collect-At-Store"
+      expires: "False"
