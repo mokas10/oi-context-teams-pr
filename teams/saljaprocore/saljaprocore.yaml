@@ -52,3 +52,8 @@ spec:
       permissions: "write"
       tenant: "Saljapro-Core"
       expires: "False"
+    - name: "Saljapro-Core_write_Saljapro-Core_1771936071"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Saljapro-Core"
+      expires: "False"
