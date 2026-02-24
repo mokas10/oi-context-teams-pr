@@ -47,3 +47,8 @@ spec:
         - "saljaprocore"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Saljapro-Core_write_Saljapro-Core_1771927675"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Saljapro-Core"
+      expires: "False"
