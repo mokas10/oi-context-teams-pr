@@ -42,12 +42,10 @@ spec:
       # for these teams
       read_access:
         - "prepaidpayments"
-        - "paymentsprepaid"
-        - "iPay"
+        - "ipay"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "prepaidpayments"
-        - "paymentsprepaid"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
     - name: "Prepaid-Payments_write_Prepaid-Payments_1732835416"
