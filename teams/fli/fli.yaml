@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "robert.bernhard1@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "FLI"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "fli-astro"
       # cost center associated with this tenant
-      cost_center: "CC5171"
       # wbs associated with this tenant
       wbs: "IN009780"
       # smc associated with this tenant
@@ -51,7 +47,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "fli-common"
       # cost center associated with this tenant
-      cost_center: "CC5171"
       # wbs associated with this tenant
       wbs: "IN009780"
       # smc associated with this tenant
@@ -66,7 +61,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "fli-scx"
       # cost center associated with this tenant
-      cost_center: "CC5171"
       # wbs associated with this tenant
       wbs: "IN009780"
       # smc associated with this tenant
@@ -81,7 +75,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "fli-core"
       # cost center associated with this tenant
-      cost_center: "fli-scx"
       # wbs associated with this tenant
       wbs: "fli-astro"
       # smc associated with this tenant

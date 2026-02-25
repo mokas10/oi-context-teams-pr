@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "alexander.lindeskar@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "CONTEXT"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "newtesttenant"
       # cost center associated with this tenant
-      cost_center: "CC5344"
       # wbs associated with this tenant
       wbs: "IN_1234"
       # smc associated with this tenant
@@ -51,7 +47,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "context"
       # cost center associated with this tenant
-      cost_center: "CC5344"
       # wbs associated with this tenant
       wbs: "IN_009709"
       # smc associated with this tenant

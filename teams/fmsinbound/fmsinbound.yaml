@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "sander.sietses@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "FMSRR"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -52,11 +49,8 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "FMS-Inbound"
       # cost center associated with this tenant
-      cost_center: "CC5208"
-      # wbs associated with this tenant
-      wbs: "IN009695"
-      # smc associated with this tenant
-      smc: "FMSRR"
+      # project code associated with this tenant
+      project_code: "PTF-00003-W01-A08OP-2120"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

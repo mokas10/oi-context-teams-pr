@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "michael.huang1@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "China Engineering Platform"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "alicloud-cn"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "CDH-Auditing"
       # cost center associated with this tenant
-      cost_center: "CC5158"
       # wbs associated with this tenant
       wbs: "PJENGPLATFROM"
       # smc associated with this tenant

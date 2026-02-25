@@ -6,13 +6,10 @@ metadata:
   name: prepaidpayments
 spec:
   # display name in Grafana
-  displayName: "Prepaid-Payments"
+  displayName: "Payments-Prepaid"
   # owner / responsible for the team
   owner: "andre.baudeau1@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "prepaid"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Prepaid-Payments"
       # cost center associated with this tenant
-      cost_center: "5299"
       # wbs associated with this tenant
       wbs: "IN_008606"
       # smc associated with this tenant
@@ -45,6 +41,7 @@ spec:
       # for these teams
       read_access:
         - "prepaidpayments"
+        - "ipay"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "prepaidpayments"

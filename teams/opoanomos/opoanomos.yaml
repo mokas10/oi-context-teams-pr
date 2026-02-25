@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "rene.purrio@ingka.com"
   # systems connected to this team
-  smc:
-    - "SM-100929"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -42,7 +39,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "nomos"
       # cost center associated with this tenant
-      cost_center: "CC5207"
       # wbs associated with this tenant
       wbs: "IN_008733"
       # smc associated with this tenant

@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "tarekben.guiza@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "WOMGRPS"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "cs-provided-services"
       # cost center associated with this tenant
-      cost_center: "CC5149"
       # wbs associated with this tenant
       wbs: "IN010205"
       # smc associated with this tenant

@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "pooja.sharma5@ingka.com"
   # systems connected to this team
-  smc:
-    - "SMC-114870"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "alicloud-cn"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "iSell-CN"
       # cost center associated with this tenant
-      cost_center: "CC5212"
       # wbs associated with this tenant
       wbs: "PRD000032"
       # smc associated with this tenant

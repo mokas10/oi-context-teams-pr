@@ -8,11 +8,8 @@ spec:
   # display name in Grafana
   displayName: "CcoE-China"
   # owner / responsible for the team
-  owner: "felix.lv@ingka.ikea.com"
+  owner: "mike.zhang2@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "not provided"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "alicloud-cn"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "CcoE-China"
       # cost center associated with this tenant
-      cost_center: ""
       # wbs associated with this tenant
       wbs: ""
       # smc associated with this tenant

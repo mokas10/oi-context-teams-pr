@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "german.retamosa@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "Life at Home Platform"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Spain"
       # cost center associated with this tenant
-      cost_center: "CC5185"
       # wbs associated with this tenant
       wbs: "IN009889"
       # smc associated with this tenant

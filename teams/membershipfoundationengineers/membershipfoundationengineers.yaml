@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "lovely.gupta@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SM-117760"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "membership-foundation-engineers"
       # cost center associated with this tenant
-      cost_center: "CC5443"
       # wbs associated with this tenant
       wbs: "IN010449"
       # smc associated with this tenant

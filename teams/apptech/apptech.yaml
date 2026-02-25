@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "arvinder.raina2@ingka.com"
   # systems connected to this team
-  smc:
-    - "not provided"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Apptech"
       # cost center associated with this tenant
-      cost_center: "CC5259"
       # wbs associated with this tenant
       wbs: "PRD000184"
       # smc associated with this tenant

@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "sandra.wuttke@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "not provided"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "alicloud-cn"
@@ -34,7 +31,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Example-Tenant"
       # cost center associated with this tenant
-      cost_center: ""
       # wbs associated with this tenant
       wbs: ""
       # smc associated with this tenant

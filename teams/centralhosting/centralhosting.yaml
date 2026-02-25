@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "annika.aronsson@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "HCI Management"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "CentralHosting"
       # cost center associated with this tenant
-      cost_center: "CC5319"
       # wbs associated with this tenant
       wbs: "IN_001656"
       # smc associated with this tenant

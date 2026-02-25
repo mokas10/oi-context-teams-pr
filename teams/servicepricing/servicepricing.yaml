@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "fredrik.schon1@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "Service Pricing"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -37,7 +34,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "ServicePricing"
       # cost center associated with this tenant
-      cost_center: "CC5432"
       # wbs associated with this tenant
       wbs: "IN_005059"
       # smc associated with this tenant

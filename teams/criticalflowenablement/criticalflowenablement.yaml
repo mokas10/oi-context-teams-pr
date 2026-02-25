@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "satish.kunjir1@ingka.com"
   # systems connected to this team
-  smc:
-    - "SM-105268"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -37,7 +34,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "CriticalFlowEnablement"
       # cost center associated with this tenant
-      cost_center: "CC5304"
       # wbs associated with this tenant
       wbs: "TBM-P1002-C05-TAV-OP2120"
       # smc associated with this tenant

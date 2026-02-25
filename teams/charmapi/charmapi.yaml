@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "robin.jonsson7@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "CHARM"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "CHARM"
       # cost center associated with this tenant
-      cost_center: "CC5321"
       # wbs associated with this tenant
       wbs: "IN_1234"
       # smc associated with this tenant

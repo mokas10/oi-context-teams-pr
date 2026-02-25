@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "magnus.hojer@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "LTG"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "prod"
       # cost center associated with this tenant
-      cost_center: "5351"
       # wbs associated with this tenant
       wbs: "IN_004650"
       # smc associated with this tenant
@@ -51,7 +47,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dev"
       # cost center associated with this tenant
-      cost_center: "5351"
       # wbs associated with this tenant
       wbs: "IN_004650"
       # smc associated with this tenant

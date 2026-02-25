@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "joacim.delamotte@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SMC-115024"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,11 +33,8 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Product-Presentation"
       # cost center associated with this tenant
-      cost_center: "CC5351"
-      # wbs associated with this tenant
-      wbs: "IN_005068"
-      # smc associated with this tenant
-      smc: "SMC-115024"
+      # project code associated with this tenant
+      project_code: "DPR-P1049-C01-PPI-OP2120"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "wayne.shi1@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SM-100638"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "alicloud-cn"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "macp"
       # cost center associated with this tenant
-      cost_center: "CC5341"
       # wbs associated with this tenant
       wbs: "PRJ007854"
       # smc associated with this tenant

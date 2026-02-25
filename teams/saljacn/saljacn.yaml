@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "anil.kumar3@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SMC-518808"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "alicloud-cn"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SaljaCN"
       # cost center associated with this tenant
-      cost_center: "CC5218"
       # wbs associated with this tenant
       wbs: "IN_008817"
       # smc associated with this tenant

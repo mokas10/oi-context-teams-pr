@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "olof.hjortsjoe@inter.ikea.com"
   # systems connected to this team
-  smc:
-    - "SM-117614"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "alicloud-cn"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "a33c6ac4-a52e-45c5-af07-b972df9bd004"
       # cost center associated with this tenant
-      cost_center: "CC002501"
       # wbs associated with this tenant
       wbs: "PJIN001657"
       # smc associated with this tenant

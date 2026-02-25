@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "sumit.karna@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SMC-365052"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -37,7 +34,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "saljapro"
       # cost center associated with this tenant
-      cost_center: "CC5199"
       # wbs associated with this tenant
       wbs: "IN_008817"
       # smc associated with this tenant

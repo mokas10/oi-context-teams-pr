@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "belma.katkic@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SM-100887"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Returns"
       # cost center associated with this tenant
-      cost_center: "CC5353"
       # wbs associated with this tenant
       wbs: "IN_005382"
       # smc associated with this tenant

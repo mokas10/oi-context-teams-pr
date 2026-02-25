@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "jonas.wennberg@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "Application-Hosting-as-a-Service"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -41,7 +38,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Application-Hosting"
       # cost center associated with this tenant
-      cost_center: "5320"
       # wbs associated with this tenant
       wbs: "PRJ003657"
       # smc associated with this tenant

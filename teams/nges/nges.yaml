@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "stephan.agerley@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SecOps_NGES"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -37,7 +34,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Page-Shield"
       # cost center associated with this tenant
-      cost_center: "CC5522"
       # wbs associated with this tenant
       wbs: "TBM-P1032-C01-PPR-OP2120"
       # smc associated with this tenant
@@ -53,7 +49,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "NGES"
       # cost center associated with this tenant
-      cost_center: "CC5522"
       # wbs associated with this tenant
       wbs: "TBM-P1032-C01-PPR-OP2120"
       # smc associated with this tenant
@@ -68,7 +63,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "NGES-HTTP"
       # cost center associated with this tenant
-      cost_center: "CC5522"
       # wbs associated with this tenant
       wbs: "TBM-P1032-C01-PPR-OP2120"
       # smc associated with this tenant
@@ -83,7 +77,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "NGES-MT"
       # cost center associated with this tenant
-      cost_center: "CC5522"
       # wbs associated with this tenant
       wbs: "TBM-P1032-C01-PPR-OP2120"
       # smc associated with this tenant
@@ -98,7 +91,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "NGES-FW"
       # cost center associated with this tenant
-      cost_center: "CC5522"
       # wbs associated with this tenant
       wbs: "TBM-P1032-C01-PPR-OP2120"
       # smc associated with this tenant

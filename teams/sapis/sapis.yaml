@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "ramasatyasrinivasvarma.ganapathiraju@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SM-116385"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -37,7 +34,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SAPISPROD"
       # cost center associated with this tenant
-      cost_center: "CC5518"
       # wbs associated with this tenant
       wbs: "DPR-P1096-C06-EXC-OP2120"
       # smc associated with this tenant

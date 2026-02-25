@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "matteo.merola@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SLM"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "slm"
       # cost center associated with this tenant
-      cost_center: "CC5215"
       # wbs associated with this tenant
       wbs: "DPR-P1071-C03-FND-OP2120"
       # smc associated with this tenant

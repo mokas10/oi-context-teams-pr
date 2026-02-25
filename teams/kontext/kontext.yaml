@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "niclas.nilsson@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "CONTEXT"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -87,7 +84,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "fleet-testing"
       # cost center associated with this tenant
-      cost_center: "CC5344"
       # wbs associated with this tenant
       wbs: "TBM-P1011-C06-EMA-OP2120"
       # smc associated with this tenant
@@ -102,7 +98,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "context-shared"
       # cost center associated with this tenant
-      cost_center: "CC1234"
       # wbs associated with this tenant
       wbs: "IN_0000"
       # smc associated with this tenant
@@ -117,7 +112,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "oi"
       # cost center associated with this tenant
-      cost_center: "0"
       # wbs associated with this tenant
       wbs: "TBM-P1035-C01-DAI-OP2120"
       # smc associated with this tenant
@@ -132,7 +126,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "self-monitoring"
       # cost center associated with this tenant
-      cost_center: "CC1234"
       # wbs associated with this tenant
       wbs: "IN1234"
       # smc associated with this tenant

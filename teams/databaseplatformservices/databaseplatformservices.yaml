@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "dinesh.adhikari@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "DBaaS Platform"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -37,7 +34,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "DPS-DBAAS"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -52,7 +48,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "DPS-MSSQL"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -68,7 +63,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "DPS-POSTGRESQL"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -84,7 +78,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-6461e66b9b967d62da736c7e"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -100,7 +93,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-65362ffd499ef417d95fa2c4"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -116,7 +108,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-6436507d73fdc370b3a1fb05"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -131,7 +122,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-6720f35de78088125e6d1563"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -146,7 +136,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-644a1188e6483a231c76daf7"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -161,7 +150,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-6644a500883858277b4f931a"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -176,7 +164,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-65b8afd89ea9c54cb539330d"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -191,7 +178,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-649e7508a5483d1882ad5747"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -207,7 +193,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-6544b489b51d85526f5f1e25"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -222,7 +207,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-64636e4d23d099518677129a"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -237,7 +221,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-6544b094dac69930afd46424"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -252,7 +235,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-64ec4674726c787590987df3"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -267,7 +249,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-64255440fff26579cd981fcc"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -282,7 +263,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-671f8e41d2774e4241ed7915"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -298,7 +278,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-6749d1eef9420265e5f7148d"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -314,7 +293,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-6641dec8257fcd6150a76c83"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -329,7 +307,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-6426889788ee744b5e4cf1db"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -345,7 +322,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-64916089c8ebab131120059d"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -361,7 +337,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-650947ac3a70312ac3f874a7"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -376,7 +351,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-67b8704b9c7725136bcbc5e7"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -391,7 +365,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-67a617097ef5c22494c4e55a"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -406,7 +379,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-66f2507f8dc0bc61de9c5b53"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -421,7 +393,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-6746fb91a5b2f94a61b02eb3"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -436,7 +407,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-642161cdce93a02b9d135ae8"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -451,7 +421,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-65cb456b5ad1c65220991a14"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -467,7 +436,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-65a54305be0f7d03b9cde8ea"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -482,7 +450,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-643d276019b0726551abc58c"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -497,7 +464,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-6446a14b1523a11fc52cab2d"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -512,7 +478,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-643d4b5679e7f35e16c8a6a1"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -527,7 +492,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-641d6bc9cc97ab46ac2b8c93"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -542,7 +506,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-641d64473e922b13ae923194"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -557,7 +520,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-64637e1defe3d1109cac867f"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -572,7 +534,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-6821f21ba00c566041239f8a"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -587,7 +548,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-685d087847ef096602fbfb5c"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -602,7 +562,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-685bf31f729db2283aaf8dbe"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -617,7 +576,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-686bae9a68ecb57632d656a1"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -632,7 +590,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-686bae9a68ecb57632d656a1"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -647,7 +604,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-685bf31f729db2283aaf8dbe"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -662,7 +618,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-685d087847ef096602fbfb5c"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -677,7 +632,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-6821f21ba00c566041239f8a"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -692,7 +646,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-64637e1defe3d1109cac867f"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -707,7 +660,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-641d64473e922b13ae923194"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -722,7 +674,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-641d6bc9cc97ab46ac2b8c93"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -737,7 +688,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-643d4b5679e7f35e16c8a6a1"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -752,7 +702,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-6446a14b1523a11fc52cab2d"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -767,7 +716,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-643d276019b0726551abc58c"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -782,7 +730,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-65a54305be0f7d03b9cde8ea"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -797,7 +744,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-65cb456b5ad1c65220991a14"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -812,7 +758,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-642161cdce93a02b9d135ae8"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -827,7 +772,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-6746fb91a5b2f94a61b02eb3"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -842,7 +786,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-66f2507f8dc0bc61de9c5b53"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -857,7 +800,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-67a617097ef5c22494c4e55a"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -872,7 +814,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-67b8704b9c7725136bcbc5e7"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -887,7 +828,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-650947ac3a70312ac3f874a7"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -902,7 +842,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-64916089c8ebab131120059d"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -917,7 +856,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-6426889788ee744b5e4cf1db"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -932,7 +870,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-6641dec8257fcd6150a76c83"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -947,7 +884,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-6749d1eef9420265e5f7148d"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -962,7 +898,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-671f8e41d2774e4241ed7915"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -977,7 +912,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-64255440fff26579cd981fcc"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -992,7 +926,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-64ec4674726c787590987df3"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -1007,7 +940,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-6544b094dac69930afd46424"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -1022,7 +954,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-64636e4d23d099518677129a"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -1037,7 +968,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-6544b489b51d85526f5f1e25"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -1052,7 +982,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-649e7508a5483d1882ad5747"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -1067,7 +996,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-65b8afd89ea9c54cb539330d"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -1082,7 +1010,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-6644a500883858277b4f931a"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -1097,7 +1024,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-644a1188e6483a231c76daf7"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -1112,7 +1038,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-6720f35de78088125e6d1563"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -1127,7 +1052,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-6436507d73fdc370b3a1fb05"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -1142,7 +1066,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-65362ffd499ef417d95fa2c4"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -1157,7 +1080,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-6461e66b9b967d62da736c7e"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -1172,7 +1094,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "dbps-64637e1defe3d1109cac867f"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant
@@ -1187,7 +1108,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "DatabasePlatformServices"
       # cost center associated with this tenant
-      cost_center: "CC5329"
       # wbs associated with this tenant
       wbs: "PRJ004137"
       # smc associated with this tenant

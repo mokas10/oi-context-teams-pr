@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "andre.baudeau1@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "iPay"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -39,7 +36,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "iPay"
       # cost center associated with this tenant
-      cost_center: "cc5299"
       # wbs associated with this tenant
       wbs: "IN_004418"
       # smc associated with this tenant

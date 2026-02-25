@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "andre.bazaglia@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "ENRGMNG"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "energy"
       # cost center associated with this tenant
-      cost_center: "CC5548"
       # wbs associated with this tenant
       wbs: "IN_007100"
       # smc associated with this tenant

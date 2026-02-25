@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "per.larsson@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SM-117260"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "EFTIC-Global"
       # cost center associated with this tenant
-      cost_center: "IN_004921"
       # wbs associated with this tenant
       wbs: "CC5299"
       # smc associated with this tenant

@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "guang.yang4@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "china_customer_support"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "alicloud-cn"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "cncs"
       # cost center associated with this tenant
-      cost_center: "CC5053"
       # wbs associated with this tenant
       wbs: "IN009965"
       # smc associated with this tenant

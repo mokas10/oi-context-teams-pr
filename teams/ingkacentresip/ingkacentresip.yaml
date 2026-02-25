@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "sivasankar.arjunan@ingka.com"
   # systems connected to this team
-  smc:
-    - "SMC2"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "ICIP-Tenants4"
       # cost center associated with this tenant
-      cost_center: "CC0121"
       # wbs associated with this tenant
       wbs: "IN_0121"
       # smc associated with this tenant

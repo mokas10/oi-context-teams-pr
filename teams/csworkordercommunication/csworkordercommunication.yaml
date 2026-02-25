@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "dl.dsm.argonauts.nl@ingka.com"
   # systems connected to this team
-  smc:
-    - "SPCOMHUB"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "alicloud-cn"
@@ -37,7 +34,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "cs-work-order-communication"
       # cost center associated with this tenant
-      cost_center: "CC5149"
       # wbs associated with this tenant
       wbs: "IN009217"
       # smc associated with this tenant

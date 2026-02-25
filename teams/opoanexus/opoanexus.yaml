@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "arun.vandal@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SM-117153"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "OPOA-Nexus"
       # cost center associated with this tenant
-      cost_center: "CC5207"
       # wbs associated with this tenant
       wbs: "IN_008740"
       # smc associated with this tenant

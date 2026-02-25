@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "johannes.fosseus3@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SMC-609038"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -37,7 +34,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "cs"
       # cost center associated with this tenant
-      cost_center: "CC5309"
       # wbs associated with this tenant
       wbs: "IN_010046"
       # smc associated with this tenant

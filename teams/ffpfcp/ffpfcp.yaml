@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "vangelis.katikaridis@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "OCP_Flow_and_Capacity_Planning"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "ffpfcp"
       # cost center associated with this tenant
-      cost_center: "CC5215"
       # wbs associated with this tenant
       wbs: "IN009531"
       # smc associated with this tenant

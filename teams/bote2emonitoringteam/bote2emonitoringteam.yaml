@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "divya.ravikumar@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SM-100813"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "BOTE2EMONITORINGTEAM"
       # cost center associated with this tenant
-      cost_center: "CC5228"
       # wbs associated with this tenant
       wbs: "IN_006882"
       # smc associated with this tenant

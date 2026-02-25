@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "romero.galiza@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SM-117393"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Kitchen-Imagination"
       # cost center associated with this tenant
-      cost_center: "CC5840"
       # wbs associated with this tenant
       wbs: "DPR-P1047-C06-PEP-OP2120"
       # smc associated with this tenant

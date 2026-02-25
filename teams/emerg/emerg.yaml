@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "haris.drina@ingka.com"
   # systems connected to this team
-  smc:
-    - "SM-116489"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "EMERG"
       # cost center associated with this tenant
-      cost_center: "CC5227"
       # wbs associated with this tenant
       wbs: "IN010243"
       # smc associated with this tenant

@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "antonio.gonzalez1@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "not provided"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -40,7 +37,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "ASL-BUSINESS-CARDS"
       # cost center associated with this tenant
-      cost_center: "CC5125"
       # wbs associated with this tenant
       wbs: "IN010318"
       # smc associated with this tenant
@@ -55,7 +51,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "ASL-REWARDS"
       # cost center associated with this tenant
-      cost_center: "CC5125"
       # wbs associated with this tenant
       wbs: "IN010318"
       # smc associated with this tenant
@@ -70,7 +65,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "ASL-TAX-INVOICE"
       # cost center associated with this tenant
-      cost_center: "CC5125"
       # wbs associated with this tenant
       wbs: "IN010318"
       # smc associated with this tenant
@@ -85,7 +79,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "ASL"
       # cost center associated with this tenant
-      cost_center: "CC5125"
       # wbs associated with this tenant
       wbs: "IN010318"
       # smc associated with this tenant
@@ -100,7 +93,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "ASL-CART"
       # cost center associated with this tenant
-      cost_center: "CC5125"
       # wbs associated with this tenant
       wbs: "IN010318"
       # smc associated with this tenant
@@ -115,7 +107,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "ASL-CUSTOMER"
       # cost center associated with this tenant
-      cost_center: "CC5125"
       # wbs associated with this tenant
       wbs: "IN010318"
       # smc associated with this tenant
@@ -130,7 +121,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "ASL-DISCOUNT-COUPON"
       # cost center associated with this tenant
-      cost_center: "CC5125"
       # wbs associated with this tenant
       wbs: "IN010318"
       # smc associated with this tenant
@@ -145,7 +135,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "ASL-ORDERS"
       # cost center associated with this tenant
-      cost_center: "CC5125"
       # wbs associated with this tenant
       wbs: "IN010318"
       # smc associated with this tenant
@@ -160,7 +149,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "ASL-RANGE"
       # cost center associated with this tenant
-      cost_center: "CC5125"
       # wbs associated with this tenant
       wbs: "IN010318"
       # smc associated with this tenant

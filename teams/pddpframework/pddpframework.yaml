@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "vijayabhaskar.kakarla@ingka.ikea.com,marcus.lagstrom@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "pdpp-framework"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "pdpp-framework"
       # cost center associated with this tenant
-      cost_center: "CC5222"
       # wbs associated with this tenant
       wbs: "IN_006801"
       # smc associated with this tenant

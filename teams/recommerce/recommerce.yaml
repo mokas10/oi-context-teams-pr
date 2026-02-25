@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "birkan.atici@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SM-105302"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "alicloud-cn"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "buyback-cn"
       # cost center associated with this tenant
-      cost_center: "CC5431"
       # wbs associated with this tenant
       wbs: "IN009385"
       # smc associated with this tenant

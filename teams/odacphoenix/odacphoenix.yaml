@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "robert.nilsson2@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SMC-115014"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -40,7 +37,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "ODAC-Phoenix"
       # cost center associated with this tenant
-      cost_center: "CC5207"
       # wbs associated with this tenant
       wbs: "IN_008733"
       # smc associated with this tenant

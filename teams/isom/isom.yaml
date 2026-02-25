@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "kamal.sastry@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "ISOM Grafana"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "IsomGrafanaNonProd"
       # cost center associated with this tenant
-      cost_center: "5339"
       # wbs associated with this tenant
       wbs: "PRJ007230"
       # smc associated with this tenant

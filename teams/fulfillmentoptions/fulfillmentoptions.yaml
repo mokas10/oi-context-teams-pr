@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "justyna.szczepankowska@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "Fulfillment Options"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -49,7 +46,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "fulfillment-options"
       # cost center associated with this tenant
-      cost_center: "CC5207"
       # wbs associated with this tenant
       wbs: "IN_008735"
       # smc associated with this tenant

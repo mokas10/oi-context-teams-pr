@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "michael.fallows@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SMC-125796"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "cff-insights"
       # cost center associated with this tenant
-      cost_center: "CC5075"
       # wbs associated with this tenant
       wbs: "DPR-P1074-C01-CPE-OP2120"
       # smc associated with this tenant

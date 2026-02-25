@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "priyaa.elumalai@ingka.com"
   # systems connected to this team
-  smc:
-    - "not provided"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "GenAI-Observability-Dev"
       # cost center associated with this tenant
-      cost_center: "CC5344"
       # wbs associated with this tenant
       wbs: "TBM-P1011-C04-AFR-OP2120"
       # smc associated with this tenant
@@ -51,7 +47,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "GenAI-Observability-Stage"
       # cost center associated with this tenant
-      cost_center: "CC5344"
       # wbs associated with this tenant
       wbs: "TBM-P1011-C04-AFR-OP2120"
       # smc associated with this tenant
@@ -66,7 +61,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "GenAI-Observability-Prod"
       # cost center associated with this tenant
-      cost_center: "CC5344"
       # wbs associated with this tenant
       wbs: "TBM-P1011-C04-AFR-OP2120"
       # smc associated with this tenant

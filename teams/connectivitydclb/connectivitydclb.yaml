@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "janus.schimrosczik@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "DCLOADBA"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "DCLB01"
       # cost center associated with this tenant
-      cost_center: "CC5303"
       # wbs associated with this tenant
       wbs: "PRJ0"
       # smc associated with this tenant

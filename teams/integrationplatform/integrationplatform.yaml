@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "sebastien.peirone@ingka.com"
   # systems connected to this team
-  smc:
-    - "SMC_IP"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "ICIP-Tenants"
       # cost center associated with this tenant
-      cost_center: "CC1001"
       # wbs associated with this tenant
       wbs: "IN_1005"
       # smc associated with this tenant

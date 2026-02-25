@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "michael.nero@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "not provided"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -44,7 +41,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "PAC"
       # cost center associated with this tenant
-      cost_center: "CC5299"
       # wbs associated with this tenant
       wbs: "IN_007888"
       # smc associated with this tenant

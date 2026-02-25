@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "mirsad.krasniqi@ingka.com"
   # systems connected to this team
-  smc:
-    - "PYDH (Payroll Data Hub) - SM-116208"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "payroll-integration"
       # cost center associated with this tenant
-      cost_center: "CC5230"
       # wbs associated with this tenant
       wbs: "DPR-P1100-C05-BTI-OP2120"
       # smc associated with this tenant

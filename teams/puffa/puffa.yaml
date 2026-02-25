@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "magnus.pettersson@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "Nudging Framework"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Puffa-test"
       # cost center associated with this tenant
-      cost_center: "CC5442"
       # wbs associated with this tenant
       wbs: "IN010124"
       # smc associated with this tenant
@@ -51,7 +47,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Puffa"
       # cost center associated with this tenant
-      cost_center: "CC5442"
       # wbs associated with this tenant
       wbs: "IN010124"
       # smc associated with this tenant

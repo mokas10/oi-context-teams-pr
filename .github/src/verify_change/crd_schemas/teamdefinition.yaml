@@ -29,10 +29,6 @@ spec:
                   type: string
                 owner:
                   type: string
-                smc:
-                  type: array
-                  items:
-                    type: string
                 locations:
                   type: array
                   items:
@@ -148,8 +144,6 @@ spec:
                     type: object
                     properties:
                       name:
-                        type: string
-                      cost_center:
                         type: string
                       wbs:
                         type: string

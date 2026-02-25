@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "haixiang.zhou1@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SM-116421"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "DH-StoreOffice"
       # cost center associated with this tenant
-      cost_center: "CC5343"
       # wbs associated with this tenant
       wbs: "TBM-P1004-C02-DHR-OP2120"
       # smc associated with this tenant

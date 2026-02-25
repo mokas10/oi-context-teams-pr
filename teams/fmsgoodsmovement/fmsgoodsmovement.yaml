@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "daniel.jakandre2@ingka.com"
   # systems connected to this team
-  smc:
-    - "FLT"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "FMS-Goods-Movement"
       # cost center associated with this tenant
-      cost_center: "CC5208"
       # wbs associated with this tenant
       wbs: "IN_009703"
       # smc associated with this tenant

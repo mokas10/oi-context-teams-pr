@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "lawal.adekunle.olusegun@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "Hosted Payment Page"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -42,7 +39,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "paye"
       # cost center associated with this tenant
-      cost_center: "CC5299"
       # wbs associated with this tenant
       wbs: "IN_005173"
       # smc associated with this tenant

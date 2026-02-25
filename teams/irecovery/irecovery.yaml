@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "ajeetkumar.singh@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "IRECOV"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "inventory"
       # cost center associated with this tenant
-      cost_center: "5208"
       # wbs associated with this tenant
       wbs: "PRJ006627"
       # smc associated with this tenant
@@ -51,7 +47,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "pricing"
       # cost center associated with this tenant
-      cost_center: "5208"
       # wbs associated with this tenant
       wbs: "PRJ006627"
       # smc associated with this tenant
@@ -66,7 +61,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "data"
       # cost center associated with this tenant
-      cost_center: "5208"
       # wbs associated with this tenant
       wbs: "PRJ006627"
       # smc associated with this tenant
@@ -81,7 +75,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "infrastructure"
       # cost center associated with this tenant
-      cost_center: "5208"
       # wbs associated with this tenant
       wbs: "PRJ006627"
       # smc associated with this tenant

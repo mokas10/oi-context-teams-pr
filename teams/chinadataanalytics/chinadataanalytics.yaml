@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "ewen.guo@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "China DAP"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "alicloud-cn"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "china-data-analytics"
       # cost center associated with this tenant
-      cost_center: "5653"
       # wbs associated with this tenant
       wbs: "PJNORM"
       # smc associated with this tenant

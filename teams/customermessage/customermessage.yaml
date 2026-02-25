@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "hassan.sojod@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "CME"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "customer-message"
       # cost center associated with this tenant
-      cost_center: "CC5491"
       # wbs associated with this tenant
       wbs: "IN010112"
       # smc associated with this tenant

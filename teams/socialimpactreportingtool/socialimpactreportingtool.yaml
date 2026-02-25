@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "rostyslav.trotsiuk@ingka.com"
   # systems connected to this team
-  smc:
-    - "SMC-631654 Social Impact Reporting Tool"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Social-Impact-Reporting-Tool"
       # cost center associated with this tenant
-      cost_center: "CC5284"
       # wbs associated with this tenant
       wbs: "TBM-P1012-C07-4PT-OP2120"
       # smc associated with this tenant

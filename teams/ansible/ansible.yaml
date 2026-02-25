@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "joerg.mieth1@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "ATOWER (ANSIBLE TOWER)"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -36,7 +33,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "EDA"
       # cost center associated with this tenant
-      cost_center: "CC5331"
       # wbs associated with this tenant
       wbs: "PJXXX530000"
       # smc associated with this tenant

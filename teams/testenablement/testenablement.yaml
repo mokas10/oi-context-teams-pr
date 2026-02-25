@@ -10,9 +10,6 @@ spec:
   # owner / responsible for the team
   owner: "martin.berg1@ingka.ikea.com"
   # systems connected to this team
-  smc:
-    - "SERVPRO"
-  # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
@@ -37,7 +34,6 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "test-enablement"
       # cost center associated with this tenant
-      cost_center: "CC5244"
       # wbs associated with this tenant
       wbs: "TBM-P1019-C01-TPL-OP2120"
       # smc associated with this tenant
