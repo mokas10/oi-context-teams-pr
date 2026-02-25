@@ -8,10 +8,10 @@ spec:
   # display name in Grafana
   displayName: "ccoecn"
   # owner / responsible for the team
-  owner: "hai.yue@ingka.com"
+  owner: "mike.zhang2@ingka.ikea.com"
   # systems connected to this team
   smc:
-    - "not provided"
+    - "SM-100638"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
@@ -25,11 +25,11 @@ spec:
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
-        - "IAM_AAD_Team_ccoecn-context"
+        - ""
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - ""
+        - "IAM_AAD_Team_ccoecn-context"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!

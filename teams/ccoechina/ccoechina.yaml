@@ -8,10 +8,10 @@ spec:
   # display name in Grafana
   displayName: "CcoE-China"
   # owner / responsible for the team
-  owner: "felix.lv@ingka.ikea.com"
+  owner: "mike.zhang2@ingka.ikea.com"
   # systems connected to this team
   smc:
-    - "not provided"
+    - "SM-100638"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
