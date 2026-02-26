@@ -8,7 +8,7 @@ spec:
   # display name in Grafana
   displayName: "Upptacka"
   # owner / responsible for the team
-  owner: "martin.sternebring@ingka.ikea.com"
+  owner: "eva.romansoff@ingka.ikea.com"
   # systems connected to this team
   smc:
     - "UPPTACKA"
@@ -23,6 +23,7 @@ spec:
     - name: "0-Viewer"
       groups:
         - "Tech LT Omni Meeting Points"
+        - "IAM_AAD_Team_Critical_Flow_Enablement"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
