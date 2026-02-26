@@ -2,7 +2,7 @@
 apiVersion: "context.ingka.com/v1"
 kind: SLO
 metadata:
-  name: cps-pickbe-availability-integration-test
+  name: cps-packbe-availability-integration
 spec:
   description: "SLO for API availability based on the HTTP Status Codes-integration"
   location: "gcp-eu"
@@ -10,7 +10,7 @@ spec:
   window: "30d"
   labels:
     - name: "service.name"
-      value: "cps-pick-backend"
+      value: "cps-pack-backend"
     - name: "deployment.environment.name"
       value: "integration"
     - name: "ingka.legal_company"
@@ -24,6 +24,6 @@ spec:
   indicator:
     ratio:
       errors:
-        metric: http_server_requests_seconds_count{app="cps-pick-backend",deployment_environment="integration",status=~"5..",uri!~"/actuator/.*|root"}
+        metric: http_server_requests_seconds_count{app="cps-pack-backend",deployment_environment="integration",status=~"5..",uri!~"/actuator/.*|root"}
       total:
-        metric: http_server_requests_seconds_count{app="cps-pick-backend",deployment_environment="integration",uri!~"/actuator/.*|root"}
+        metric: http_server_requests_seconds_count{app="cps-pack-backend",deployment_environment="integration",uri!~"/actuator/.*|root"}

@@ -2,7 +2,7 @@
 apiVersion: "context.ingka.com/v1"
 kind: SLO
 metadata:
-  name: cps-pickbe-availability-prod-test
+  name: cps-pickbe-availability-prod
 spec:
   description: "SLO for API availability based on the HTTP Status Codes -prod"
   location: "gcp-eu"
