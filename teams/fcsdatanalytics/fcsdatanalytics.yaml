@@ -47,3 +47,8 @@ spec:
         - "fcsdatanalytics"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "FCS-Datanalytics_write_FCS-Datanalytics_1772619918"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "FCS-Datanalytics"
+      expires: "False"
