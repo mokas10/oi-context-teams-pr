@@ -47,3 +47,8 @@ spec:
         - "pythia"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "pythia_write_Pythia_1772624951"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "pythia"
+      expires: "False"
