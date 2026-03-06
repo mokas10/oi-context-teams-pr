@@ -47,3 +47,8 @@ spec:
         - "orderpromise"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "order-promise_write_Order-Promise_1772792502"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "order-promise"
+      expires: "False"
