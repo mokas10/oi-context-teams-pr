@@ -29,3 +29,4 @@ spec:
         - deployment_environment # Will be removed in the future, as it's replaced by deployment_environment_name
         - deployment_environment_name
         - gateway
+        - k8s_cluster_name
