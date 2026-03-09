@@ -14,7 +14,7 @@ spec:
     # possible values: gcp-eu / alicloud-cn
     - "alicloud-cn"
     - "gcp-eu"
-  cost_center: "IN_007254"
+  cost_center: "CC5124"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -33,8 +33,20 @@ spec:
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
+      name: "upptacka"
+      # wbs associated with this tenant
+      wbs: "IN_007254"
+      # smc associated with this tenant
+      smc: "UPPTACKA"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "upptacka"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "upptacka"
+    - # READ ONLY! tenant name - CANNOT be changed!
       name: "upptackaCN"
-      # cost center associated with this tenant
       # wbs associated with this tenant
       wbs: "IN_007254"
       # smc associated with this tenant
