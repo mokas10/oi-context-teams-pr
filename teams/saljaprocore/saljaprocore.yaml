@@ -33,7 +33,7 @@ spec:
       name: "Saljapro-Core"
       # cost center associated with this tenant
       # project code associated with this tenant
-      project_code: "IN_006923"
+      wbs: "IN_006923"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
