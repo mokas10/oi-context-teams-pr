@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "customer-consent-management"
       expires: "False"
+    - name: "customer-consent-management_write_customer-consent-management_1772699975"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "customer-consent-management"
+      expires: "False"
