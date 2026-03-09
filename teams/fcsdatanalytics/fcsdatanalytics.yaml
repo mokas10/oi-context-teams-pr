@@ -9,13 +9,12 @@ spec:
   displayName: "FCS-Datanalytics"
   # owner / responsible for the team
   owner: "elias.gomes@ingka.ikea.com"
-  # systems connected to this team
-  smc:
-    - "SM-116239"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+        # cost center associated with this tenant
+  cost_center: "CC5208"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -34,10 +33,11 @@ spec:
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "FCS-Datanalytics"
-      # cost center associated with this tenant
-      cost_center: "CC5208"
       # project code associated with this tenant
-      project_code: "IN010390"
+      wbs: "IN010390"
+      # systems connected to this team
+      smc:
+        - "SM-116239"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

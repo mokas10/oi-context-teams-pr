@@ -9,13 +9,12 @@ spec:
   displayName: "Pythia"
   # owner / responsible for the team
   owner: "dilni.udeshika@ingka.com"
-  # systems connected to this team
-  smc:
-    - "SM-100529"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+  # cost center associated with this tenant
+  cost_center: "CC5212"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -34,10 +33,11 @@ spec:
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "pythia"
-      # cost center associated with this tenant
-      cost_center: "CC5212"
       # project code associated with this tenant
-      project_code: "IN_008685"
+      wbs: "IN_008685"
+      # systems connected to this team
+      smc:
+        - "SM-100529"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
