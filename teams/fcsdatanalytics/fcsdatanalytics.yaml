@@ -13,7 +13,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
-        # cost center associated with this tenant
+      # cost center associated with this tenant
   cost_center: "CC5208"
   # role definitions for this team
   roles:
