@@ -27,6 +27,7 @@ spec:
         - "IAM_AAD_Team_Payments-iPay"
         - "IAM_AAD_Team_online_payments_PayE"
         - "IAM_AAD_Team_payments-direct-integration"
+        - "IAM_AAD_Team_Critical_Flow_Enablement"
         - "DL sp supportpod SE"
         - "Tech LT Omni Meeting Points"
         - "DL FT MONITORING-TEAM SE"
@@ -39,6 +40,7 @@ spec:
       groups:
         - "IAM_AAD_Team_Payments-PSP-Integration"
         - "IAM_AAD_Team_Payments-OPI"
+        - "IAM_AAD_Team_Payments-PORT"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
