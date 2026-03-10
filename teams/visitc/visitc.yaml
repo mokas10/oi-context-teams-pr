@@ -48,3 +48,8 @@ spec:
         - "visitc"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "VISITC_write_VISITC_1773153201"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "VISITC"
+      expires: "False"
