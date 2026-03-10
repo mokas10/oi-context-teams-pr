@@ -35,7 +35,7 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Prepaid-Payments"
       # cost center associated with this tenant
-      cost_center: "5299"
+      cost_center: "5820510006"
       # project code associated with this tenant
       project_code: "IN_008606"
       # teams allowed to read - automatically adding loki datasources
