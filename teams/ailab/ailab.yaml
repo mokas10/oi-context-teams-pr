@@ -47,3 +47,8 @@ spec:
         - "ailab"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "blinka_write_ai-lab_1773131073"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "blinka"
+      expires: "False"
