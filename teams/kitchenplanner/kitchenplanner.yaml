@@ -60,3 +60,8 @@ spec:
         - "kitchenplanner"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "CN-KitchenPlanner_write_kitchen-planner_1773324406"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "CN-KitchenPlanner"
+      expires: "False"
