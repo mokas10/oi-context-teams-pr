@@ -46,3 +46,8 @@ spec:
         - "actuallastteammaybe1"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "actuallastteammaybe1_write_actuallastteammaybe1_1773397013"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "actuallastteammaybe1"
+      expires: "False"
