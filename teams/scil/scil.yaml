@@ -171,3 +171,8 @@ spec:
       permissions: "write"
       tenant: "SCIL-DISCOUNT-COUPON"
       expires: "False"
+    - name: "SCIL-ORDERS_write_SCIL_1773418327"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SCIL-ORDERS"
+      expires: "False"
