@@ -151,3 +151,8 @@ spec:
         - "scil"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "SCIL_write_SCIL_1773418302"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SCIL"
+      expires: "False"
