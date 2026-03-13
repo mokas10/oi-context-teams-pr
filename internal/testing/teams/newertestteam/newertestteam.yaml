@@ -46,3 +46,8 @@ spec:
         - "newertestteam"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "newertesttenant_write_newertestteam_1773386773"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "newertesttenant"
+      expires: "False"
