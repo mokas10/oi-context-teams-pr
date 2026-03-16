@@ -197,3 +197,8 @@ spec:
       permissions: "write"
       tenant: "cmp-workers"
       expires: "False"
+    - name: "url-inspector-dev_write_Cmp-Web-Framework_1773652987"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "url-inspector-dev"
+      expires: "False"
