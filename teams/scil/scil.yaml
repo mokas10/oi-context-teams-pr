@@ -216,3 +216,8 @@ spec:
       permissions: "write"
       tenant: "SCIL-TAX-INVOICE"
       expires: "False"
+    - name: "SCIL-DISCOUNT-COUPON_write_SCIL_1773756159"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SCIL-DISCOUNT-COUPON"
+      expires: "False"
