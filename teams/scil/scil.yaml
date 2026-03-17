@@ -191,3 +191,8 @@ spec:
       permissions: "write"
       tenant: "SCIL-CART"
       expires: "False"
+    - name: "SCIL-CUSTOMER_write_SCIL_1773755535"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SCIL-CUSTOMER"
+      expires: "False"
