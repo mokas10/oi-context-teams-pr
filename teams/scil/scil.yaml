@@ -211,3 +211,8 @@ spec:
       permissions: "write"
       tenant: "SCIL-REWARDS"
       expires: "False"
+    - name: "SCIL-TAX-INVOICE_write_SCIL_1773755768"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SCIL-TAX-INVOICE"
+      expires: "False"
