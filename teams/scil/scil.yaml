@@ -176,3 +176,8 @@ spec:
       permissions: "write"
       tenant: "SCIL-ORDERS"
       expires: "False"
+    - name: "SCIL-BUSINESS-CARDS_write_SCIL_1773746250"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SCIL-BUSINESS-CARDS"
+      expires: "False"
