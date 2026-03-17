@@ -201,3 +201,8 @@ spec:
       permissions: "write"
       tenant: "SCIL-ORDERS"
       expires: "False"
+    - name: "SCIL-RANGE_write_SCIL_1773755702"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SCIL-RANGE"
+      expires: "False"
