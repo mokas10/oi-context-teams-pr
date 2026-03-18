@@ -148,9 +148,7 @@ spec:
                       wbs:
                         type: string
                       smc:
-                        type: array
-                        items:
-                          type: string
+                        type: string
                       read_access:
                         type: array
                         items:
