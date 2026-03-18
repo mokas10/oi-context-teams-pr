@@ -31,6 +31,19 @@ spec:
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
+      name: "CN-KitchenPlanner"
+      # cost center associated with this tenant
+      cost_center: "CC5522"
+      # project code associated with this tenant
+      project_code: "IN_001657"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "kitchenplanner"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "kitchenplanner"
+    - # READ ONLY! tenant name - CANNOT be changed!
       name: "a33c6ac4-a52e-45c5-af07-b972df9bd004"
       # cost center associated with this tenant
       # wbs associated with this tenant
@@ -46,3 +59,8 @@ spec:
         - "kitchenplanner"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "CN-KitchenPlanner_write_kitchen-planner_1773324406"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "CN-KitchenPlanner"
+      expires: "False"

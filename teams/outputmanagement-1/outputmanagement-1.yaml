@@ -1,0 +1,54 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: outputmanagement-1
+spec:
+  # display name in Grafana
+  displayName: "Output-Management"
+  # owner / responsible for the team
+  owner: "jesper.petersson@ingka.ikea.com"
+  # systems connected to this team
+  smc:
+    - "SM-100777"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "alicloud-cn"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - "Output Management (ITSEHBG)"
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - ""
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "OutputManagement-CN"
+      # cost center associated with this tenant
+      cost_center: "CC5320"
+      # project code associated with this tenant
+      project_code: "IN_1234"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "outputmanagement-1"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "outputmanagement-1"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
+    - name: "OutputManagement-CN_write_Output-Management_1773311655"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "OutputManagement-CN"
+      expires: "False"

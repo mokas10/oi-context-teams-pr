@@ -32,6 +32,19 @@ spec:
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
+      name: "url-inspector-dev"
+      # cost center associated with this tenant
+      cost_center: "CC5350"
+      # project code associated with this tenant
+      project_code: "IN_004956"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "cmpwebframework"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "cmpwebframework"
+    - # READ ONLY! tenant name - CANNOT be changed!
       name: "cmp-workers"
       # cost center associated with this tenant
       # wbs associated with this tenant
@@ -189,4 +202,9 @@ spec:
       location: "gcp-eu"
       permissions: "write"
       tenant: "cmp-workers"
+      expires: "False"
+    - name: "url-inspector-dev_write_Cmp-Web-Framework_1773652987"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "url-inspector-dev"
       expires: "False"

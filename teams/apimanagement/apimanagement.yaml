@@ -90,6 +90,8 @@ spec:
         - "nges"
         - "tugc"
         - "storecheckout"
+        - "eventmesh"
+        - "scil"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "apimanagement"
