@@ -33,7 +33,6 @@ spec:
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "windowssoe-t1"
-      # cost center associated with this tenant
       # wbs associated with this tenant
       wbs: "PJXXX530000"
       # smc associated with this tenant

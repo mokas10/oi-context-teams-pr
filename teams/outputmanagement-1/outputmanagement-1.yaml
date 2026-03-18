@@ -9,9 +9,8 @@ spec:
   displayName: "Output-Management"
   # owner / responsible for the team
   owner: "jesper.petersson@ingka.ikea.com"
-  # systems connected to this team
-  smc:
-    - "SM-100777"
+  # cost center associated with this tenant
+  cost_center: "CC5320"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
@@ -34,10 +33,11 @@ spec:
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "OutputManagement-CN"
-      # cost center associated with this tenant
-      cost_center: "CC5320"
-      # project code associated with this tenant
-      project_code: "IN_1234"
+      # wbs associated with this tenant
+      wbs: "IN_1234"
+      # systems connected to this team
+      smc:
+        - "SM-100777"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

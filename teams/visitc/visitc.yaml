@@ -9,9 +9,8 @@ spec:
   displayName: "VISITC"
   # owner / responsible for the team
   owner: "ajit.shingade1@ingka.ikea.com"
-  # systems connected to this team
-  smc:
-    - "SM-100585"
+  # cost center associated with this tenant
+  cost_center: "CC5566"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
@@ -35,10 +34,11 @@ spec:
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "VISITC"
-      # cost center associated with this tenant
-      cost_center: "CC5566"
-      # project code associated with this tenant
-      project_code: "PRP1032"
+      # wbs associated with this tenant
+      wbs: "PRP1032"
+      # systems connected to this team
+      smc:
+        - "SM-100585"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

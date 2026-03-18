@@ -33,10 +33,10 @@ spec:
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "url-inspector-dev"
-      # cost center associated with this tenant
-      cost_center: "CC5350"
-      # project code associated with this tenant
-      project_code: "IN_004956"
+      # wbs associated with this tenant
+      wbs: "IN_004956"
+      # smc associated with this tenant
+      smc: "EVS"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -46,7 +46,6 @@ spec:
         - "cmpwebframework"
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "cmp-workers"
-      # cost center associated with this tenant
       # wbs associated with this tenant
       wbs: "IN_004956"
       # smc associated with this tenant

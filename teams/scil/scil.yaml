@@ -9,9 +9,8 @@ spec:
   displayName: "SCIL"
   # owner / responsible for the team
   owner: "javier.ortega1@ingka.ikea.com"
-  # systems connected to this team
-  smc:
-    - "SM-117469"
+  # cost center associated with this tenant
+  cost_center: "CC5125"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
@@ -34,10 +33,11 @@ spec:
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL"
-      # cost center associated with this tenant
-      cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # systems connected to this team
+      smc:
+        - "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -47,10 +47,11 @@ spec:
         - "scil"
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-BUSINESS-CARDS"
-      # cost center associated with this tenant
-      cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # systems connected to this team
+      smc:
+        - "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -60,10 +61,11 @@ spec:
         - "scil"
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-CART"
-      # cost center associated with this tenant
-      cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # systems connected to this team
+      smc:
+        - "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -73,10 +75,11 @@ spec:
         - "scil"
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-CUSTOMER"
-      # cost center associated with this tenant
-      cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # systems connected to this team
+      smc:
+        - "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -86,10 +89,11 @@ spec:
         - "scil"
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-DISCOUNT-COUPON"
-      # cost center associated with this tenant
-      cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # systems connected to this team
+      smc:
+        - "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -99,10 +103,11 @@ spec:
         - "scil"
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-ORDERS"
-      # cost center associated with this tenant
-      cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # systems connected to this team
+      smc:
+        - "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -112,10 +117,11 @@ spec:
         - "scil"
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-RANGE"
-      # cost center associated with this tenant
-      cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # systems connected to this team
+      smc:
+        - "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -125,10 +131,11 @@ spec:
         - "scil"
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-REWARDS"
-      # cost center associated with this tenant
-      cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # systems connected to this team
+      smc:
+        - "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -138,10 +145,11 @@ spec:
         - "scil"
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-TAX-INVOICE"
-      # cost center associated with this tenant
-      cost_center: "CC5125"
-      # project code associated with this tenant
-      project_code: "IN010318"
+      # wbs associated with this tenant
+      wbs: "IN010318"
+      # systems connected to this team
+      smc:
+        - "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

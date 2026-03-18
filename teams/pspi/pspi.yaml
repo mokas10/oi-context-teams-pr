@@ -43,7 +43,6 @@ spec:
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "PSPI"
-      # cost center associated with this tenant
       # wbs associated with this tenant
       wbs: "IN_007092"
       # smc associated with this tenant

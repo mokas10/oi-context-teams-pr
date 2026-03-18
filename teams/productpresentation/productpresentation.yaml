@@ -32,9 +32,10 @@ spec:
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "Product-Presentation"
-      # cost center associated with this tenant
-      # project code associated with this tenant
+      # wbs associated with this tenant
       wbs: "DPR-P1049-C01-PPI-OP2120"
+      # smc associated with this tenant
+      smc: ""
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

@@ -9,9 +9,8 @@ spec:
   displayName: "ai-lab"
   # owner / responsible for the team
   owner: "maria.garcia.garcia@ingka.ikea.com"
-  # systems connected to this team
-  smc:
-    - "SM-118236"
+  # cost center associated with this tenant
+  cost_center: "CC5602"
   # locations where team will be added
   locations:
     # possible values: gcp-eu / alicloud-cn
@@ -34,11 +33,12 @@ spec:
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "blinka"
-      # cost center associated with this tenant
-      cost_center: "CC5602"
-      # project code associated with this tenant
-      project_code: "IN_006919"
+      # wbs associated with this tenant
+      wbs: "IN_006919"
       # teams allowed to read - automatically adding loki datasources
+      # systems connected to this team
+      smc:
+        - "SM-118236"
       # for these teams
       read_access:
         - "ailab"
