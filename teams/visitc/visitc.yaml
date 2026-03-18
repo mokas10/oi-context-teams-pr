@@ -37,8 +37,7 @@ spec:
       # wbs associated with this tenant
       wbs: "PRP1032"
       # systems connected to this team
-      smc:
-        - "SM-100585"
+      smc: "SM-100585"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

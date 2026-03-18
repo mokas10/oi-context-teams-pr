@@ -37,8 +37,7 @@ spec:
       wbs: "IN_006919"
       # teams allowed to read - automatically adding loki datasources
       # systems connected to this team
-      smc:
-        - "SM-118236"
+      smc: "SM-118236"
       # for these teams
       read_access:
         - "ailab"

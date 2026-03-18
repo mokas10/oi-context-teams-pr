@@ -36,8 +36,7 @@ spec:
       # project code associated with this tenant
       wbs: "IN010390"
       # systems connected to this team
-      smc:
-        - "SM-116239"
+      smc: "SM-116239"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:

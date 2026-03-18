@@ -36,8 +36,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN010318"
       # systems connected to this team
-      smc:
-        - "SM-117469"
+      smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -50,8 +49,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN010318"
       # systems connected to this team
-      smc:
-        - "SM-117469"
+      smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -64,8 +62,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN010318"
       # systems connected to this team
-      smc:
-        - "SM-117469"
+      smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -78,8 +75,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN010318"
       # systems connected to this team
-      smc:
-        - "SM-117469"
+      smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -92,8 +88,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN010318"
       # systems connected to this team
-      smc:
-        - "SM-117469"
+      smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -106,8 +101,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN010318"
       # systems connected to this team
-      smc:
-        - "SM-117469"
+      smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -120,8 +114,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN010318"
       # systems connected to this team
-      smc:
-        - "SM-117469"
+      smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -134,8 +127,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN010318"
       # systems connected to this team
-      smc:
-        - "SM-117469"
+      smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -148,8 +140,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN010318"
       # systems connected to this team
-      smc:
-        - "SM-117469"
+      smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
