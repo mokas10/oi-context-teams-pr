@@ -36,7 +36,7 @@ spec:
       # wbs associated with this tenant
       wbs: "DPR-P1074-C01-CPE-OP2120"
       # smc associated with this tenant
-      smc: "SMC-125796"
+      smc: "SM-101066"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
