@@ -34,9 +34,9 @@ spec:
       name: "provided-services-con-app"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "IN010205"
+      wbs: "DPR-P1083-C01-PRM-OP2120"
       # smc associated with this tenant
-      smc: "not provided"
+      smc: "SM-116777"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
