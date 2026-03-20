@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "blinka"
       expires: "False"
+    - name: "blinka_write_ai-lab_1774020172"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "blinka"
+      expires: "False"
