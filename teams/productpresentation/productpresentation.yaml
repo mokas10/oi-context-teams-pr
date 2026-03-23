@@ -50,3 +50,8 @@ spec:
       permissions: "write"
       tenant: "Product-Presentation"
       expires: "False"
+    - name: "Product-Presentation_write_Product-Presentation_1774273391"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Product-Presentation"
+      expires: "False"
