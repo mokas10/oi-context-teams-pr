@@ -56,3 +56,8 @@ spec:
       permissions: "write"
       tenant: "pdpp-core-schedule"
       expires: "False"
+    - name: "pdpp-core-schedule_write_pdpp-core-schedule_1774257916"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "pdpp-core-schedule"
+      expires: "False"
