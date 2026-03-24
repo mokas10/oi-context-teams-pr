@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "eRIX"
       expires: "False"
+    - name: "eRIX_write_eRIX_1774343937"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "eRIX"
+      expires: "False"
