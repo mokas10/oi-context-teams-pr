@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "range-categorisation"
       expires: "False"
+    - name: "range-categorisation_write_range-categorisation_1774361521"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "range-categorisation"
+      expires: "False"
