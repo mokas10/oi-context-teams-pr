@@ -59,3 +59,8 @@ spec:
       permissions: "write"
       tenant: "SalesItem"
       expires: "False"
+    - name: "SalesItem_write_SalesItem_1774443838"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SalesItem"
+      expires: "False"
