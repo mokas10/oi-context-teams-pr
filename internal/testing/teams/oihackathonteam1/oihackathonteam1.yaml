@@ -46,3 +46,8 @@ spec:
         - "oihackathonteam1"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "hackathont1_write_OI-Hackathon-Team1_1774452130"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "hackathont1"
+      expires: "False"
