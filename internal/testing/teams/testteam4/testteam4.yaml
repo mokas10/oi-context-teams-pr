@@ -46,3 +46,8 @@ spec:
         - "testteam4"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Test-Tenant4_write_test-team4_1774441067"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Test-Tenant4"
+      expires: "False"
