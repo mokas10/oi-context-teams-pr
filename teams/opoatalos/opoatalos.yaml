@@ -27,6 +27,7 @@ spec:
         - "IAM_AAD_Team_OPOA-Nebula"
         - "IAM_AAD_Team_OPOA-NOMOS"
         - "IAM_AAD_Team_OPOA_FNM"
+        - "DL fulfilment.opoa team-l2-support GL"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
