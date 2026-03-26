@@ -1,0 +1,54 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: oihackathonteam1
+spec:
+  # display name in Grafana
+  displayName: "OI-Hackathon-Team1"
+  # owner / responsible for the team
+  owner: "thomas.hille1@ingka.ikea.com"
+  # cost center connected to this team
+  cost_center: "CC5344"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - "IAM_AAD_Team_DPS-OI-NextGen"
+        - "IAM_AAD_Team_oi-op"
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - ""
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "hackathont1"
+      # smc system associated with this tenant
+      smc: "SM-116470"
+      # wbs associated with this tenant
+      wbs: "DPR-0123456789"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "oihackathonteam1"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "oihackathonteam1"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
+    - name: "hackathont1_write_OI-Hackathon-Team1_1774452130"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "hackathont1"
+      expires: "False"
