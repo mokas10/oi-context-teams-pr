@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "second-hand"
       expires: "False"
+    - name: "second-hand_write_Second-hand_1774520408"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "second-hand"
+      expires: "False"
