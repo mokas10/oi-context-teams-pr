@@ -114,3 +114,8 @@ spec:
       permissions: "write"
       tenant: "GenAI-Observability-Stage"
       expires: "False"
+    - name: "GenAI-Observability-Prod_write_MLOps_1774614112"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "GenAI-Observability-Prod"
+      expires: "False"
