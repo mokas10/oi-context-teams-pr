@@ -56,3 +56,8 @@ spec:
       permissions: "write"
       tenant: "fcs-route-manager"
       expires: "False"
+    - name: "fcs-route-manager_write_fcs-route-management-team_1774594884"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "fcs-route-manager"
+      expires: "False"
