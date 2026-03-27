@@ -30,6 +30,7 @@ spec:
       groups:
         - "IAM_AAD_Team_Critical_Flow_Enablement"
         - "IAM_AAD_Team_Caas"
+        - "Operational Intelligence (ISSEMAL)"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
