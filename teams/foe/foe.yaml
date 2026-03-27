@@ -57,3 +57,8 @@ spec:
       permissions: "write"
       tenant: "foe"
       expires: "False"
+    - name: "foe_write_foe_1774607393"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "foe"
+      expires: "False"
