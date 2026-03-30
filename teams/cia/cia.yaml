@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "cia"
       expires: "False"
+    - name: "cia_write_CIA_1774872504"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "cia"
+      expires: "False"
