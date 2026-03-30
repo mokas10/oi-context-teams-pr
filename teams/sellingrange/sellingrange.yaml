@@ -56,3 +56,8 @@ spec:
       permissions: "write"
       tenant: "SellingRange"
       expires: "False"
+    - name: "SellingRange_write_SellingRange_1774873639"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "SellingRange"
+      expires: "False"
