@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "OMDMDataAnalytics"
       expires: "False"
+    - name: "OMDMDataAnalytics_write_OMDM-Data-Analytics_1774875195"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "OMDMDataAnalytics"
+      expires: "False"
