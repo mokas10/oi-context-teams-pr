@@ -4,6 +4,7 @@
   "schedule": ["on the 1st and 3rd day instance on Monday before 8am"],
   "extends": ["config:best-practices"],
   "rebaseWhen": "conflicted",
+  "minimumReleaseAge": "2 days",
   "packageRules": [
     {
       "groupName": "major",
