@@ -13,7 +13,6 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
-  cost_center: "CC5208"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -32,9 +31,8 @@ spec:
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "FMS-Goods-Movement"
-      # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "IN_009703"
+      wbs: "DPR-P1077-C01-FLR-OP2120"
       # smc associated with this tenant
       smc: "FLT"
       # teams allowed to read - automatically adding loki datasources
