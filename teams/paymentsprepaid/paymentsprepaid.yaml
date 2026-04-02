@@ -46,3 +46,8 @@ spec:
         - "paymentsprepaid"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "paymentsprepaid_write_paymentsprepaid_1775132677"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "paymentsprepaid"
+      expires: "False"
