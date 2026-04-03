@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "circularservices"
       expires: "False"
+    - name: "circularservices_write_circularservices_1775209886"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "circularservices"
+      expires: "False"
