@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "sun"
       expires: "False"
+    - name: "sun_write_sun_1775560281"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "sun"
+      expires: "False"
