@@ -27,7 +27,7 @@ jobs:
           exportToken: false
           exportEnv: true
           secrets: |
-            secret/data/github/pat context-teams-20240806 | GH_PAT ;
+            secret/data/github/pat context-teams-20260327 | GH_PAT ;
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
         with:
