@@ -46,3 +46,8 @@ spec:
         - "resolutions"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "resolutions_write_resolutions_1775549848"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "resolutions"
+      expires: "False"
