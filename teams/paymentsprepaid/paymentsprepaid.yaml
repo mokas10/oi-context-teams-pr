@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "paymentsprepaid"
       expires: "False"
+    - name: "paymentsprepaid_write_paymentsprepaid_1775561850"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "paymentsprepaid"
+      expires: "False"
