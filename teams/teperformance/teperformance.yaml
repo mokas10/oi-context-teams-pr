@@ -52,3 +52,8 @@ spec:
       permissions: "write"
       tenant: "te-performance"
       expires: "False"
+    - name: "te-performance_write_te-performance_1775658045"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "te-performance"
+      expires: "False"
