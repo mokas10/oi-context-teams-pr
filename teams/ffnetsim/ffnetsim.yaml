@@ -46,3 +46,8 @@ spec:
         - "ffnetsim"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ffnetsim_write_FFNETSIM_1775744883"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ffnetsim"
+      expires: "False"
