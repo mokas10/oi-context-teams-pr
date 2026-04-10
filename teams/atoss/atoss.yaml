@@ -46,3 +46,8 @@ spec:
         - "atoss"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "ATOSS-Context_write_ATOSS_1775827296"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ATOSS-Context"
+      expires: "False"
