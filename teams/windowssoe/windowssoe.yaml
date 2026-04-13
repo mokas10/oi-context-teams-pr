@@ -34,7 +34,7 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "windowssoe-t1"
       # wbs associated with this tenant
-      wbs: "PJXXX530000"
+      wbs: "TBM-T1004-C01-WOS-OP2120"
       # smc associated with this tenant
       smc: "WINTP"
       # teams allowed to read - automatically adding loki datasources
