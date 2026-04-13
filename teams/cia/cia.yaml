@@ -34,7 +34,7 @@ spec:
       name: "cia"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "IN_006927"
+      wbs: "DPR-P1003-C03-CIA-OP2120"
       # smc associated with this tenant
       smc: " SMC-114965"
       # teams allowed to read - automatically adding loki datasources
