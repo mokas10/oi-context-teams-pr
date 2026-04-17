@@ -13,7 +13,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
-  cost_center: "CC5442"
+  cost_center: "5311510006"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -35,9 +35,9 @@ spec:
       name: "cie-dev"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "IN009497"
+      wbs: "DPR-P1015-C01-CIE-OP2120"
       # smc associated with this tenant
-      smc: "not provided"
+      smc: "SM-100880"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -49,9 +49,9 @@ spec:
       name: "cie-prod"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "IN009497"
+      wbs: "DPR-P1015-C01-CIE-OP2120"
       # smc associated with this tenant
-      smc: "not provided"
+      smc: "SM-100880"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
