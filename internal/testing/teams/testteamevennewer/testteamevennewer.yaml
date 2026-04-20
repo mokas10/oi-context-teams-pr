@@ -46,3 +46,8 @@ spec:
         - "testteamevennewer"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "TestTeamEvenNewer_write_TestTeamEvenNewer_1776666883"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "TestTeamEvenNewer"
+      expires: "False"
