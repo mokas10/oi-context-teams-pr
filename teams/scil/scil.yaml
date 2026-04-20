@@ -34,7 +34,7 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL"
       # wbs associated with this tenant
-      wbs: "IN010318"
+      wbs: "DPR-P1038-C02-CCH-OP2120"
       # systems connected to this team
       smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
@@ -47,7 +47,7 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-BUSINESS-CARDS"
       # wbs associated with this tenant
-      wbs: "IN010318"
+      wbs: "DPR-P1038-C02-CCH-OP2120"
       # systems connected to this team
       smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
@@ -60,7 +60,7 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-CART"
       # wbs associated with this tenant
-      wbs: "IN010318"
+      wbs: "DPR-P1038-C02-CCH-OP2120"
       # systems connected to this team
       smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
@@ -73,7 +73,7 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-CUSTOMER"
       # wbs associated with this tenant
-      wbs: "IN010318"
+      wbs: "DPR-P1038-C02-CCH-OP2120"
       # systems connected to this team
       smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
@@ -86,7 +86,7 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-DISCOUNT-COUPON"
       # wbs associated with this tenant
-      wbs: "IN010318"
+      wbs: "DPR-P1038-C02-CCH-OP2120"
       # systems connected to this team
       smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
@@ -99,7 +99,7 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-ORDERS"
       # wbs associated with this tenant
-      wbs: "IN010318"
+      wbs: "DPR-P1038-C02-CCH-OP2120"
       # systems connected to this team
       smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
@@ -112,7 +112,7 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-RANGE"
       # wbs associated with this tenant
-      wbs: "IN010318"
+      wbs: "DPR-P1038-C02-CCH-OP2120"
       # systems connected to this team
       smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
@@ -125,7 +125,7 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-REWARDS"
       # wbs associated with this tenant
-      wbs: "IN010318"
+      wbs: "DPR-P1038-C02-CCH-OP2120"
       # systems connected to this team
       smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
@@ -138,7 +138,7 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "SCIL-TAX-INVOICE"
       # wbs associated with this tenant
-      wbs: "IN010318"
+      wbs: "DPR-P1038-C02-CCH-OP2120"
       # systems connected to this team
       smc: "SM-117469"
       # teams allowed to read - automatically adding loki datasources
