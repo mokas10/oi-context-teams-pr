@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "IsellClient"
       expires: "False"
+    - name: "IsellClient_write_iSell-Client_1776674322"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "IsellClient"
+      expires: "False"
