@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "vcs"
       expires: "False"
+    - name: "vcs_write_VCS_1776930413"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "vcs"
+      expires: "False"
