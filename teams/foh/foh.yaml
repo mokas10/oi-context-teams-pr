@@ -57,3 +57,8 @@ spec:
       permissions: "write"
       tenant: "FOH"
       expires: "False"
+    - name: "FOH_write_FOH_1776925592"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "FOH"
+      expires: "False"
