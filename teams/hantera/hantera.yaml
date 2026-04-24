@@ -46,3 +46,8 @@ spec:
         - "hantera"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "HANTERA_write_HANTERA_1777028193"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "HANTERA"
+      expires: "False"
