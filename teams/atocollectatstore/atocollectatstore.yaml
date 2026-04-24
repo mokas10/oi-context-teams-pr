@@ -21,6 +21,7 @@ spec:
     - name: "0-Viewer"
       groups:
         - "IAM_AAD_Team_dsm-pickup-point-manager"
+        - "IAM_AAD_cs-pickup-schedules-manager-grafana-users"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
