@@ -8,7 +8,7 @@ spec:
   # display name in Grafana
   displayName: "Edge-Event-Streaming"
   # owner / responsible for the team
-  owner: "tusar.pattnaik3@ingka.ikea.com"
+  owner: "nihar.shah@ingka.ikea.com"
   # systems connected to this team
   locations:
     # possible values: gcp-eu / alicloud-cn
@@ -20,6 +20,7 @@ spec:
     - name: "0-Viewer"
       groups:
         - "IAM_AAD_Team_Kopoa"
+        - "IAM_AAD_Team_Pythia"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
@@ -39,8 +40,12 @@ spec:
       smc: "Edge Event Streaming"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
+      # NOTE: if you add a team here,
+      # make sure the name matches what you have specified in metadata.name in <your_team>.yaml
       read_access:
         - "edgeeventstreaming"
+        - "kopoa"
+        - "pythia"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "edgeeventstreaming"
