@@ -47,6 +47,7 @@ def rename_team(old_name, new_name, requester):
     for doc in doc_stream:
         dict_doc = doc.to_dict()
         dict_doc["owner"] = new_name
+        dict_doc["access"]["full"].append(new_name)
         history_dict = {
             "action": f"renamed owner team from {old_name} to {new_name}",
             "timestamp": datetime.now(),
