@@ -46,3 +46,8 @@ spec:
         - "globallanguageservices"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "languagelake_write_Global-Language-Services_1777294314"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "languagelake"
+      expires: "False"
