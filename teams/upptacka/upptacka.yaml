@@ -26,6 +26,7 @@ spec:
     - name: "1-Editor"
       groups:
         - "IAM_AAD_Team_upptacka"
+        - "IAM_AAD_Team_Critical_Flow_Enablement"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
