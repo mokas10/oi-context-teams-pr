@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "ATOSS-Context"
       expires: "False"
+    - name: "ATOSS-Context_write_ATOSS_1777295585"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ATOSS-Context"
+      expires: "False"
