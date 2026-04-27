@@ -46,3 +46,8 @@ spec:
         - "dpbsft"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "DPR-DPBSFT_write_DPBSFT_1777289278"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "DPR-DPBSFT"
+      expires: "False"
