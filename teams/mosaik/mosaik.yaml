@@ -46,3 +46,8 @@ spec:
         - "mosaik"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "remote-chat-mosaik_write_Mosaik_1777541359"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "remote-chat-mosaik"
+      expires: "False"
