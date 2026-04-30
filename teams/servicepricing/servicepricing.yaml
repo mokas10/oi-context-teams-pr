@@ -72,3 +72,8 @@ spec:
       permissions: "write"
       tenant: "ServicePricing"
       expires: "False"
+    - name: "ServicePricing_write_ServicePricing_1777539139"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ServicePricing"
+      expires: "False"
