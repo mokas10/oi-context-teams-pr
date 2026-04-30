@@ -31,6 +31,19 @@ spec:
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
+      name: "tenantdevtest"
+      # smc system associated with this tenant
+      smc: "SM-116470"
+      # wbs associated with this tenant
+      wbs: "TBM-P1011-C05-CON-OP2120"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "context"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "context"
+    - # READ ONLY! tenant name - CANNOT be changed!
       name: "newtesttenant"
       # cost center associated with this tenant
       # wbs associated with this tenant
