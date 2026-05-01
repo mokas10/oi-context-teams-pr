@@ -52,3 +52,8 @@ spec:
       permissions: "write"
       tenant: "dsm-pickup-point-manager"
       expires: "False"
+    - name: "dsm-pickup-point-manager_write_dsm-pickup-point-manager_1777627398"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "dsm-pickup-point-manager"
+      expires: "False"
