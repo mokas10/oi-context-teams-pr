@@ -31,6 +31,19 @@ spec:
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
+      name: "O11y-Experience-monitoring"
+      # smc system associated with this tenant
+      smc: "SM-105129"
+      # wbs associated with this tenant
+      wbs: "TBM-P1011-C02-SER-OP2120"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "catchpoint"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "catchpoint"
+    - # READ ONLY! tenant name - CANNOT be changed!
       name: "DEM"
       # cost center associated with this tenant
       # wbs associated with this tenant
