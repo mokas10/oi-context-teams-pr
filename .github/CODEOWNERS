@@ -24,7 +24,6 @@
 /teams/reexpansion @ingka-group-digital/igd-re-devops
 /teams/databaseplatformservices @ingka-group-digital/dps
 /teams/cps @ingka-group-digital/dt-fl-fms-cps
-/teams/ccoe @ingka-group-digital/ccoe-cn
 /teams/outbound @ingka-group-digital/dt-fcs-outbound
 /teams/pdppcodp @ingka-group-digital/pdpp-core-codp
 /teams/asisonline @ingka-group-digital/asisonline-engineering
@@ -137,7 +136,6 @@ teams/dsmpickuppointmanager @ingka-group-digital/dsm-pickup-point-manager
 /teams/ctm @ingka-group-digital/ctm
 /teams/applicationhosting @ingka-group-digital/apphosting
 /teams/omdmdataanalytics @ingka-group-digital/isom-data-movement
-/teams/macp @ingka-group-digital/ccoe-cn
 /teams/cndigitalhub @ingka-group-digital/cn-dh-ep
 /teams/isellclient @ingka-group-digital/isell-devs
 /teams/journeydecisioning @ingka-group-digital/journey-decisioning
@@ -177,8 +175,6 @@ teams/dsmpickuppointmanager @ingka-group-digital/dsm-pickup-point-manager
 /teams/opoanexus @ingka-group-digital/opoa-nexus
 /teams/charmapi @ingka-group-digital/charm
 /teams/saljaprocore @ingka-group-digital/saljapro-core
-/teams/ccoecn @ingka-group-digital/ccoe-cn
-/teams/ccoechina @ingka-group-digital/ccoe-cn
 /teams/windowssoe @ingka-group-digital/winsoe_automation
 /teams/fcsdatanalytics @ingka-group-digital/fcs-datanalytics
 /teams/orderpromise @ingka-group-digital/order-promise
