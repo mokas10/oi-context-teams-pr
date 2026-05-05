@@ -87,3 +87,8 @@ spec:
       permissions: "write"
       tenant: "ServicePricing"
       expires: "False"
+    - name: "ServicePricing_write_ServicePricing_1777983574"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "ServicePricing"
+      expires: "False"
