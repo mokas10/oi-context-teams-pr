@@ -46,3 +46,8 @@ spec:
         - "cnisdp"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "CNSOC_write_CNISDP_1777965307"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "CNSOC"
+      expires: "False"
