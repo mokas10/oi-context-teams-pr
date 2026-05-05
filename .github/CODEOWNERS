@@ -137,7 +137,6 @@ teams/dsmpickuppointmanager @ingka-group-digital/dsm-pickup-point-manager
 /teams/applicationhosting @ingka-group-digital/apphosting
 /teams/omdmdataanalytics @ingka-group-digital/isom-data-movement
 /teams/cndigitalhub @ingka-group-digital/cn-dh-ep
-/teams/isellclient @ingka-group-digital/isell-devs
 /teams/journeydecisioning @ingka-group-digital/journey-decisioning
 /teams/erix @ingka-group-digital/erix-developers
 /teams/eventmesh @ingka-group-digital/event-mesh
