@@ -46,3 +46,8 @@ spec:
         - "dsmpickuppointmanagercn"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "dsm-pickup-point-manager-cn_write_dsm-pickup-point-manager-cn_1778064842"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "dsm-pickup-point-manager-cn"
+      expires: "False"
