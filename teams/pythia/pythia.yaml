@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "pythia"
       expires: "False"
+    - name: "pythia_write_Pythia_1778065373"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "pythia"
+      expires: "False"
