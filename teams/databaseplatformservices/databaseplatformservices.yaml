@@ -32,6 +32,19 @@ spec:
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
+      name: "DPS-ORACLE"
+      # smc system associated with this tenant
+      smc: "SM-116493"
+      # wbs associated with this tenant
+      wbs: "TBM-T1006-C01-DPL-OP2120"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "databaseplatformservices"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "databaseplatformservices"
+    - # READ ONLY! tenant name - CANNOT be changed!
       name: "MONGODB-69f9b2f594d0bf934d450494"
       # smc system associated with this tenant
       smc: "SM-116493"
