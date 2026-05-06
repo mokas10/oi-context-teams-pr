@@ -8,7 +8,7 @@ spec:
   # display name in Grafana
   displayName: "CISDP-RedTeam-Sie"
   # owner / responsible for the team
-  owner: "steven.bai@ingka.ikea.com"
+  owner: "junjie.lu@ingka.ikea.com"
   # systems connected to this team
   locations:
     # possible values: gcp-eu / alicloud-cn
@@ -19,15 +19,15 @@ spec:
     # allowed to view / query data, create READ token
     - name: "0-Viewer"
       groups:
-        - ""
+        - "IAM_AAD_Team_CNSOC"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
-        - "IAM_AAD_Team_CISDP-RedTeam"
+        - "IAM_AAD_Team_CNISDP"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - ""
+        - "IAM_AAD_Team_CISDP-Admin"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
@@ -41,9 +41,11 @@ spec:
       # for these teams
       read_access:
         - "cisdpredteamsie"
+        - "cnisdp"
       # teams allowed to write - will in the future add permissions to create write token
       write_access:
         - "cisdpredteamsie"
+        - "cnisdp"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
     - name: "redteam_write_CISDP-RedTeam-Sie_1755161914"
