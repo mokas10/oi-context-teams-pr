@@ -20,11 +20,11 @@ spec:
     # allowed to view / query data, create READ token
     - name: "0-Viewer"
       groups:
-        - ""
+        - "IAM_AAD_O11Y_EM_GRAFANA"
     # allowed to create dashboards, create WRITE token
     - name: "1-Editor"
       groups:
-        - "IAM_AAD_Team_DEM-AP"
+        - "IAM_AAD_Team_DEM-APM"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
