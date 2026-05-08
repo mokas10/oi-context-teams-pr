@@ -46,3 +46,8 @@ spec:
         - "cndhcff"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "lmaster_write_cn-dh-cff_1778225043"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "lmaster"
+      expires: "False"
