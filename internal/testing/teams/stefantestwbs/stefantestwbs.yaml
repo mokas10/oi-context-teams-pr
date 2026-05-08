@@ -46,3 +46,8 @@ spec:
         - "stefantestwbs"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "stefan-tbm-test_write_Stefan-test-WBS_1778222694"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "stefan-tbm-test"
+      expires: "False"
