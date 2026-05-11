@@ -46,3 +46,8 @@ spec:
         - "episod"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "episod_write_episod_1778481621"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "episod"
+      expires: "False"
