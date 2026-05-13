@@ -27,7 +27,7 @@ spec:
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - ""
+        - "IAM_AAD_Team_Global-Storage-Services"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
@@ -36,7 +36,7 @@ spec:
       # wbs associated with this tenant
       wbs: "PRJ003279"
       # smc associated with this tenant
-      smc: "Backup and Storage Infrastructure Software Services"
+      smc: "SM-117109"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
