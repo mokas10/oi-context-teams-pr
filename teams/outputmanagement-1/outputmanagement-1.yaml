@@ -34,7 +34,7 @@ spec:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "OutputManagement-CN"
       # wbs associated with this tenant
-      wbs: "IN_1234"
+      wbs: "TBM-T1006-C02-MSE-OP2120"
       # systems connected to this team
       smc: "SM-100777"
       # teams allowed to read - automatically adding loki datasources
