@@ -8,7 +8,7 @@ spec:
   # display name in Grafana
   displayName: "Checkout-services"
   # owner / responsible for the team
-  owner: "johannes.fosseus3@ingka.ikea.com"
+  owner: "johan.lofgren@ingka.ikea.com"
   # systems connected to this team
   locations:
     # possible values: gcp-eu / alicloud-cn
@@ -35,7 +35,7 @@ spec:
       name: "cs"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "IN_010046"
+      wbs: "DPRP1055C99CHSOP2120"
       # smc associated with this tenant
       smc: "SMC-609038"
       # teams allowed to read - automatically adding loki datasources
