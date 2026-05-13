@@ -40,7 +40,7 @@ spec:
       name: "nomos"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "IN_008733"
+      wbs: "DPR-P1075-C99-OAL-OP2120"
       # smc associated with this tenant
       smc: "SM-100929"
       # teams allowed to read - automatically adding loki datasources
