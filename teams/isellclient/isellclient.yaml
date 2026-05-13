@@ -27,14 +27,14 @@ spec:
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
-        - ""
+        - "IAM_AAD_Team_iSell_client_devs"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
       name: "IsellClient"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "IN_003952"
+      wbs: "DPR-P1028-C01-ISE-OP2120"
       # smc associated with this tenant
       smc: "SM-117022"
       # teams allowed to read - automatically adding loki datasources

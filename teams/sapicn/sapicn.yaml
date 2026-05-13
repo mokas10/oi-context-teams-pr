@@ -8,7 +8,7 @@ spec:
   # display name in Grafana
   displayName: "SAPI-CN"
   # owner / responsible for the team
-  owner: "pooja.sharma5@ingka.com"
+  owner: "banu.sridharan@ingka.ikea.com"
   # systems connected to this team
   locations:
     # possible values: gcp-eu / alicloud-cn
@@ -34,9 +34,9 @@ spec:
       name: "iSell-CN"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "PRD000032"
+      wbs: "DPR-P1076-C03-COD-OP2120"
       # smc associated with this tenant
-      smc: "SMC-114870"
+      smc: "SMC-100519"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
