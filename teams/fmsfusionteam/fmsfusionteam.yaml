@@ -36,7 +36,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN_008761"
       # smc associated with this tenant
-      smc: "FMS CC Sync"
+      smc: "SM-116925"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -50,7 +50,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN_008761"
       # smc associated with this tenant
-      smc: "FMS CC Sync"
+      smc: "SM-116925"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -64,7 +64,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN_008761"
       # smc associated with this tenant
-      smc: "FMS CC Sync"
+      smc: "SM-116925"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -78,7 +78,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN_008761"
       # smc associated with this tenant
-      smc: "FMS CC Sync"
+      smc: "SM-116925"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
