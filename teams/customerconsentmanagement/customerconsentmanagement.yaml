@@ -34,7 +34,7 @@ spec:
       name: "customer-consent-management"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "IN010117"
+      wbs: "DPR-P1015-C02-CON-OP2120"
       # smc associated with this tenant
       smc: "SM-100878"
       # teams allowed to read - automatically adding loki datasources
