@@ -8,12 +8,12 @@ spec:
   # display name in Grafana
   displayName: "GIS"
   # owner / responsible for the team
-  owner: "sinan.ulker@ingka.ikea.com"
+  owner: "nikolay.diakov@ingka.ikea.com"
   # systems connected to this team
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
-  cost_center: "CC5208"
+  cost_center: "CC5171"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -24,10 +24,14 @@ spec:
     - name: "1-Editor"
       groups:
         - "DL byt engineering GL"
+        - "GIS_Global_Inventory_Services"
+        - "o365g_iloct_itdedor"
     # allowed to create datasources and service accounts
     - name: "2-Admin"
       groups:
         - "DL byt engineering GL"
+        - "GIS_Global_Inventory_Services"
+        - "o365g_iloct_itdedor"
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
@@ -36,7 +40,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN_008761"
       # smc associated with this tenant
-      smc: "GIS"
+      smc: "SM-100065"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
