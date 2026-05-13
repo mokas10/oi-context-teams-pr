@@ -35,9 +35,9 @@ spec:
       name: "iRecover"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "PRJ006627"
+      wbs: "DPR-P1058-C04-IRE-OP2120"
       # smc associated with this tenant
-      smc: "IRECOV"
+      smc: "SM-100912"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -49,9 +49,9 @@ spec:
       name: "irecover-inventory"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "PRJ006627"
+      wbs: "DPR-P1058-C04-IRE-OP2120"
       # smc associated with this tenant
-      smc: "IRECOV"
+      smc: "SM-100912"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -63,9 +63,9 @@ spec:
       name: "irecover-pricing"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "PRJ006627"
+      wbs: "DPR-P1058-C04-IRE-OP2120"
       # smc associated with this tenant
-      smc: "IRECOV"
+      smc: "SM-100912"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -77,9 +77,9 @@ spec:
       name: "irecover-data"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "PRJ006627"
+      wbs: "DPR-P1058-C04-IRE-OP2120"
       # smc associated with this tenant
-      smc: "IRECOV"
+      smc: "SM-100912"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
@@ -91,9 +91,9 @@ spec:
       name: "irecover-infra"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "PRJ006627"
+      wbs: "DPR-P1058-C04-IRE-OP2120"
       # smc associated with this tenant
-      smc: "IRECOV"
+      smc: "SM-100912"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
