@@ -13,7 +13,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
-  cost_center: "CC5123"
+  cost_center: "5832510006"
   # role definitions for this team
   roles:
     # allowed to view / query data, create READ token
@@ -35,9 +35,9 @@ spec:
       name: "AppBackend"
       # cost center associated with this tenant
       # wbs associated with this tenant
-      wbs: "IN_6624"
+      wbs: "DPR-P1048-C99-APP-OP2120"
       # smc associated with this tenant
-      smc: "not provided"
+      smc: "SM-100925"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
