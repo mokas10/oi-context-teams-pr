@@ -889,3 +889,8 @@ spec:
       permissions: "write"
       tenant: "MONGODB-69f9b2f594d0bf934d450494"
       expires: "False"
+    - name: "DPS-ORACLE_write_DatabasePlatformServices_1779364338"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "DPS-ORACLE"
+      expires: "False"
