@@ -894,3 +894,8 @@ spec:
       permissions: "write"
       tenant: "DPS-ORACLE"
       expires: "False"
+    - name: "DPS-ORACLE_write_DatabasePlatformServices_1779431755"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "DPS-ORACLE"
+      expires: "False"
