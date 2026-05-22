@@ -899,3 +899,8 @@ spec:
       permissions: "write"
       tenant: "DPS-ORACLE"
       expires: "False"
+    - name: "DPS-ORACLE_write_DatabasePlatformServices_1779431850"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "DPS-ORACLE"
+      expires: "False"
