@@ -1,0 +1,74 @@
+---
+apiVersion: "context.ingka.com/v1"
+kind: Team
+metadata:
+  # READ ONLY! resource name - CANNOT be changed!
+  name: paas
+spec:
+  # display name in Grafana
+  displayName: "PAAS"
+  # owner / responsible for the team
+  owner: "bernardo.rodrigues@ingka.ikea.com"
+  # cost center connected to this team
+  cost_center: "CC5299"
+  # locations where team will be added
+  locations:
+    # possible values: gcp-eu / alicloud-cn
+    - "gcp-eu"
+  # role definitions for this team
+  roles:
+    # allowed to view / query data, create READ token
+    - name: "0-Viewer"
+      groups:
+        - ""
+    # allowed to create dashboards, create WRITE token
+    - name: "1-Editor"
+      groups:
+        - "Payments (ITSEHBG)"
+    # allowed to create datasources and service accounts
+    - name: "2-Admin"
+      groups:
+        - ""
+  # tenants OWNED by this team, information about these tenants
+  tenants:
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "IOPS"
+      # smc system associated with this tenant
+      smc: "SM-100917"
+      # wbs associated with this tenant
+      wbs: "DPR-P1052-C02-IOP-OP2120"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "paas"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "paas"
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "PayOrder"
+      # smc system associated with this tenant
+      smc: "SM-100933"
+      # wbs associated with this tenant
+      wbs: "DPR-P1052-C99-PAO-OP2120"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "paas"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "paas"
+    - # READ ONLY! tenant name - CANNOT be changed!
+      name: "HPP"
+      # smc system associated with this tenant
+      smc: "SM-116469"
+      # wbs associated with this tenant
+      wbs: "DPR-P1052-C01-HPP-OP2120"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "paas"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "paas"
+  # READ ONLY! tokens OWNED by this team, information about these tokens
+  tokens:
