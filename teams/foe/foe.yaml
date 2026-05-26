@@ -13,6 +13,7 @@ spec:
   locations:
     # possible values: gcp-eu / alicloud-cn
     - "gcp-eu"
+    - "alicloud-cn"
   cost_center: "CC5212"
   # role definitions for this team
   roles:
