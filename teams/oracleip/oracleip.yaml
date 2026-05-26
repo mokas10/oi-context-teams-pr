@@ -46,3 +46,8 @@ spec:
         - "oracleip"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "OIPLOWER_write_OracleIP_1779788551"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "OIPLOWER"
+      expires: "False"
