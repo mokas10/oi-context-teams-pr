@@ -46,3 +46,8 @@ spec:
         - "ikeaforbusiness"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "IKEAforBusiness_write_IKEA-for-Business_1779858673"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "IKEAforBusiness"
+      expires: "False"
