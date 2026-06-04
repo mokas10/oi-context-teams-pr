@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "Experimentum-logs"
       expires: "False"
+    - name: "Experimentum-logs_write_Experimentum_1780566740"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Experimentum-logs"
+      expires: "False"
