@@ -69,3 +69,8 @@ spec:
       permissions: "write"
       tenant: "blinka"
       expires: "False"
+    - name: "ailab-product-bundles-dev_write_ai-lab_1780574396"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ailab-product-bundles-dev"
+      expires: "False"
