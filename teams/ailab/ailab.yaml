@@ -87,3 +87,8 @@ spec:
       permissions: "write"
       tenant: "ailab-product-bundles-dev"
       expires: "False"
+    - name: "ailab-product-bundles-prod_write_ai-lab_1780640961"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "ailab-product-bundles-prod"
+      expires: "False"
