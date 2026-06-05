@@ -32,6 +32,19 @@ spec:
   # tenants OWNED by this team, information about these tenants
   tenants:
     - # READ ONLY! tenant name - CANNOT be changed!
+      name: "ailab-product-bundles-prod"
+      # smc system associated with this tenant
+      smc: "SM-118067"
+      # wbs associated with this tenant
+      wbs: "DPR-P1047-C06-PEP-OP2120"
+      # teams allowed to read - automatically adding loki datasources
+      # for these teams
+      read_access:
+        - "ailab"
+      # teams allowed to write - will in the future add permissions to create write token
+      write_access:
+        - "ailab"
+    - # READ ONLY! tenant name - CANNOT be changed!
       name: "ailab-product-bundles-dev"
       # smc system associated with this tenant
       smc: "SM-118067"
