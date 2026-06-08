@@ -2,7 +2,13 @@ import sys
 import yaml
 import os
 from verify_schema import verify_schema
-from verify_slo import check_mandatory_labels, check_resource_name
+from verify_slo import (
+    check_mandatory_labels_for_version,
+    check_required_fields_v1,
+    check_resource_name,
+    get_slo_version,
+    verify_slo_v2,
+)
 
 max_per_kind = {"Team": 1, "SLO": 5}
 
@@ -63,9 +69,22 @@ for file in file_list:
             print("ERROR: schema validation failed")
             any_error = True
         else:
-            any_error = check_mandatory_labels(yaml_data, any_error)
             team_name = file.split("/")[1]
             any_error = check_resource_name(team_name, yaml_data, any_error)
+            if get_slo_version(yaml_data) == "v2beta1":
+                # For new v2beta1 files use the full v2 validation (owner, objective,
+                # and mandatory labels) rather than just the label check, because
+                # findDiff()-based gating in verify_slo_v2 is bypassed here (no old
+                # YAML to diff against).
+                any_error = verify_slo_v2(team_name, yaml_data, {}, any_error)
+            else:
+                # For new v1 files, explicitly check required spec fields first
+                # (indicator/target/window/location) before running label
+                # validation.  The CRD schema alone does not reliably enforce
+                # these for new files because x-kubernetes-preserve-unknown-fields
+                # is set on spec.
+                any_error = check_required_fields_v1(yaml_data, any_error)
+                any_error = check_mandatory_labels_for_version(yaml_data, any_error)
 
     else:
         print(f"ERROR: unknown kind '{kind}'")

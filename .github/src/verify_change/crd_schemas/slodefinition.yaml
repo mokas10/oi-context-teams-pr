@@ -33,13 +33,17 @@ spec:
           properties:
             spec:
               type: object
+              x-kubernetes-preserve-unknown-fields: true
+              required:
+                - indicator
+                - target
+                - window
+                - location
               properties:
                 description:
                   type: string
                 location:
                   type: string
-                dev:
-                  type: boolean
                 target:
                   type: string
                 window:
@@ -55,6 +59,7 @@ spec:
                         type: string
                 indicator:
                   type: object
+                  x-kubernetes-preserve-unknown-fields: true
                   properties:
                     bool_gauge:
                       type: object
@@ -134,18 +139,174 @@ spec:
                       required:
                         - errors
                         - total
-              required:
-                - indicator
-                - target
-                - window
-                - location
             status:
               type: object
+              x-kubernetes-preserve-unknown-fields: true
               properties:
                 synced:
                   type: boolean
                 update:
                   type: boolean
+      subresources:
+        # status enables the status subresource.
+        status: {}
+    - name: v2beta1
+      # Each version can be enabled/disabled by Served flag.
+      served: true
+      # v1 remains the storage version; v2beta1 uses x-kubernetes-preserve-unknown-fields: true on spec
+      # so all v2beta1-only fields survive round-trips through the v1 storage representation.
+      storage: false
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              x-kubernetes-preserve-unknown-fields: true
+              required:
+                - owner
+                - service
+                - environment
+                - version
+                - objective
+                - description
+                - locations
+                - indicator
+                - alerting
+              properties:
+                owner:
+                  type: string
+                service:
+                  type: string
+                environment:
+                  type: string
+                version:
+                  type: string
+                objective:
+                  type: number
+                  minimum: 0
+                  exclusiveMinimum: true
+                  maximum: 100
+                description:
+                  type: string
+                locations:
+                  type: array
+                  minItems: 1
+                  items:
+                    type: string
+                    enum:
+                      - gcp-eu
+                      - alicloud-cn
+                time_window:
+                  type: string
+                mimir_tenant:
+                  type: string
+                  default: public
+                paused:
+                  type: boolean
+                  default: true
+                dev:
+                  type: boolean
+                  default: false
+                labels:
+                  type: array
+                  items:
+                    type: object
+                    required:
+                      - name
+                      - value
+                    properties:
+                      name:
+                        type: string
+                      value:
+                        type: string
+                alerting:
+                  type: object
+                  required:
+                    - page_alert
+                    - ticket_alert
+                  properties:
+                    labels:
+                      type: object
+                      additionalProperties:
+                        type: string
+                    annotations:
+                      type: object
+                      additionalProperties:
+                        type: string
+                    page_alert:
+                      type: object
+                      required:
+                        - severity
+                      properties:
+                        severity:
+                          type: string
+                        receiver:
+                          type: string
+                          default: context-event
+                        disable:
+                          type: boolean
+                          default: false
+                        labels:
+                          type: object
+                          additionalProperties:
+                            type: string
+                        annotations:
+                          type: object
+                          additionalProperties:
+                            type: string
+                    ticket_alert:
+                      type: object
+                      required:
+                        - severity
+                      properties:
+                        severity:
+                          type: string
+                        receiver:
+                          type: string
+                          default: context-event
+                        disable:
+                          type: boolean
+                          default: false
+                        labels:
+                          type: object
+                          additionalProperties:
+                            type: string
+                        annotations:
+                          type: object
+                          additionalProperties:
+                            type: string
+                indicator:
+                  type: object
+                  oneOf:
+                    - required: ["events"]
+                    - required: ["raw"]
+                  properties:
+                    events:
+                      type: object
+                      required:
+                        - error_query
+                        - total_query
+                      properties:
+                        error_query:
+                          type: string
+                        total_query:
+                          type: string
+                    raw:
+                      type: object
+                      required:
+                        - error_ratio_query
+                      properties:
+                        error_ratio_query:
+                          type: string
+            status:
+              type: object
+              x-kubernetes-preserve-unknown-fields: true
+              properties:
+                grafana_sync:
+                  type: string
+                error:
+                  type: string
       subresources:
         # status enables the status subresource.
         status: {}
