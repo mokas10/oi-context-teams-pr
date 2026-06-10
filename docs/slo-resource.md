@@ -39,6 +39,19 @@ Validation enforces that `metadata.name` exactly equals `{owner}-{slugified_serv
 | `spec.alerting.page_alert.severity`   | Severity label for the fast-burn (page) alert.                                                                                                                                | `critical`           |
 | `spec.alerting.ticket_alert.severity` | Severity label for the slow-burn (ticket) alert.                                                                                                                              | `warning`            |
 
+### Bumping the SLO version
+
+Because `metadata.name` is **read-only** after a resource is created, you cannot update `spec.version` (or any other component of the name) in-place. Attempting to do so will fail validation, because `check_v2_name_convention` enforces that `metadata.name` always equals `{owner}-{slugified_service}-{environment}-{version}`.
+
+To bump the version (e.g. after a breaking change to the indicator query that should reset the error budget):
+
+1. **Create a new file** — e.g. `teams/myteam/slo/myteam-api-prod-v2.yaml` — with the updated `metadata.name` and `spec.version`.
+2. **Delete the old file** — e.g. `teams/myteam/slo/myteam-api-prod-v1.yaml` — in the same PR.
+
+Both changes can (and should) be submitted together in one PR so the old SLO is retired at the same time the new one is created.
+
+> **Note:** Deleting the old file removes its recording rules and alert rules from Grafana. Make sure the new SLO is configured correctly before merging.
+
 ### Indicator types
 
 Provide exactly **one** of the following under `spec.indicator`:

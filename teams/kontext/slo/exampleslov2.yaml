@@ -1,0 +1,113 @@
+---
+# Test CSLO v2beta1 — for end-to-end dev validation only.
+#
+# Measures the success rate of context-operator scheduled runs using the
+# real platform metric: context_operator_run_counter_total{run_status="failed|success"}.
+# This metric is emitted by context-operator (docker/context-operator/src/metrics.py)
+# via OTel → Prometheus. OTel converts dot-notation label keys:
+#   run.status → run_status
+#   run.type   → run_type
+#   service.name (resource) → service_name
+#   deployment.environment (resource) → deployment_environment
+#
+# Safety gates:
+#   spec.dev: true    → operator skips this in prod (DEPLOYMENT_ENV=prod), only processes in dev
+#   spec.paused: true → Grafana rules are synced but created in paused state; no alerts fire
+#
+# Naming convention: {owner}-{service}-{environment}-{version}
+# All v2beta1 cslos live in the shared "context" namespace; team identity is carried by spec.owner.
+#
+# To deploy:
+#   kubectl apply -f temp/test-cslos/kontext-k8s-operator-dev-v1.yaml
+#
+# To verify pipeline:
+#   kubectl get prometheusservicelevel -n context kontext-k8s-operator-dev-v1
+#   kubectl get prometheusrule -n context -l context.ingka.com/slo-name=kontext-k8s-operator-dev-v1
+#
+# To activate rules once verified (unpause):
+#   kubectl patch slo kontext-k8s-operator-dev-v1 -n context \
+#     --type=merge -p '{"spec":{"paused":false}}'
+
+apiVersion: "context.ingka.com/v2beta1"
+kind: SLO
+metadata:
+  name: kontext-k8s-operator-dev-v1
+  namespace: context
+spec:
+  # ── Identity ─────────────────────────────────────────────────────────────────
+  owner: kontext # Team.metadata.name — used to resolve Grafana org ID
+  service: k8s-operator # OTel service.name
+  environment: dev # Scopes the SLO; dev and prod never share an error budget
+  version: v1 # Increment to reset error budget on breaking changes
+
+  # ── Description & Objective ──────────────────────────────────────────────────
+  description: >
+    Success rate of context-operator scheduled runs (orgs, users, dashboards, tokens, tenants, mimir_rules).
+    Measures the fraction of run_counter events that completed with run_status="success".
+
+  objective: 99.0 # 99% target (lenient for dev testing)
+
+  # ── Deployment control ───────────────────────────────────────────────────────
+  locations:
+    - gcp-eu # Only processed by the gcp-eu operator instance
+  paused: true # Rules synced to Grafana but created in paused state — no alerts fire
+
+  # ── Mimir ────────────────────────────────────────────────────────────────────
+  mimir_tenant: public
+
+  # ── SLI indicator (events-based) ─────────────────────────────────────────────
+  # Source metric: context_operator_run_counter_total
+  # Emitted by: docker/context-operator/src/metrics.py via OTel → Prometheus
+  # Labels (OTel dot-notation keys are normalised to underscores by the SDK):
+  #   run_status: "success" | "failed"
+  #   run_type:   "orgs" | "users" | "dashboards" | "tokens" | "tenants" | "mimir_rules" | "backup"
+  #   service_name: value of OPERATOR_NAME env var (e.g. "context-operator")
+  #   deployment_environment: value of DEPLOYMENT_ENV env var (e.g. "dev")
+  #
+  # The OR on() vector(0) guard prevents a no-data gap from being treated as 100% error
+  # (same pattern used in monitoring/sloth/slo-grafana.yaml).
+  indicator:
+    events:
+      error_query: >
+        sum(rate(context_operator_run_counter_total{run_status="failed",deployment_environment="dev"}[{{.window}}]))
+        OR on() vector(0)
+      total_query: >
+        sum(rate(context_operator_run_counter_total{deployment_environment="dev"}[{{.window}}]))
+
+  # ── Extra labels ─────────────────────────────────────────────────────────────
+  labels:
+    - name: "deployment.environment.name"
+      value: "prod"
+    - name: "ingka.team"
+      value: "DPS-OI-NextGen"
+    - name: "ingka.system_name"
+      value: "KONTEXT"
+    - name: "ingka.system_id"
+      value: "SM-116470"
+    - name: "ingka.legal_company"
+      value: "ingka"
+    - name: "ingka.version"
+      value: "SM-116470"
+
+  # ── Alerting ─────────────────────────────────────────────────────────────────
+  alerting:
+    labels:
+      team: kontext
+    annotations:
+      runbook_url: "https://docs.ng.oi.ingka.com/docs/default/component/oi-context/runbooks/"
+    page_alert:
+      severity: critical
+      receiver: context-event
+      disable: false
+      labels:
+        priority: P1
+      annotations:
+        summary: "[DEV TEST] context-operator run success rate critical — high error burn rate"
+    ticket_alert:
+      severity: warning
+      receiver: context-event
+      disable: false
+      labels:
+        priority: P3
+      annotations:
+        summary: "[DEV TEST] context-operator run success rate warning — slow error burn rate"
