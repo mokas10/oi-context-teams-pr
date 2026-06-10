@@ -51,3 +51,8 @@ spec:
       permissions: "write"
       tenant: "fs-loyalty-fstdh"
       expires: "False"
+    - name: "fs-loyalty-fstdh_write_fs-loyalty-fstdh_1781095056"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "fs-loyalty-fstdh"
+      expires: "False"
