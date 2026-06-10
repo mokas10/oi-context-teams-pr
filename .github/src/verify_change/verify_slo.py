@@ -231,6 +231,45 @@ def verify_slo_v1(team_name, new_yaml, changes, any_error):
     return any_error
 
 
+def _slugify_service(service: str) -> str:
+    """Return the DNS-label-safe form of a service name (replace _ with -)."""
+    return service.replace("_", "-")
+
+
+def check_v2_name_convention(new_yaml, any_error):
+    """Validate that metadata.name follows {owner}-{service}-{environment}-{version}.
+
+    spec.service is documented as underscore_case (e.g. ``my_api``), which is
+    incompatible with Kubernetes DNS label rules.  The expected metadata.name
+    is therefore built by slugifying the service component: ``_`` → ``-``.
+    """
+    metadata = new_yaml.get("metadata") or {}
+    spec = new_yaml.get("spec") or {}
+
+    name = metadata.get("name", "")
+    owner = spec.get("owner")
+    service = spec.get("service")
+    environment = spec.get("environment")
+    version = spec.get("version")
+
+    # Only validate the naming convention when all component fields are present;
+    # missing required fields are reported elsewhere.
+    if not all([owner, service, environment, version]):
+        return any_error
+
+    expected = f"{owner}-{_slugify_service(service)}-{environment}-{version}"
+    if name != expected:
+        print(
+            f"ERROR: metadata.name '{name}' does not match the required naming "
+            f"convention '{{owner}}-{{service}}-{{environment}}-{{version}}'. "
+            f"Expected '{expected}' (note: underscores in spec.service are "
+            f"replaced with hyphens in metadata.name)."
+        )
+        any_error = True
+
+    return any_error
+
+
 def verify_slo_v2(team_name, new_yaml, changes, any_error):
     spec = new_yaml.get("spec")
     if not isinstance(spec, dict):
@@ -249,6 +288,10 @@ def verify_slo_v2(team_name, new_yaml, changes, any_error):
             f"ERROR: spec.owner '{owner}' must match the team name '{team_name}'"
         )
         any_error = True
+
+    # Validate that metadata.name follows the {owner}-{service}-{environment}-{version}
+    # naming convention, accounting for the _ → - slugification of spec.service.
+    any_error = check_v2_name_convention(new_yaml, any_error)
 
     # Always validate spec.objective from the resulting spec, not only the diff,
     # because findDiff() only iterates keys from the old YAML and newly added
