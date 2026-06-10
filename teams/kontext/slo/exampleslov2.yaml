@@ -31,13 +31,13 @@
 apiVersion: "context.ingka.com/v2beta1"
 kind: SLO
 metadata:
-  name: kontext-k8s-operator-dev-v1
+  name: kontext-k8s-operator-prod-v1
   namespace: context
 spec:
   # ── Identity ─────────────────────────────────────────────────────────────────
   owner: kontext # Team.metadata.name — used to resolve Grafana org ID
   service: k8s-operator # OTel service.name
-  environment: dev # Scopes the SLO; dev and prod never share an error budget
+  environment: prod # Scopes the SLO; dev and prod never share an error budget
   version: v1 # Increment to reset error budget on breaking changes
 
   # ── Description & Objective ──────────────────────────────────────────────────
