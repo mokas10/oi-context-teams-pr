@@ -59,3 +59,8 @@ spec:
         - "unixoperatingsystems"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "RHEL-OperatingSystems_write_Unix-OperatingSystems_1781169243"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "RHEL-OperatingSystems"
+      expires: "False"
