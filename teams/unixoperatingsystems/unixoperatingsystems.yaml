@@ -64,3 +64,8 @@ spec:
       permissions: "write"
       tenant: "RHEL-OperatingSystems"
       expires: "False"
+    - name: "Ubuntu-OperatingSystems_write_Unix-OperatingSystems_1781169244"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Ubuntu-OperatingSystems"
+      expires: "False"
