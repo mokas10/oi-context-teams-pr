@@ -46,3 +46,8 @@ spec:
         - "rookies17"
   # READ ONLY! tokens OWNED by this team, information about these tokens
   tokens:
+    - name: "Catchpoint_write_Rookies-17_1781600971"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "Catchpoint"
+      expires: "False"
