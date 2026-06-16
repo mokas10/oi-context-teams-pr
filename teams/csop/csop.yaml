@@ -53,3 +53,8 @@ spec:
       permissions: "write"
       tenant: "CSOP"
       expires: "False"
+    - name: "CSOP_write_CSOP_1781611255"
+      location: "alicloud-cn"
+      permissions: "write"
+      tenant: "CSOP"
+      expires: "False"
