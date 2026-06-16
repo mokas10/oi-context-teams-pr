@@ -66,3 +66,8 @@ spec:
       permissions: "write"
       tenant: "RookiesTenant"
       expires: "False"
+    - name: "RookiesTenant_write_ContextRookies2_1781601364"
+      location: "gcp-eu"
+      permissions: "write"
+      tenant: "RookiesTenant"
+      expires: "False"
