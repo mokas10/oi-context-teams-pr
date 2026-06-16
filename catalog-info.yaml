@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: oi-context-teams
+  annotations:
+    github.com/project-slug: ingka-group-digital/oi-context-teams
+  description: Repo to manage teams onboarded to Context
+spec:
+  type: data-pipeline
+  lifecycle: production
+  owner: DPS-OI-NextGen
+  system: SM-116470
