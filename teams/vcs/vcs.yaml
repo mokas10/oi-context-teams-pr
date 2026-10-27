@@ -36,7 +36,7 @@ spec:
       # wbs associated with this tenant
       wbs: "IN009950"
       # smc associated with this tenant
-      smc: "not provided"
+      smc: "SMC-136062"
       # teams allowed to read - automatically adding loki datasources
       # for these teams
       read_access:
